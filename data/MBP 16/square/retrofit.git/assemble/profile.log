@@ -1,0 +1,2697 @@
+
+* Started at 2020-11-19T04:01:09.975Z
+
+* Settings
+Project dir: repos/square/retrofit.git/assemble
+Output dir: data/square/retrofit.git/assemble
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: [assemble]
+
+* Inspecting the build using its default Gradle version
+Downloading https://services.gradle.org/distributions/gradle-6.7-rc-1-bin.zip
+..................................................................................................
+
+> Task :help
+
+Welcome to Gradle 6.7-rc-1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 42s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.7-rc-1-bin/ec3ezyzwqexv9j9xpriwyoyaj/gradle-6.7-rc-1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+
+Welcome to Gradle 6.7-rc-1!
+
+Here are the highlights of this release:
+ - File system watching is ready for production use
+ - Java toolchain support
+ - Java 15 support
+
+For more details see https://docs.gradle.org/6.7-rc-1/release-notes.html
+
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: using Gradle 6.7-rc-1
+  Gradle 6.7-rc-1 (/Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.7-rc-1-bin/ec3ezyzwqexv9j9xpriwyoyaj/gradle-6.7-rc-1)
+  Run using: Tooling API
+  Run: run tasks assemble
+  Cleanup: do nothing
+  Gradle args: []
+  Build changes: []
+  Warm-ups: 6
+  Builds: 10
+
+* Running scenario using Gradle 6.7-rc-1 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.7-rc-1-bin/ec3ezyzwqexv9j9xpriwyoyaj/gradle-6.7-rc-1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 6.7-rc-1
+Java home: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+OS: mac os x x86_64 10.16
+JVM args:
+  -XX:MaxMetaspaceSize=256m
+  -XX:+HeapDumpOnOutOfMemoryError
+  -Xms256m
+  -Xmx512m
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=default
+Gradle args:
+  --gradle-user-home
+  /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+  -I
+  /private/var/folders/xv/ls5g0fmx0wz_10nqcd01gx6sqfg4nw/T/gradleProfiler8311660062606962568.gradle
+
+* Running warm-up build #1
+> Task :retrofit:compileKotlin
+
+> Task :retrofit:compileJava
+/Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit/src/main/java/retrofit2/Utils.java:46: warning: [AnnotateFormatMethod] This method passes a pair of parameters through to String.format, but the enclosing method wasn't annotated @FormatMethod. Doing so gives compile-time rather than run-time protection against malformed format strings.
+  static RuntimeException methodError(
+                          ^
+    (see https://errorprone.info/bugpattern/AnnotateFormatMethod)
+/Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit/src/main/java/retrofit2/RequestFactory.java:347: warning: [EmptyCatch] Caught exceptions should not be ignored
+          } catch (NoClassDefFoundError ignored) {
+            ^
+    (see https://google.github.io/styleguide/javaguide.html#s6.2-caught-exceptions)
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 warnings
+
+> Task :retrofit:processResources
+> Task :retrofit:classes
+> Task :retrofit:inspectClassesForKotlinIC
+> Task :retrofit:jar
+> Task :retrofit:assemble
+> Task :retrofit-mock:compileKotlin
+
+> Task :retrofit-mock:compileJava
+Note: /Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit-mock/src/main/java/retrofit2/mock/BehaviorCall.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes
+> Task :retrofit-mock:inspectClassesForKotlinIC
+> Task :retrofit-mock:jar
+> Task :retrofit-mock:assemble
+
+> Task :retrofit-adapters:rxjava:compileJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :retrofit-converters:gson:compileJava
+> Task :retrofit-converters:moshi:compileJava
+> Task :retrofit-converters:simplexml:compileJava
+
+> Task :samples:compileJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/samples/src/main/java/com/example/retrofit/RxJavaObserveOnMainThread.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes
+> Task :samples:jar
+> Task :samples:assemble
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig
+> Task :retrofit:android-test:generateDebugResValues
+> Task :retrofit:android-test:generateDebugResources
+> Task :retrofit:android-test:packageDebugResources
+> Task :retrofit:android-test:parseDebugLocalResources
+> Task :retrofit:android-test:mergeDebugShaders
+> Task :retrofit:android-test:compileDebugShaders
+> Task :retrofit:android-test:generateDebugAssets
+> Task :retrofit:android-test:packageDebugAssets
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:robovm-test:compileJava
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes
+> Task :retrofit:robovm-test:jar
+> Task :retrofit:robovm-test:assemble
+> Task :retrofit:test-helpers:compileJava
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes
+> Task :retrofit:test-helpers:jar
+> Task :retrofit:test-helpers:assemble
+
+> Task :retrofit-adapters:guava:compileJava
+Note: /Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit-adapters/guava/src/main/java/retrofit2/adapter/guava/GuavaCallAdapterFactory.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes
+> Task :retrofit-adapters:guava:jar
+> Task :retrofit-adapters:guava:assemble
+> Task :retrofit-adapters:java8:compileJava
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes
+> Task :retrofit-adapters:java8:jar
+> Task :retrofit-adapters:java8:assemble
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes
+> Task :retrofit-adapters:rxjava:jar
+> Task :retrofit-adapters:rxjava:assemble
+
+> Task :retrofit-adapters:rxjava2:compileJava
+Note: /Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit-adapters/rxjava2/src/main/java/retrofit2/adapter/rxjava2/BodyObservable.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes
+> Task :retrofit-adapters:rxjava2:jar
+> Task :retrofit-adapters:rxjava2:assemble
+
+> Task :retrofit-adapters:rxjava3:compileJava
+Note: /Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit-adapters/rxjava3/src/main/java/retrofit2/adapter/rxjava3/BodyObservable.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes
+> Task :retrofit-adapters:rxjava3:jar
+> Task :retrofit-adapters:rxjava3:assemble
+> Task :retrofit-adapters:scala:compileJava
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes
+> Task :retrofit-adapters:scala:jar
+> Task :retrofit-adapters:scala:assemble
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes
+> Task :retrofit-converters:gson:jar
+> Task :retrofit-converters:gson:assemble
+> Task :retrofit-converters:guava:compileJava
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes
+> Task :retrofit-converters:guava:jar
+> Task :retrofit-converters:guava:assemble
+> Task :retrofit-converters:jackson:compileJava
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes
+> Task :retrofit-converters:jackson:jar
+> Task :retrofit-converters:jackson:assemble
+> Task :retrofit-converters:java8:compileJava
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes
+> Task :retrofit-converters:java8:jar
+> Task :retrofit-converters:java8:assemble
+> Task :retrofit-converters:jaxb:compileJava
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes
+> Task :retrofit-converters:jaxb:jar
+> Task :retrofit-converters:jaxb:assemble
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes
+> Task :retrofit-converters:moshi:jar
+> Task :retrofit-converters:moshi:assemble
+> Task :retrofit:android-test:javaPreCompileDebug
+> Task :retrofit-converters:protobuf:extractIncludeProto
+> Task :retrofit-converters:protobuf:extractProto
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+
+> Task :retrofit-converters:protobuf:compileJava
+Note: /Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit-converters/protobuf/src/main/java/retrofit2/converter/protobuf/ProtoConverterFactory.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes
+> Task :retrofit-converters:protobuf:jar
+
+> Task :retrofit-converters:protobuf:javadoc
+/Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit-converters/protobuf/src/main/java/retrofit2/converter/protobuf/ProtoConverterFactory.java:38: warning - Tag @linkplain: reference not found: Converter.Factory converter
+/Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit-converters/protobuf/src/main/java/retrofit2/converter/protobuf/ProtoConverterFactory.java:38: warning - Tag @linkplain: reference not found: Converter.Factory converter
+/Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit-converters/protobuf/src/main/java/retrofit2/converter/protobuf/ProtoConverterFactory.java:38: warning - Tag @linkplain: reference not found: Converter.Factory converter
+3 warnings
+
+> Task :retrofit-converters:protobuf:javadocsJar
+> Task :retrofit-converters:protobuf:sourcesJar
+> Task :retrofit-converters:protobuf:assemble
+> Task :retrofit-converters:scalars:compileJava
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes
+> Task :retrofit-converters:scalars:jar
+> Task :retrofit-converters:scalars:assemble
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes
+> Task :retrofit-converters:simplexml:jar
+> Task :retrofit-converters:simplexml:assemble
+
+> Task :retrofit-converters:wire:compileJava
+Note: /Users/ltsai/Desktop/git/personal/benchmark/repos/square/retrofit.git/assemble/retrofit-converters/wire/src/main/java/retrofit2/converter/wire/WireConverterFactory.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes
+> Task :retrofit-converters:wire:jar
+> Task :retrofit-converters:wire:assemble
+> Task :retrofit:android-test:prepareLintJarForPublish
+> Task :retrofit:android-test:mergeDebugNativeLibs
+> Task :retrofit:android-test:stripDebugDebugSymbols
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars
+> Task :retrofit:android-test:processDebugManifest
+> Task :retrofit:android-test:generateDebugRFile
+> Task :retrofit:android-test:compileDebugJavaWithJavac
+> Task :retrofit:android-test:extractDebugAnnotations
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles
+> Task :retrofit:android-test:compileDebugSources
+> Task :retrofit:android-test:mergeDebugJavaResource
+> Task :retrofit:android-test:syncDebugLibJars
+> Task :retrofit:android-test:bundleDebugAar
+> Task :retrofit:android-test:assembleDebug
+> Task :retrofit:android-test:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 50s
+74 actionable tasks: 74 executed
+Used daemon with pid 19079
+Execution time 50843 ms
+
+* Running warm-up build #2
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 995ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 1026 ms
+
+* Running warm-up build #3
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 768ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 799 ms
+
+* Running warm-up build #4
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 776ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 806 ms
+
+* Running warm-up build #5
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 749ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 776 ms
+
+* Running warm-up build #6
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 751ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 778 ms
+
+* Using args for instrumented builds:
+
+* Running measured build #1
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 712ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 748 ms
+
+* Running measured build #2
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 653ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 678 ms
+
+* Running measured build #3
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 634ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 666 ms
+
+* Running measured build #4
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 616ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 647 ms
+
+* Running measured build #5
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 596ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 633 ms
+
+* Running measured build #6
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 588ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 605 ms
+
+* Running measured build #7
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 604ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 635 ms
+
+* Running measured build #8
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 598ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 632 ms
+
+* Running measured build #9
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 611ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 638 ms
+
+* Running measured build #10
+> Task :retrofit:compileKotlin UP-TO-DATE
+> Task :retrofit:compileJava UP-TO-DATE
+> Task :retrofit:processResources UP-TO-DATE
+> Task :retrofit:classes UP-TO-DATE
+> Task :retrofit:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit:jar UP-TO-DATE
+> Task :retrofit:assemble UP-TO-DATE
+> Task :retrofit-mock:compileKotlin UP-TO-DATE
+> Task :retrofit-mock:compileJava UP-TO-DATE
+> Task :retrofit-mock:processResources NO-SOURCE
+> Task :retrofit-mock:classes UP-TO-DATE
+> Task :retrofit-mock:inspectClassesForKotlinIC UP-TO-DATE
+> Task :retrofit-mock:jar UP-TO-DATE
+> Task :retrofit-mock:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:compileJava UP-TO-DATE
+> Task :retrofit-converters:gson:compileJava UP-TO-DATE
+> Task :retrofit-converters:moshi:compileJava UP-TO-DATE
+> Task :retrofit-converters:simplexml:compileJava UP-TO-DATE
+> Task :samples:compileJava UP-TO-DATE
+> Task :samples:processResources NO-SOURCE
+> Task :samples:classes UP-TO-DATE
+> Task :samples:jar UP-TO-DATE
+> Task :samples:assemble UP-TO-DATE
+> Task :retrofit:android-test:preBuild UP-TO-DATE
+> Task :retrofit:android-test:preDebugBuild UP-TO-DATE
+> Task :retrofit:android-test:compileDebugAidl NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJniLibFolders UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugNativeLibs UP-TO-DATE
+> Task :retrofit:android-test:stripDebugDebugSymbols UP-TO-DATE
+> Task :retrofit:android-test:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :retrofit:android-test:compileDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:generateDebugBuildConfig UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResValues UP-TO-DATE
+> Task :retrofit:android-test:generateDebugResources UP-TO-DATE
+> Task :retrofit:android-test:packageDebugResources UP-TO-DATE
+> Task :retrofit:android-test:parseDebugLocalResources UP-TO-DATE
+> Task :retrofit:android-test:processDebugManifest UP-TO-DATE
+> Task :retrofit:android-test:generateDebugRFile UP-TO-DATE
+> Task :retrofit:android-test:javaPreCompileDebug UP-TO-DATE
+> Task :retrofit:android-test:compileDebugJavaWithJavac UP-TO-DATE
+> Task :retrofit:android-test:extractDebugAnnotations UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :retrofit:android-test:mergeDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:compileDebugShaders UP-TO-DATE
+> Task :retrofit:android-test:generateDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugAssets UP-TO-DATE
+> Task :retrofit:android-test:packageDebugRenderscript NO-SOURCE
+> Task :retrofit:android-test:prepareLintJarForPublish UP-TO-DATE
+> Task :retrofit:android-test:processDebugJavaRes NO-SOURCE
+> Task :retrofit:android-test:mergeDebugJavaResource UP-TO-DATE
+> Task :retrofit:android-test:syncDebugLibJars UP-TO-DATE
+> Task :retrofit:android-test:bundleDebugAar UP-TO-DATE
+> Task :retrofit:android-test:compileDebugSources UP-TO-DATE
+> Task :retrofit:android-test:assembleDebug UP-TO-DATE
+> Task :retrofit:android-test:assemble UP-TO-DATE
+> Task :retrofit:robovm-test:compileJava UP-TO-DATE
+> Task :retrofit:robovm-test:processResources NO-SOURCE
+> Task :retrofit:robovm-test:classes UP-TO-DATE
+> Task :retrofit:robovm-test:jar UP-TO-DATE
+> Task :retrofit:robovm-test:assemble UP-TO-DATE
+> Task :retrofit:test-helpers:compileJava UP-TO-DATE
+> Task :retrofit:test-helpers:processResources NO-SOURCE
+> Task :retrofit:test-helpers:classes UP-TO-DATE
+> Task :retrofit:test-helpers:jar UP-TO-DATE
+> Task :retrofit:test-helpers:assemble UP-TO-DATE
+> Task :retrofit-adapters:guava:compileJava UP-TO-DATE
+> Task :retrofit-adapters:guava:processResources NO-SOURCE
+> Task :retrofit-adapters:guava:classes UP-TO-DATE
+> Task :retrofit-adapters:guava:jar UP-TO-DATE
+> Task :retrofit-adapters:guava:assemble UP-TO-DATE
+> Task :retrofit-adapters:java8:compileJava UP-TO-DATE
+> Task :retrofit-adapters:java8:processResources NO-SOURCE
+> Task :retrofit-adapters:java8:classes UP-TO-DATE
+> Task :retrofit-adapters:java8:jar UP-TO-DATE
+> Task :retrofit-adapters:java8:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava2:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava2:assemble UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:compileJava UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:processResources NO-SOURCE
+> Task :retrofit-adapters:rxjava3:classes UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:jar UP-TO-DATE
+> Task :retrofit-adapters:rxjava3:assemble UP-TO-DATE
+> Task :retrofit-adapters:scala:compileJava UP-TO-DATE
+> Task :retrofit-adapters:scala:processResources NO-SOURCE
+> Task :retrofit-adapters:scala:classes UP-TO-DATE
+> Task :retrofit-adapters:scala:jar UP-TO-DATE
+> Task :retrofit-adapters:scala:assemble UP-TO-DATE
+> Task :retrofit-converters:gson:processResources NO-SOURCE
+> Task :retrofit-converters:gson:classes UP-TO-DATE
+> Task :retrofit-converters:gson:jar UP-TO-DATE
+> Task :retrofit-converters:gson:assemble UP-TO-DATE
+> Task :retrofit-converters:guava:compileJava UP-TO-DATE
+> Task :retrofit-converters:guava:processResources NO-SOURCE
+> Task :retrofit-converters:guava:classes UP-TO-DATE
+> Task :retrofit-converters:guava:jar UP-TO-DATE
+> Task :retrofit-converters:guava:assemble UP-TO-DATE
+> Task :retrofit-converters:jackson:compileJava UP-TO-DATE
+> Task :retrofit-converters:jackson:processResources NO-SOURCE
+> Task :retrofit-converters:jackson:classes UP-TO-DATE
+> Task :retrofit-converters:jackson:jar UP-TO-DATE
+> Task :retrofit-converters:jackson:assemble UP-TO-DATE
+> Task :retrofit-converters:java8:compileJava UP-TO-DATE
+> Task :retrofit-converters:java8:processResources NO-SOURCE
+> Task :retrofit-converters:java8:classes UP-TO-DATE
+> Task :retrofit-converters:java8:jar UP-TO-DATE
+> Task :retrofit-converters:java8:assemble UP-TO-DATE
+> Task :retrofit-converters:jaxb:compileJava UP-TO-DATE
+> Task :retrofit-converters:jaxb:processResources NO-SOURCE
+> Task :retrofit-converters:jaxb:classes UP-TO-DATE
+> Task :retrofit-converters:jaxb:jar UP-TO-DATE
+> Task :retrofit-converters:jaxb:assemble UP-TO-DATE
+> Task :retrofit-converters:moshi:processResources NO-SOURCE
+> Task :retrofit-converters:moshi:classes UP-TO-DATE
+> Task :retrofit-converters:moshi:jar UP-TO-DATE
+> Task :retrofit-converters:moshi:assemble UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractIncludeProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:extractProto UP-TO-DATE
+> Task :retrofit-converters:protobuf:generateProto NO-SOURCE
+> Task :retrofit-converters:protobuf:compileJava UP-TO-DATE
+> Task :retrofit-converters:protobuf:processResources NO-SOURCE
+> Task :retrofit-converters:protobuf:classes UP-TO-DATE
+> Task :retrofit-converters:protobuf:jar UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadoc UP-TO-DATE
+> Task :retrofit-converters:protobuf:javadocsJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:sourcesJar UP-TO-DATE
+> Task :retrofit-converters:protobuf:assemble UP-TO-DATE
+> Task :retrofit-converters:scalars:compileJava UP-TO-DATE
+> Task :retrofit-converters:scalars:processResources NO-SOURCE
+> Task :retrofit-converters:scalars:classes UP-TO-DATE
+> Task :retrofit-converters:scalars:jar UP-TO-DATE
+> Task :retrofit-converters:scalars:assemble UP-TO-DATE
+> Task :retrofit-converters:simplexml:processResources NO-SOURCE
+> Task :retrofit-converters:simplexml:classes UP-TO-DATE
+> Task :retrofit-converters:simplexml:jar UP-TO-DATE
+> Task :retrofit-converters:simplexml:assemble UP-TO-DATE
+> Task :retrofit-converters:wire:compileJava UP-TO-DATE
+> Task :retrofit-converters:wire:processResources NO-SOURCE
+> Task :retrofit-converters:wire:classes UP-TO-DATE
+> Task :retrofit-converters:wire:jar UP-TO-DATE
+> Task :retrofit-converters:wire:assemble UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7-rc-1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 604ms
+74 actionable tasks: 74 up-to-date
+Used daemon with pid 19079
+Execution time 615 ms
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.7-rc-1-bin/ec3ezyzwqexv9j9xpriwyoyaj/gradle-6.7-rc-1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Results written to /Users/ltsai/Desktop/git/personal/benchmark/data/square/retrofit.git/assemble
+  /Users/ltsai/Desktop/git/personal/benchmark/data/square/retrofit.git/assemble/benchmark.csv
+  /Users/ltsai/Desktop/git/personal/benchmark/data/square/retrofit.git/assemble/benchmark.html
+

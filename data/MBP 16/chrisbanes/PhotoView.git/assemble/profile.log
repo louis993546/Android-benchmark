@@ -1,0 +1,2611 @@
+
+* Started at 2020-11-19T08:24:30.222Z
+
+* Settings
+Project dir: repos/chrisbanes/PhotoView.git/assemble
+Output dir: data/chrisbanes/PhotoView.git/assemble
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: [assemble]
+
+* Inspecting the build using its default Gradle version
+Downloading https://services.gradle.org/distributions/gradle-6.3-bin.zip
+.................................................................................................
+
+> Task :help
+
+Welcome to Gradle 6.3.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 52s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.3-bin/8tpu6egwsccjzp10c1jckl0rx/gradle-6.3/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+
+Welcome to Gradle 6.3!
+
+Here are the highlights of this release:
+ - Java 14 support
+ - Improved error messages for unexpected failures
+
+For more details see https://docs.gradle.org/6.3/release-notes.html
+
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: using Gradle 6.3
+  Gradle 6.3 (/Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.3-bin/8tpu6egwsccjzp10c1jckl0rx/gradle-6.3)
+  Run using: Tooling API
+  Run: run tasks assemble
+  Cleanup: do nothing
+  Gradle args: []
+  Build changes: []
+  Warm-ups: 6
+  Builds: 10
+
+* Running scenario using Gradle 6.3 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.3-bin/8tpu6egwsccjzp10c1jckl0rx/gradle-6.3/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 6.3
+Java home: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+OS: mac os x x86_64 10.16
+JVM args:
+  -XX:MaxMetaspaceSize=256m
+  -XX:+HeapDumpOnOutOfMemoryError
+  -Xms256m
+  -Xmx512m
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=default
+Gradle args:
+  --gradle-user-home
+  /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+  -I
+  /private/var/folders/xv/ls5g0fmx0wz_10nqcd01gx6sqfg4nw/T/gradleProfiler2705235799625703895.gradle
+
+* Running warm-up build #1
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig
+> Task :photoview:generateDebugResValues
+> Task :photoview:generateDebugResources
+> Task :photoview:packageDebugResources
+> Task :photoview:mergeDebugNativeLibs
+> Task :photoview:stripDebugDebugSymbols
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars
+> Task :photoview:parseDebugLocalResources
+> Task :photoview:mergeDebugShaders
+> Task :photoview:compileDebugShaders
+> Task :photoview:generateDebugAssets
+> Task :photoview:packageDebugAssets
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:processDebugManifest
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig
+> Task :photoview:generateReleaseResValues
+> Task :photoview:generateReleaseResources
+> Task :photoview:packageReleaseResources
+> Task :photoview:mergeReleaseNativeLibs
+> Task :photoview:stripReleaseDebugSymbols
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars
+> Task :photoview:parseReleaseLocalResources
+> Task :photoview:mergeReleaseShaders
+> Task :photoview:compileReleaseShaders
+> Task :photoview:generateReleaseAssets
+> Task :photoview:packageReleaseAssets
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:javaPreCompileDebug
+> Task :photoview:mergeReleaseResources
+> Task :photoview:javaPreCompileRelease
+> Task :photoview:mergeReleaseJavaResource
+> Task :photoview:generateDebugRFile
+> Task :photoview:compileDebugJavaWithJavac
+> Task :photoview:extractDebugAnnotations
+> Task :photoview:mergeDebugGeneratedProguardFiles
+> Task :photoview:mergeDebugConsumerProguardFiles
+> Task :photoview:compileDebugSources
+> Task :photoview:prepareLintJarForPublish
+> Task :photoview:processReleaseManifest
+> Task :photoview:mergeDebugJavaResource
+> Task :photoview:syncDebugLibJars
+> Task :photoview:bundleDebugAar
+> Task :photoview:assembleDebug
+> Task :photoview:generateReleaseRFile
+> Task :photoview:compileReleaseJavaWithJavac
+> Task :photoview:extractReleaseAnnotations
+> Task :photoview:mergeReleaseGeneratedProguardFiles
+> Task :photoview:mergeReleaseConsumerProguardFiles
+> Task :photoview:syncReleaseLibJars
+> Task :photoview:bundleReleaseAar
+> Task :photoview:compileReleaseSources
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :photoview:bundleLibCompileDebug
+> Task :sample:generateDebugBuildConfig
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :sample:mainApkListPersistenceDebug
+> Task :photoview:compileDebugLibraryResources
+> Task :sample:generateDebugResValues
+> Task :sample:generateDebugResources
+> Task :photoview:extractDeepLinksDebug
+> Task :sample:createDebugCompatibleScreenManifests
+> Task :sample:extractDeepLinksDebug
+> Task :sample:processDebugManifest
+> Task :sample:mergeDebugResources
+> Task :sample:processDebugResources
+> Task :sample:compileDebugKotlin
+> Task :photoview:verifyReleaseResources
+> Task :photoview:assembleRelease
+> Task :photoview:assemble
+> Task :sample:javaPreCompileDebug
+> Task :sample:compileDebugJavaWithJavac
+> Task :sample:compileDebugSources
+> Task :sample:mergeDebugShaders
+> Task :sample:compileDebugShaders
+> Task :sample:generateDebugAssets
+> Task :sample:mergeDebugAssets
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :photoview:bundleLibResDebug
+> Task :photoview:bundleLibRuntimeDebug
+> Task :sample:checkDebugDuplicateClasses
+> Task :sample:dexBuilderDebug
+> Task :sample:mergeDebugJavaResource
+> Task :sample:desugarDebugFileDependencies
+> Task :photoview:copyDebugJniLibsProjectOnly
+> Task :sample:mergeDebugJniLibFolders
+> Task :sample:validateSigningDebug
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig
+> Task :sample:mainApkListPersistenceRelease
+> Task :sample:generateReleaseResValues
+> Task :sample:generateReleaseResources
+> Task :photoview:compileReleaseLibraryResources
+> Task :photoview:bundleLibCompileRelease
+> Task :photoview:extractDeepLinksRelease
+> Task :sample:createReleaseCompatibleScreenManifests
+> Task :sample:extractDeepLinksRelease
+> Task :sample:processReleaseManifest
+> Task :sample:mergeReleaseResources
+> Task :sample:processReleaseResources
+> Task :sample:compileReleaseKotlin
+> Task :sample:mergeDebugNativeLibs
+> Task :sample:stripDebugDebugSymbols
+> Task :sample:javaPreCompileRelease
+> Task :sample:compileReleaseJavaWithJavac
+> Task :sample:compileReleaseSources
+> Task :sample:prepareLintJar
+> Task :sample:lintVitalRelease
+> Task :sample:checkReleaseDuplicateClasses
+> Task :sample:mergeExtDexDebug
+> Task :photoview:bundleLibRuntimeRelease
+> Task :sample:dexBuilderRelease
+> Task :sample:desugarReleaseFileDependencies
+> Task :sample:mergeReleaseShaders
+> Task :sample:compileReleaseShaders
+> Task :sample:generateReleaseAssets
+> Task :sample:mergeReleaseAssets
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :photoview:copyReleaseJniLibsProjectOnly
+> Task :sample:mergeReleaseJniLibFolders
+> Task :photoview:bundleLibResRelease
+> Task :sample:mergeDexDebug
+> Task :sample:packageDebug
+> Task :sample:assembleDebug
+> Task :sample:mergeReleaseNativeLibs
+> Task :sample:stripReleaseDebugSymbols
+> Task :sample:mergeReleaseJavaResource
+> Task :sample:mergeExtDexRelease
+> Task :sample:mergeDexRelease
+> Task :sample:packageRelease
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1m 4s
+108 actionable tasks: 108 executed
+Used daemon with pid 23847
+Execution time 64872 ms
+
+* Running warm-up build #2
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 2329 ms
+
+* Running warm-up build #3
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1890 ms
+
+* Running warm-up build #4
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 2169 ms
+
+* Running warm-up build #5
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1836 ms
+
+* Running warm-up build #6
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1707 ms
+
+* Using args for instrumented builds:
+
+* Running measured build #1
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1708 ms
+
+* Running measured build #2
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1919 ms
+
+* Running measured build #3
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1824 ms
+
+* Running measured build #4
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1676 ms
+
+* Running measured build #5
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1381 ms
+
+* Running measured build #6
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1251 ms
+
+* Running measured build #7
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1251 ms
+
+* Running measured build #8
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1238 ms
+
+* Running measured build #9
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1518 ms
+
+* Running measured build #10
+> Task :photoview:preBuild UP-TO-DATE
+> Task :photoview:preDebugBuild UP-TO-DATE
+> Task :photoview:compileDebugAidl NO-SOURCE
+> Task :photoview:mergeDebugJniLibFolders UP-TO-DATE
+> Task :photoview:mergeDebugNativeLibs UP-TO-DATE
+> Task :photoview:stripDebugDebugSymbols UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileDebugRenderscript NO-SOURCE
+> Task :photoview:generateDebugBuildConfig UP-TO-DATE
+> Task :photoview:generateDebugResValues UP-TO-DATE
+> Task :photoview:generateDebugResources UP-TO-DATE
+> Task :photoview:packageDebugResources UP-TO-DATE
+> Task :photoview:parseDebugLocalResources UP-TO-DATE
+> Task :photoview:processDebugManifest UP-TO-DATE
+> Task :photoview:generateDebugRFile UP-TO-DATE
+> Task :photoview:javaPreCompileDebug UP-TO-DATE
+> Task :photoview:compileDebugJavaWithJavac UP-TO-DATE
+> Task :photoview:extractDebugAnnotations UP-TO-DATE
+> Task :photoview:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeDebugShaders UP-TO-DATE
+> Task :photoview:compileDebugShaders UP-TO-DATE
+> Task :photoview:generateDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugAssets UP-TO-DATE
+> Task :photoview:packageDebugRenderscript NO-SOURCE
+> Task :photoview:prepareLintJarForPublish UP-TO-DATE
+> Task :photoview:processDebugJavaRes NO-SOURCE
+> Task :photoview:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:syncDebugLibJars UP-TO-DATE
+> Task :photoview:bundleDebugAar UP-TO-DATE
+> Task :photoview:compileDebugSources UP-TO-DATE
+> Task :photoview:assembleDebug UP-TO-DATE
+> Task :photoview:preReleaseBuild UP-TO-DATE
+> Task :photoview:compileReleaseAidl NO-SOURCE
+> Task :photoview:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :photoview:mergeReleaseNativeLibs UP-TO-DATE
+> Task :photoview:stripReleaseDebugSymbols UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :photoview:compileReleaseRenderscript NO-SOURCE
+> Task :photoview:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:generateReleaseResValues UP-TO-DATE
+> Task :photoview:generateReleaseResources UP-TO-DATE
+> Task :photoview:packageReleaseResources UP-TO-DATE
+> Task :photoview:parseReleaseLocalResources UP-TO-DATE
+> Task :photoview:processReleaseManifest UP-TO-DATE
+> Task :photoview:generateReleaseRFile UP-TO-DATE
+> Task :photoview:javaPreCompileRelease UP-TO-DATE
+> Task :photoview:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :photoview:extractReleaseAnnotations UP-TO-DATE
+> Task :photoview:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :photoview:mergeReleaseShaders UP-TO-DATE
+> Task :photoview:compileReleaseShaders UP-TO-DATE
+> Task :photoview:generateReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseAssets UP-TO-DATE
+> Task :photoview:packageReleaseRenderscript NO-SOURCE
+> Task :photoview:processReleaseJavaRes NO-SOURCE
+> Task :photoview:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:syncReleaseLibJars UP-TO-DATE
+> Task :photoview:bundleReleaseAar UP-TO-DATE
+> Task :photoview:compileReleaseSources UP-TO-DATE
+> Task :photoview:mergeReleaseResources UP-TO-DATE
+> Task :photoview:verifyReleaseResources UP-TO-DATE
+> Task :photoview:assembleRelease UP-TO-DATE
+> Task :photoview:assemble UP-TO-DATE
+> Task :photoview:bundleLibCompileDebug UP-TO-DATE
+> Task :sample:preBuild UP-TO-DATE
+> Task :sample:preDebugBuild UP-TO-DATE
+> Task :sample:compileDebugAidl NO-SOURCE
+> Task :sample:generateDebugBuildConfig UP-TO-DATE
+> Task :sample:compileDebugRenderscript NO-SOURCE
+> Task :photoview:compileDebugLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceDebug UP-TO-DATE
+> Task :sample:generateDebugResValues UP-TO-DATE
+> Task :sample:generateDebugResources UP-TO-DATE
+> Task :sample:mergeDebugResources UP-TO-DATE
+> Task :photoview:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksDebug UP-TO-DATE
+> Task :sample:processDebugManifest UP-TO-DATE
+> Task :sample:processDebugResources UP-TO-DATE
+> Task :sample:compileDebugKotlin UP-TO-DATE
+> Task :sample:javaPreCompileDebug UP-TO-DATE
+> Task :sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sample:compileDebugSources UP-TO-DATE
+> Task :sample:mergeDebugShaders UP-TO-DATE
+> Task :sample:compileDebugShaders UP-TO-DATE
+> Task :sample:generateDebugAssets UP-TO-DATE
+> Task :sample:mergeDebugAssets UP-TO-DATE
+> Task :photoview:bundleLibResDebug UP-TO-DATE
+> Task :sample:processDebugJavaRes NO-SOURCE
+> Task :sample:mergeDebugJavaResource UP-TO-DATE
+> Task :photoview:bundleLibRuntimeDebug UP-TO-DATE
+> Task :sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderDebug UP-TO-DATE
+> Task :sample:desugarDebugFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexDebug UP-TO-DATE
+> Task :sample:mergeDexDebug UP-TO-DATE
+> Task :photoview:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :sample:stripDebugDebugSymbols UP-TO-DATE
+> Task :sample:validateSigningDebug UP-TO-DATE
+> Task :sample:packageDebug UP-TO-DATE
+> Task :sample:assembleDebug UP-TO-DATE
+> Task :photoview:bundleLibCompileRelease UP-TO-DATE
+> Task :sample:preReleaseBuild UP-TO-DATE
+> Task :sample:compileReleaseAidl NO-SOURCE
+> Task :sample:compileReleaseRenderscript NO-SOURCE
+> Task :sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :photoview:compileReleaseLibraryResources UP-TO-DATE
+> Task :sample:mainApkListPersistenceRelease UP-TO-DATE
+> Task :sample:generateReleaseResValues UP-TO-DATE
+> Task :sample:generateReleaseResources UP-TO-DATE
+> Task :sample:mergeReleaseResources UP-TO-DATE
+> Task :photoview:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :sample:extractDeepLinksRelease UP-TO-DATE
+> Task :sample:processReleaseManifest UP-TO-DATE
+> Task :sample:processReleaseResources UP-TO-DATE
+> Task :sample:compileReleaseKotlin UP-TO-DATE
+> Task :sample:javaPreCompileRelease UP-TO-DATE
+> Task :sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sample:compileReleaseSources UP-TO-DATE
+> Task :sample:prepareLintJar UP-TO-DATE
+> Task :photoview:bundleLibRuntimeRelease UP-TO-DATE
+> Task :sample:lintVitalRelease
+> Task :sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :sample:dexBuilderRelease UP-TO-DATE
+> Task :sample:desugarReleaseFileDependencies UP-TO-DATE
+> Task :sample:mergeExtDexRelease UP-TO-DATE
+> Task :sample:mergeDexRelease UP-TO-DATE
+> Task :sample:mergeReleaseShaders UP-TO-DATE
+> Task :sample:compileReleaseShaders UP-TO-DATE
+> Task :sample:generateReleaseAssets UP-TO-DATE
+> Task :sample:mergeReleaseAssets UP-TO-DATE
+> Task :photoview:bundleLibResRelease UP-TO-DATE
+> Task :sample:processReleaseJavaRes NO-SOURCE
+> Task :sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :photoview:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :sample:stripReleaseDebugSymbols UP-TO-DATE
+> Task :sample:packageRelease UP-TO-DATE
+> Task :sample:assembleRelease
+> Task :sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 23847
+Execution time 1358 ms
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.3-bin/8tpu6egwsccjzp10c1jckl0rx/gradle-6.3/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Results written to /Users/ltsai/Desktop/git/personal/benchmark/data/chrisbanes/PhotoView.git/assemble
+  /Users/ltsai/Desktop/git/personal/benchmark/data/chrisbanes/PhotoView.git/assemble/benchmark.csv
+  /Users/ltsai/Desktop/git/personal/benchmark/data/chrisbanes/PhotoView.git/assemble/benchmark.html
+

@@ -1,0 +1,2791 @@
+
+* Started at 2020-11-19T10:15:34.544Z
+
+* Settings
+Project dir: repos/AppIntro/AppIntro.git/assemble
+Output dir: data/AppIntro/AppIntro.git/assemble
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: [assemble]
+
+* Inspecting the build using its default Gradle version
+
+> Task :help
+
+Welcome to Gradle 6.7.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 11s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.7-all/cuy9mc7upwgwgeb72wkcrupxe/gradle-6.7/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: using Gradle 6.7
+  Gradle 6.7 (/Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.7-all/cuy9mc7upwgwgeb72wkcrupxe/gradle-6.7)
+  Run using: Tooling API
+  Run: run tasks assemble
+  Cleanup: do nothing
+  Gradle args: []
+  Build changes: []
+  Warm-ups: 6
+  Builds: 10
+
+* Running scenario using Gradle 6.7 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.7-all/cuy9mc7upwgwgeb72wkcrupxe/gradle-6.7/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 6.7
+Java home: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+OS: mac os x x86_64 10.16
+JVM args:
+  -Xmx1536m
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=default
+Gradle args:
+  --gradle-user-home
+  /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+  -I
+  /private/var/folders/xv/ls5g0fmx0wz_10nqcd01gx6sqfg4nw/T/gradleProfiler5397194366782413938.gradle
+
+* Running warm-up build #1
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig
+> Task :appintro:generateDebugResValues
+> Task :appintro:generateDebugResources
+> Task :appintro:packageDebugResources
+> Task :appintro:javaPreCompileDebug
+> Task :appintro:mergeDebugShaders
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:writeDebugAarMetadata
+> Task :appintro:mergeReleaseJniLibFolders
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig
+> Task :appintro:generateReleaseResValues
+> Task :appintro:generateReleaseResources
+> Task :appintro:parseDebugLocalResources
+> Task :appintro:processDebugManifest
+> Task :appintro:packageReleaseResources
+> Task :appintro:javaPreCompileRelease
+> Task :appintro:mergeReleaseShaders
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:processReleaseManifest
+> Task :appintro:packageReleaseAssets
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:parseReleaseLocalResources
+> Task :appintro:writeReleaseAarMetadata
+> Task :appintro:generateReleaseRFile
+> Task :appintro:generateDebugRFile
+> Task :appintro:mergeReleaseResources
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig
+> Task :example:generateDebugResValues
+> Task :example:generateDebugResources
+> Task :appintro:compileDebugLibraryResources
+> Task :example:mergeDebugResources
+> Task :appintro:verifyReleaseResources
+
+> Task :appintro:compileDebugKotlin
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/AppIntroBase.kt: (249, 40): Parameter 'lock' is never used
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/AppIntroBase.kt: (460, 17): Condition 'fragment != null' is always 'true'
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/AppIntroBase.kt: (504, 61): Unchecked cast: Serializable? to kotlin.collections.HashMap<Int, PermissionWrapper>? /* = java.util.HashMap<Int, PermissionWrapper>? */
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/AppIntroBase.kt: (681, 22): 'vibrate(Long): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/indicator/ProgressIndicatorController.kt: (26, 30): 'setColorFilter(Int, PorterDuff.Mode): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/indicator/ProgressIndicatorController.kt: (32, 35): 'setColorFilter(Int, PorterDuff.Mode): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/internal/AppIntroViewPager.kt: (183, 46): Parameter 'event' is never used
+
+> Task :appintro:compileDebugJavaWithJavac
+> Task :appintro:extractDebugAnnotations
+> Task :appintro:mergeDebugGeneratedProguardFiles
+> Task :appintro:mergeDebugConsumerProguardFiles
+> Task :appintro:compileDebugSources
+> Task :appintro:mergeDebugJavaResource
+
+> Task :appintro:compileReleaseKotlin
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/AppIntroBase.kt: (249, 40): Parameter 'lock' is never used
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/AppIntroBase.kt: (460, 17): Condition 'fragment != null' is always 'true'
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/AppIntroBase.kt: (504, 61): Unchecked cast: Serializable? to kotlin.collections.HashMap<Int, PermissionWrapper>? /* = java.util.HashMap<Int, PermissionWrapper>? */
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/AppIntroBase.kt: (681, 22): 'vibrate(Long): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/indicator/ProgressIndicatorController.kt: (26, 30): 'setColorFilter(Int, PorterDuff.Mode): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/indicator/ProgressIndicatorController.kt: (32, 35): 'setColorFilter(Int, PorterDuff.Mode): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/AppIntro/AppIntro.git/assemble/appintro/src/main/java/com/github/appintro/internal/AppIntroViewPager.kt: (183, 46): Parameter 'event' is never used
+
+> Task :appintro:syncDebugLibJars
+> Task :appintro:bundleDebugAar
+> Task :appintro:assembleDebug
+> Task :appintro:compileReleaseJavaWithJavac
+> Task :appintro:extractReleaseAnnotations
+> Task :appintro:mergeReleaseGeneratedProguardFiles
+> Task :appintro:mergeReleaseConsumerProguardFiles
+> Task :appintro:compileReleaseSources
+> Task :appintro:mergeReleaseJavaResource
+> Task :example:checkDebugAarMetadata
+> Task :appintro:bundleLibCompileToJarDebug
+> Task :appintro:syncReleaseLibJars
+> Task :appintro:bundleReleaseAar
+> Task :appintro:assembleRelease
+> Task :appintro:assemble
+> Task :example:createDebugCompatibleScreenManifests
+> Task :appintro:extractDeepLinksDebug
+> Task :example:extractDeepLinksDebug
+> Task :example:processDebugMainManifest
+> Task :example:processDebugManifest
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:javaPreCompileDebug
+> Task :example:mergeDebugShaders
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :appintro:bundleLibResDebug
+> Task :example:compressDebugAssets
+> Task :appintro:bundleLibRuntimeToJarDebug
+> Task :appintro:copyDebugJniLibsProjectOnly
+> Task :example:mergeDebugJniLibFolders
+> Task :example:validateSigningDebug
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:checkDebugDuplicateClasses
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:bundleLibCompileToJarRelease
+> Task :example:generateReleaseBuildConfig
+> Task :example:generateReleaseResValues
+> Task :example:generateReleaseResources
+> Task :example:checkReleaseAarMetadata
+> Task :appintro:compileReleaseLibraryResources
+> Task :example:createReleaseCompatibleScreenManifests
+> Task :appintro:extractDeepLinksRelease
+> Task :example:extractDeepLinksRelease
+> Task :example:processReleaseMainManifest
+> Task :example:processReleaseManifest
+> Task :example:javaPreCompileRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets
+> Task :example:processReleaseManifestForPackage
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :appintro:bundleLibResRelease
+> Task :appintro:bundleLibRuntimeToJarRelease
+> Task :example:compressReleaseAssets
+> Task :example:checkReleaseDuplicateClasses
+> Task :example:mergeDebugNativeLibs
+> Task :example:mergeExtDexDebug
+> Task :example:collectReleaseDependencies
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:mergeReleaseResources
+> Task :example:mergeExtDexRelease
+> Task :example:processReleaseResources
+> Task :example:compileReleaseKotlin
+> Task :example:compileReleaseJavaWithJavac
+> Task :example:compileReleaseSources
+> Task :example:lintVitalRelease
+> Task :example:dexBuilderRelease
+> Task :example:sdkReleaseDependencyData
+> Task :appintro:copyReleaseJniLibsProjectOnly
+> Task :example:mergeReleaseJniLibFolders
+> Task :example:processDebugManifestForPackage
+> Task :example:mergeReleaseNativeLibs
+> Task :example:mergeReleaseJavaResource
+> Task :example:processDebugResources
+> Task :example:compileDebugKotlin
+> Task :example:compileDebugJavaWithJavac
+> Task :example:compileDebugSources
+> Task :example:dexBuilderDebug
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:mergeDebugJavaResource
+> Task :example:mergeDexRelease
+> Task :example:mergeDexDebug
+> Task :example:packageDebug
+> Task :example:assembleDebug
+> Task :example:packageRelease
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1m 1s
+107 actionable tasks: 107 executed
+Used daemon with pid 29088
+Execution time 61282 ms
+
+* Running warm-up build #2
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 2900 ms
+
+* Running warm-up build #3
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 2450 ms
+
+* Running warm-up build #4
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 2278 ms
+
+* Running warm-up build #5
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 2117 ms
+
+* Running warm-up build #6
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 2122 ms
+
+* Using args for instrumented builds:
+
+* Running measured build #1
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 2210 ms
+
+* Running measured build #2
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 1998 ms
+
+* Running measured build #3
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 1739 ms
+
+* Running measured build #4
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 1716 ms
+
+* Running measured build #5
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 1694 ms
+
+* Running measured build #6
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 1597 ms
+
+* Running measured build #7
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 1625 ms
+
+* Running measured build #8
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 1549 ms
+
+* Running measured build #9
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 1547 ms
+
+* Running measured build #10
+> Task :appintro:preBuild UP-TO-DATE
+> Task :appintro:preDebugBuild UP-TO-DATE
+> Task :appintro:compileDebugAidl NO-SOURCE
+> Task :appintro:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appintro:mergeDebugNativeLibs NO-SOURCE
+> Task :appintro:stripDebugDebugSymbols NO-SOURCE
+> Task :appintro:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileDebugRenderscript NO-SOURCE
+> Task :appintro:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:generateDebugResValues UP-TO-DATE
+> Task :appintro:generateDebugResources UP-TO-DATE
+> Task :appintro:packageDebugResources UP-TO-DATE
+> Task :appintro:parseDebugLocalResources UP-TO-DATE
+> Task :appintro:processDebugManifest UP-TO-DATE
+> Task :appintro:generateDebugRFile UP-TO-DATE
+> Task :appintro:compileDebugKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileDebug UP-TO-DATE
+> Task :appintro:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appintro:extractDebugAnnotations UP-TO-DATE
+> Task :appintro:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeDebugShaders UP-TO-DATE
+> Task :appintro:compileDebugShaders NO-SOURCE
+> Task :appintro:generateDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugAssets UP-TO-DATE
+> Task :appintro:packageDebugRenderscript NO-SOURCE
+> Task :appintro:prepareLintJarForPublish UP-TO-DATE
+> Task :appintro:processDebugJavaRes NO-SOURCE
+> Task :appintro:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:syncDebugLibJars UP-TO-DATE
+> Task :appintro:writeDebugAarMetadata UP-TO-DATE
+> Task :appintro:bundleDebugAar UP-TO-DATE
+> Task :appintro:compileDebugSources UP-TO-DATE
+> Task :appintro:assembleDebug UP-TO-DATE
+> Task :appintro:preReleaseBuild UP-TO-DATE
+> Task :appintro:compileReleaseAidl NO-SOURCE
+> Task :appintro:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :appintro:mergeReleaseNativeLibs NO-SOURCE
+> Task :appintro:stripReleaseDebugSymbols NO-SOURCE
+> Task :appintro:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appintro:compileReleaseRenderscript NO-SOURCE
+> Task :appintro:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:generateReleaseResValues UP-TO-DATE
+> Task :appintro:generateReleaseResources UP-TO-DATE
+> Task :appintro:packageReleaseResources UP-TO-DATE
+> Task :appintro:parseReleaseLocalResources UP-TO-DATE
+> Task :appintro:processReleaseManifest UP-TO-DATE
+> Task :appintro:generateReleaseRFile UP-TO-DATE
+> Task :appintro:compileReleaseKotlin UP-TO-DATE
+> Task :appintro:javaPreCompileRelease UP-TO-DATE
+> Task :appintro:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :appintro:extractReleaseAnnotations UP-TO-DATE
+> Task :appintro:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :appintro:mergeReleaseShaders UP-TO-DATE
+> Task :appintro:compileReleaseShaders NO-SOURCE
+> Task :appintro:generateReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseAssets UP-TO-DATE
+> Task :appintro:packageReleaseRenderscript NO-SOURCE
+> Task :appintro:processReleaseJavaRes NO-SOURCE
+> Task :appintro:mergeReleaseJavaResource UP-TO-DATE
+> Task :appintro:syncReleaseLibJars UP-TO-DATE
+> Task :appintro:writeReleaseAarMetadata UP-TO-DATE
+> Task :appintro:bundleReleaseAar UP-TO-DATE
+> Task :appintro:compileReleaseSources UP-TO-DATE
+> Task :appintro:mergeReleaseResources UP-TO-DATE
+> Task :appintro:verifyReleaseResources UP-TO-DATE
+> Task :appintro:assembleRelease UP-TO-DATE
+> Task :appintro:assemble UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :example:preBuild UP-TO-DATE
+> Task :example:preDebugBuild UP-TO-DATE
+> Task :example:compileDebugAidl NO-SOURCE
+> Task :example:compileDebugRenderscript NO-SOURCE
+> Task :example:generateDebugBuildConfig UP-TO-DATE
+> Task :appintro:compileDebugLibraryResources UP-TO-DATE
+> Task :example:checkDebugAarMetadata UP-TO-DATE
+> Task :example:generateDebugResValues UP-TO-DATE
+> Task :example:generateDebugResources UP-TO-DATE
+> Task :example:mergeDebugResources UP-TO-DATE
+> Task :example:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksDebug UP-TO-DATE
+> Task :example:extractDeepLinksDebug UP-TO-DATE
+> Task :example:processDebugMainManifest UP-TO-DATE
+> Task :example:processDebugManifest UP-TO-DATE
+> Task :example:processDebugManifestForPackage UP-TO-DATE
+> Task :example:processDebugResources UP-TO-DATE
+> Task :example:compileDebugKotlin UP-TO-DATE
+> Task :example:javaPreCompileDebug UP-TO-DATE
+> Task :example:compileDebugJavaWithJavac UP-TO-DATE
+> Task :example:compileDebugSources UP-TO-DATE
+> Task :example:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :example:mergeDebugShaders UP-TO-DATE
+> Task :example:compileDebugShaders NO-SOURCE
+> Task :example:generateDebugAssets UP-TO-DATE
+> Task :example:mergeDebugAssets UP-TO-DATE
+> Task :example:compressDebugAssets UP-TO-DATE
+> Task :appintro:bundleLibResDebug UP-TO-DATE
+> Task :example:processDebugJavaRes NO-SOURCE
+> Task :example:mergeDebugJavaResource UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :example:checkDebugDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderDebug UP-TO-DATE
+> Task :example:mergeExtDexDebug UP-TO-DATE
+> Task :example:mergeDexDebug UP-TO-DATE
+> Task :appintro:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeDebugJniLibFolders UP-TO-DATE
+> Task :example:mergeDebugNativeLibs UP-TO-DATE
+> Task :example:stripDebugDebugSymbols NO-SOURCE
+> Task :example:validateSigningDebug UP-TO-DATE
+> Task :example:packageDebug UP-TO-DATE
+> Task :example:assembleDebug UP-TO-DATE
+> Task :appintro:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :example:preReleaseBuild UP-TO-DATE
+> Task :example:compileReleaseAidl NO-SOURCE
+> Task :example:compileReleaseRenderscript NO-SOURCE
+> Task :example:generateReleaseBuildConfig UP-TO-DATE
+> Task :appintro:compileReleaseLibraryResources UP-TO-DATE
+> Task :example:checkReleaseAarMetadata UP-TO-DATE
+> Task :example:generateReleaseResValues UP-TO-DATE
+> Task :example:generateReleaseResources UP-TO-DATE
+> Task :example:mergeReleaseResources UP-TO-DATE
+> Task :example:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :appintro:extractDeepLinksRelease UP-TO-DATE
+> Task :example:extractDeepLinksRelease UP-TO-DATE
+> Task :example:processReleaseMainManifest UP-TO-DATE
+> Task :example:processReleaseManifest UP-TO-DATE
+> Task :example:processReleaseManifestForPackage UP-TO-DATE
+> Task :example:processReleaseResources UP-TO-DATE
+> Task :example:compileReleaseKotlin UP-TO-DATE
+> Task :example:javaPreCompileRelease UP-TO-DATE
+> Task :example:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :example:compileReleaseSources UP-TO-DATE
+> Task :example:lintVitalRelease
+> Task :example:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :example:mergeReleaseShaders UP-TO-DATE
+> Task :example:compileReleaseShaders NO-SOURCE
+> Task :example:generateReleaseAssets UP-TO-DATE
+> Task :example:mergeReleaseAssets UP-TO-DATE
+> Task :example:compressReleaseAssets UP-TO-DATE
+> Task :appintro:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :example:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :example:dexBuilderRelease UP-TO-DATE
+> Task :example:mergeExtDexRelease UP-TO-DATE
+> Task :example:mergeDexRelease UP-TO-DATE
+> Task :appintro:bundleLibResRelease UP-TO-DATE
+> Task :example:processReleaseJavaRes NO-SOURCE
+> Task :example:mergeReleaseJavaResource UP-TO-DATE
+> Task :example:collectReleaseDependencies UP-TO-DATE
+> Task :example:sdkReleaseDependencyData UP-TO-DATE
+> Task :appintro:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :example:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :example:mergeReleaseNativeLibs UP-TO-DATE
+> Task :example:stripReleaseDebugSymbols NO-SOURCE
+> Task :example:packageRelease UP-TO-DATE
+> Task :example:assembleRelease
+> Task :example:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+107 actionable tasks: 1 executed, 106 up-to-date
+Used daemon with pid 29088
+Execution time 1572 ms
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.7-all/cuy9mc7upwgwgeb72wkcrupxe/gradle-6.7/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Results written to /Users/ltsai/Desktop/git/personal/benchmark/data/AppIntro/AppIntro.git/assemble
+  /Users/ltsai/Desktop/git/personal/benchmark/data/AppIntro/AppIntro.git/assemble/benchmark.csv
+  /Users/ltsai/Desktop/git/personal/benchmark/data/AppIntro/AppIntro.git/assemble/benchmark.html
+

@@ -1,0 +1,2769 @@
+
+* Started at 2020-11-19T10:14:19.012Z
+
+* Settings
+Project dir: repos/JakeWharton/timber.git/assemble
+Output dir: data/JakeWharton/timber.git/assemble
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: [assemble]
+
+* Inspecting the build using its default Gradle version
+
+> Task :help
+
+Welcome to Gradle 6.5.1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 15s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: using Gradle 6.5.1
+  Gradle 6.5.1 (/Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1)
+  Run using: Tooling API
+  Run: run tasks assemble
+  Cleanup: do nothing
+  Gradle args: []
+  Build changes: []
+  Warm-ups: 6
+  Builds: 10
+
+* Running scenario using Gradle 6.5.1 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 6.5.1
+Java home: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+OS: mac os x x86_64 10.16
+JVM args:
+  -Xmx1536M
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=default
+Gradle args:
+  --gradle-user-home
+  /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+  -I
+  /private/var/folders/xv/ls5g0fmx0wz_10nqcd01gx6sqfg4nw/T/gradleProfiler8760789448018302505.gradle
+
+* Running warm-up build #1
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar
+> Task :timber:androidSourcesJar
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig
+> Task :timber:generateDebugResValues
+> Task :timber:generateDebugResources
+> Task :timber:packageDebugResources
+> Task :timber:mergeDebugNativeLibs
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars
+> Task :timber:mergeDebugShaders
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin
+
+> Task :timber-lint:compileJava
+Note: /Users/ltsai/Desktop/git/personal/benchmark/repos/JakeWharton/timber.git/assemble/timber-lint/src/main/java/timber/lint/WrongTimberUsageDetector.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes
+> Task :timber-lint:inspectClassesForKotlinIC
+> Task :timber-lint:jar
+> Task :timber:javaPreCompileDebug
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders
+> Task :timber:processDebugManifest
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig
+> Task :timber:generateReleaseResValues
+> Task :timber:generateReleaseResources
+> Task :timber:packageReleaseResources
+> Task :timber:mergeReleaseNativeLibs
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars
+> Task :timber:parseReleaseLocalResources
+> Task :timber:parseDebugLocalResources
+> Task :timber:mergeReleaseShaders
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseResources
+> Task :timber-lint:assemble
+> Task :timber:generateDebugRFile
+
+> Task :timber:compileDebugKotlin
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/JakeWharton/timber.git/assemble/timber/src/main/java/timber/log/Timber.kt: (20, 18): There's a cycle in scopes for that type. Most probably, there's a companion object that inherits some nested class (see KT-21515).
+Such code is currently unstable, and its behavior may change in future releases
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/JakeWharton/timber.git/assemble/timber/src/main/java/timber/log/Timber.kt: (144, 66): 'isLoggable(Int): Boolean' is deprecated. Use isLoggable(String, int)
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/JakeWharton/timber.git/assemble/timber/src/main/java/timber/log/Timber.kt: (153, 11): Name shadowed: message
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/JakeWharton/timber.git/assemble/timber/src/main/java/timber/log/Timber.kt: (274, 13): There's a cycle in scopes for that type. Most probably, there's a companion object that inherits some nested class (see KT-21515).
+Such code is currently unstable, and its behavior may change in future releases
+
+> Task :timber:compileDebugJavaWithJavac
+> Task :timber:extractDebugAnnotations
+> Task :timber:mergeDebugGeneratedProguardFiles
+> Task :timber:mergeDebugConsumerProguardFiles
+> Task :timber:compileDebugSources
+> Task :timber:javaPreCompileRelease
+> Task :timber:prepareLintJarForPublish
+> Task :timber:processReleaseManifest
+> Task :timber:bundleLibCompileToJarDebug
+> Task :timber:mergeDebugJavaResource
+> Task :timber:syncDebugLibJars
+> Task :timber:bundleDebugAar
+> Task :timber:assembleDebug
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateReleaseRFile
+
+> Task :timber:compileReleaseKotlin
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/JakeWharton/timber.git/assemble/timber/src/main/java/timber/log/Timber.kt: (20, 18): There's a cycle in scopes for that type. Most probably, there's a companion object that inherits some nested class (see KT-21515).
+Such code is currently unstable, and its behavior may change in future releases
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/JakeWharton/timber.git/assemble/timber/src/main/java/timber/log/Timber.kt: (144, 66): 'isLoggable(Int): Boolean' is deprecated. Use isLoggable(String, int)
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/JakeWharton/timber.git/assemble/timber/src/main/java/timber/log/Timber.kt: (153, 11): Name shadowed: message
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/JakeWharton/timber.git/assemble/timber/src/main/java/timber/log/Timber.kt: (274, 13): There's a cycle in scopes for that type. Most probably, there's a companion object that inherits some nested class (see KT-21515).
+Such code is currently unstable, and its behavior may change in future releases
+
+> Task :timber:compileReleaseJavaWithJavac
+> Task :timber:extractReleaseAnnotations
+> Task :timber:mergeReleaseGeneratedProguardFiles
+> Task :timber:mergeReleaseConsumerProguardFiles
+> Task :timber:compileReleaseSources
+> Task :timber-sample:javaPreCompileDebug
+> Task :timber-sample:generateDebugResValues
+> Task :timber-sample:generateDebugResources
+> Task :timber:compileDebugLibraryResources
+> Task :timber:extractDeepLinksDebug
+> Task :timber-sample:createDebugCompatibleScreenManifests
+> Task :timber-sample:extractDeepLinksDebug
+> Task :timber-sample:processDebugManifest
+> Task :timber-sample:mergeDebugShaders
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets
+> Task :timber-sample:mergeDebugResources
+> Task :timber-sample:processDebugResources
+
+> Task :timber-sample:compileDebugJavaWithJavac
+The following annotation processors are not incremental: butterknife-compiler-8.8.1.jar (com.jakewharton:butterknife-compiler:8.8.1).
+Make sure all annotation processors are incremental to improve your build speed.
+
+> Task :timber-sample:compileDebugSources
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:dexBuilderDebug
+> Task :timber-sample:checkDebugDuplicateClasses
+> Task :timber:bundleLibRuntimeToJarDebug
+> Task :timber:bundleLibResDebug
+> Task :timber:verifyReleaseResources
+> Task :timber:mergeReleaseJavaResource
+> Task :timber:syncReleaseLibJars
+> Task :timber:bundleReleaseAar
+> Task :timber:assembleRelease
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble
+> Task :timber:copyDebugJniLibsProjectOnly
+> Task :timber-sample:mergeDebugJniLibFolders
+> Task :timber-sample:validateSigningDebug
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig
+> Task :timber:bundleLibCompileToJarRelease
+> Task :timber-sample:generateReleaseResValues
+> Task :timber-sample:generateReleaseResources
+> Task :timber:extractDeepLinksRelease
+> Task :timber-sample:createReleaseCompatibleScreenManifests
+> Task :timber-sample:extractDeepLinksRelease
+> Task :timber-sample:processReleaseManifest
+> Task :timber:compileReleaseLibraryResources
+> Task :timber-sample:prepareLintJar
+> Task :timber-sample:checkReleaseDuplicateClasses
+> Task :timber-sample:mergeReleaseShaders
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:collectReleaseDependencies
+> Task :timber-sample:sdkReleaseDependencyData
+> Task :timber-sample:javaPreCompileRelease
+> Task :timber:copyReleaseJniLibsProjectOnly
+> Task :timber-sample:mergeReleaseJniLibFolders
+> Task :timber-sample:mergeDebugNativeLibs
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:bundleLibResRelease
+> Task :timber-sample:mergeReleaseResources
+> Task :timber-sample:processReleaseResources
+
+> Task :timber-sample:compileReleaseJavaWithJavac
+The following annotation processors are not incremental: butterknife-compiler-8.8.1.jar (com.jakewharton:butterknife-compiler:8.8.1).
+Make sure all annotation processors are incremental to improve your build speed.
+
+> Task :timber-sample:compileReleaseSources
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:dexBuilderRelease
+> Task :timber-sample:mergeDebugJavaResource
+> Task :timber-sample:mergeExtDexRelease
+> Task :timber-sample:mergeExtDexDebug
+> Task :timber:bundleLibRuntimeToJarRelease
+> Task :timber-sample:mergeReleaseNativeLibs
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource
+> Task :timber-sample:mergeDexDebug
+> Task :timber-sample:packageDebug
+> Task :timber-sample:assembleDebug
+> Task :timber-sample:mergeDexRelease
+> Task :timber-sample:packageRelease
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 37s
+104 actionable tasks: 104 executed
+Used daemon with pid 29001
+Execution time 37526 ms
+
+* Running warm-up build #2
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 1499 ms
+
+* Running warm-up build #3
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 1099 ms
+
+* Running warm-up build #4
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 901ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 930 ms
+
+* Running warm-up build #5
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 835ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 861 ms
+
+* Running warm-up build #6
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 882ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 919 ms
+
+* Using args for instrumented builds:
+
+* Running measured build #1
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 841ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 877 ms
+
+* Running measured build #2
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 772ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 804 ms
+
+* Running measured build #3
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 707ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 731 ms
+
+* Running measured build #4
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 688ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 716 ms
+
+* Running measured build #5
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 815ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 837 ms
+
+* Running measured build #6
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 743ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 780 ms
+
+* Running measured build #7
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 689ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 727 ms
+
+* Running measured build #8
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 794ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 822 ms
+
+* Running measured build #9
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 649ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 682 ms
+
+* Running measured build #10
+> Task :timber:androidJavadocs NO-SOURCE
+> Task :timber:androidJavadocsJar UP-TO-DATE
+> Task :timber:androidSourcesJar UP-TO-DATE
+> Task :timber:preBuild UP-TO-DATE
+> Task :timber:preDebugBuild UP-TO-DATE
+> Task :timber:compileDebugAidl NO-SOURCE
+> Task :timber:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber:stripDebugDebugSymbols NO-SOURCE
+> Task :timber:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileDebugRenderscript NO-SOURCE
+> Task :timber:generateDebugBuildConfig UP-TO-DATE
+> Task :timber:generateDebugResValues UP-TO-DATE
+> Task :timber:generateDebugResources UP-TO-DATE
+> Task :timber:packageDebugResources UP-TO-DATE
+> Task :timber:parseDebugLocalResources UP-TO-DATE
+> Task :timber:processDebugManifest UP-TO-DATE
+> Task :timber:generateDebugRFile UP-TO-DATE
+> Task :timber:compileDebugKotlin UP-TO-DATE
+> Task :timber:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber:extractDebugAnnotations UP-TO-DATE
+> Task :timber:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeDebugShaders UP-TO-DATE
+> Task :timber:compileDebugShaders NO-SOURCE
+> Task :timber:generateDebugAssets UP-TO-DATE
+> Task :timber:packageDebugAssets UP-TO-DATE
+> Task :timber:packageDebugRenderscript NO-SOURCE
+> Task :timber-lint:compileKotlin UP-TO-DATE
+> Task :timber-lint:compileJava UP-TO-DATE
+> Task :timber-lint:processResources NO-SOURCE
+> Task :timber-lint:classes UP-TO-DATE
+> Task :timber-lint:inspectClassesForKotlinIC UP-TO-DATE
+> Task :timber-lint:jar UP-TO-DATE
+> Task :timber:prepareLintJarForPublish UP-TO-DATE
+> Task :timber:processDebugJavaRes NO-SOURCE
+> Task :timber:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:syncDebugLibJars UP-TO-DATE
+> Task :timber:bundleDebugAar UP-TO-DATE
+> Task :timber:compileDebugSources UP-TO-DATE
+> Task :timber:assembleDebug UP-TO-DATE
+> Task :timber:preReleaseBuild UP-TO-DATE
+> Task :timber:compileReleaseAidl NO-SOURCE
+> Task :timber:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :timber:compileReleaseRenderscript NO-SOURCE
+> Task :timber:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber:generateReleaseResValues UP-TO-DATE
+> Task :timber:generateReleaseResources UP-TO-DATE
+> Task :timber:packageReleaseResources UP-TO-DATE
+> Task :timber:parseReleaseLocalResources UP-TO-DATE
+> Task :timber:processReleaseManifest UP-TO-DATE
+> Task :timber:generateReleaseRFile UP-TO-DATE
+> Task :timber:compileReleaseKotlin UP-TO-DATE
+> Task :timber:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber:extractReleaseAnnotations UP-TO-DATE
+> Task :timber:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :timber:mergeReleaseShaders UP-TO-DATE
+> Task :timber:compileReleaseShaders NO-SOURCE
+> Task :timber:generateReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseAssets UP-TO-DATE
+> Task :timber:packageReleaseRenderscript NO-SOURCE
+> Task :timber:processReleaseJavaRes NO-SOURCE
+> Task :timber:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber:syncReleaseLibJars UP-TO-DATE
+> Task :timber:bundleReleaseAar UP-TO-DATE
+> Task :timber:compileReleaseSources UP-TO-DATE
+> Task :timber:mergeReleaseResources UP-TO-DATE
+> Task :timber:verifyReleaseResources UP-TO-DATE
+> Task :timber:assembleRelease UP-TO-DATE
+> Task :timber:signArchives SKIPPED
+> Task :timber:assemble UP-TO-DATE
+> Task :timber-lint:assemble UP-TO-DATE
+> Task :timber:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :timber-sample:preBuild UP-TO-DATE
+> Task :timber-sample:preDebugBuild UP-TO-DATE
+> Task :timber-sample:generateDebugBuildConfig UP-TO-DATE
+> Task :timber-sample:compileDebugAidl NO-SOURCE
+> Task :timber-sample:compileDebugRenderscript NO-SOURCE
+> Task :timber-sample:javaPreCompileDebug UP-TO-DATE
+> Task :timber:compileDebugLibraryResources UP-TO-DATE
+> Task :timber-sample:generateDebugResValues UP-TO-DATE
+> Task :timber-sample:generateDebugResources UP-TO-DATE
+> Task :timber:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugResources UP-TO-DATE
+> Task :timber-sample:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksDebug UP-TO-DATE
+> Task :timber-sample:processDebugManifest UP-TO-DATE
+> Task :timber-sample:processDebugResources UP-TO-DATE
+> Task :timber-sample:compileDebugJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileDebugSources UP-TO-DATE
+> Task :timber-sample:mergeDebugShaders UP-TO-DATE
+> Task :timber-sample:compileDebugShaders NO-SOURCE
+> Task :timber-sample:generateDebugAssets UP-TO-DATE
+> Task :timber-sample:mergeDebugAssets UP-TO-DATE
+> Task :timber:bundleLibResDebug UP-TO-DATE
+> Task :timber-sample:processDebugJavaRes NO-SOURCE
+> Task :timber-sample:mergeDebugJavaResource UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :timber-sample:dexBuilderDebug UP-TO-DATE
+> Task :timber-sample:checkDebugDuplicateClasses UP-TO-DATE
+> Task :timber:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeDebugJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeExtDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDexDebug UP-TO-DATE
+> Task :timber-sample:mergeDebugNativeLibs UP-TO-DATE
+> Task :timber-sample:stripDebugDebugSymbols NO-SOURCE
+> Task :timber-sample:validateSigningDebug UP-TO-DATE
+> Task :timber-sample:packageDebug UP-TO-DATE
+> Task :timber-sample:assembleDebug UP-TO-DATE
+> Task :timber:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :timber-sample:preReleaseBuild UP-TO-DATE
+> Task :timber-sample:compileReleaseAidl NO-SOURCE
+> Task :timber-sample:compileReleaseRenderscript NO-SOURCE
+> Task :timber-sample:generateReleaseBuildConfig UP-TO-DATE
+> Task :timber-sample:javaPreCompileRelease UP-TO-DATE
+> Task :timber:compileReleaseLibraryResources UP-TO-DATE
+> Task :timber-sample:generateReleaseResValues UP-TO-DATE
+> Task :timber-sample:generateReleaseResources UP-TO-DATE
+> Task :timber-sample:mergeReleaseResources UP-TO-DATE
+> Task :timber:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :timber-sample:extractDeepLinksRelease UP-TO-DATE
+> Task :timber-sample:processReleaseManifest UP-TO-DATE
+> Task :timber-sample:processReleaseResources UP-TO-DATE
+> Task :timber-sample:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :timber-sample:compileReleaseSources UP-TO-DATE
+> Task :timber-sample:prepareLintJar UP-TO-DATE
+> Task :timber:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :timber-sample:lintVitalRelease
+> Task :timber-sample:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :timber-sample:dexBuilderRelease UP-TO-DATE
+> Task :timber-sample:mergeReleaseShaders UP-TO-DATE
+> Task :timber-sample:compileReleaseShaders NO-SOURCE
+> Task :timber-sample:mergeExtDexRelease UP-TO-DATE
+> Task :timber-sample:mergeDexRelease UP-TO-DATE
+> Task :timber-sample:generateReleaseAssets UP-TO-DATE
+> Task :timber-sample:mergeReleaseAssets UP-TO-DATE
+> Task :timber:bundleLibResRelease UP-TO-DATE
+> Task :timber-sample:processReleaseJavaRes NO-SOURCE
+> Task :timber-sample:mergeReleaseJavaResource UP-TO-DATE
+> Task :timber-sample:collectReleaseDependencies UP-TO-DATE
+> Task :timber-sample:sdkReleaseDependencyData UP-TO-DATE
+> Task :timber:copyReleaseJniLibsProjectOnly UP-TO-DATE
+> Task :timber-sample:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :timber-sample:mergeReleaseNativeLibs UP-TO-DATE
+> Task :timber-sample:stripReleaseDebugSymbols NO-SOURCE
+> Task :timber-sample:packageRelease UP-TO-DATE
+> Task :timber-sample:assembleRelease
+> Task :timber-sample:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 758ms
+104 actionable tasks: 1 executed, 103 up-to-date
+Used daemon with pid 29001
+Execution time 780 ms
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Results written to /Users/ltsai/Desktop/git/personal/benchmark/data/JakeWharton/timber.git/assemble
+  /Users/ltsai/Desktop/git/personal/benchmark/data/JakeWharton/timber.git/assemble/benchmark.csv
+  /Users/ltsai/Desktop/git/personal/benchmark/data/JakeWharton/timber.git/assemble/benchmark.html
+
