@@ -1,4 +1,4 @@
-# M1 benchmark
+# Android benchmark
 
 There is a 75% chance I will go to Apple Store tomorrow and get a base model MBA with M1. 
 So if you want to know the performance of that machine, I wrote a simple script to test 
