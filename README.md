@@ -21,16 +21,24 @@ to run through all the projects in `projects.csv`
 ### Install basics
 
 1. Homebrew
-   Follow the instructure from [their website]()
+   Follow the instructure from [their website](https://soffes.blog/homebrew-on-apple-silicon)
 2. `kotlin`
-   Run `brew install kotlin` in Terminal
+   Run `arch -x86_64 brew install kotlin` in Terminal
 3. Gradle Profiler
-   Run `brew install gradle-profiler` in Terminal
+   Run `arch -x86_64 brew install gradle-profiler` in Terminal
 
 ### Run
 
-(TODO)
+1. Clone this repository
+1. Open the repository in Terminal
+1. ./run.main.kts
+1. Sit back and wait
 
 ### Share the result
 
-(TODO)
+1. Fork this repo on GitHub
+1. Add a new `remote` to the repo
+1. `git add data`
+1. `git commit -m` + some message
+1. Push the result to your fork
+1. Now open a Pull Request
