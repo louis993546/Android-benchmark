@@ -14,3 +14,4 @@ to run through all the projects in `projects.csv`
 - (Machine spec TBC)
 - Charging
 - 5 minutes between each projects
+- [Running everything through Rosetta 2 with `arch -x86_64`](https://twitter.com/soffes/status/1328925421069471746)
