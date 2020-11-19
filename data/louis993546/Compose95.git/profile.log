@@ -1,0 +1,314 @@
+
+* Started at 2020-11-19T02:27:32.365Z
+
+* Settings
+Project dir: repos/louis993546/Compose95.git
+Output dir: data/louis993546/Compose95.git
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: [assemble]
+
+* Inspecting the build using its default Gradle version
+
+> Task :help
+
+Welcome to Gradle 6.5.1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: using Gradle 6.5.1
+  Gradle 6.5.1 (/Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1)
+  Run using: Tooling API
+  Run: run tasks assemble
+  Cleanup: do nothing
+  Gradle args: []
+  Build changes: []
+  Warm-ups: 6
+  Builds: 10
+
+* Running scenario using Gradle 6.5.1 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 6.5.1
+Java home: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+OS: mac os x x86_64 10.16
+JVM args:
+  -XX:MaxMetaspaceSize=256m
+  -XX:+HeapDumpOnOutOfMemoryError
+  -Xms256m
+  -Xmx512m
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=default
+Gradle args:
+  --gradle-user-home
+  /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+  -I
+  /private/var/folders/xv/ls5g0fmx0wz_10nqcd01gx6sqfg4nw/T/gradleProfiler8336360327637053522.gradle
+
+* Running warm-up build #1
+
+> Task :compileKotlin
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/louis993546/Compose95.git/src/main/kotlin/components/Button95.kt: (20, 5): 'Box(Modifier = ..., Shape = ..., Color = ..., BorderStroke? = ..., Dp = ..., Dp = ..., Dp = ..., Dp = ..., Dp = ..., ContentGravity /* = Alignment */ = ..., () -> Unit = ...): Unit' is deprecated. All Box parameters have been removed (and gravity has been renamed to alignment). Use Modifier.background, Modifier.border and Modifier.padding instead. Also Box has been moved to androidx.compose.foundation.layout and that should be used instead.
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/louis993546/Compose95.git/src/main/kotlin/components/Button95.kt: (31, 19): 'typealias ContentGravity = Alignment' is deprecated. Use Alignment instead
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/louis993546/Compose95.git/src/main/kotlin/components/Checkbox.kt: (26, 5): 'Box(Modifier = ..., Shape = ..., Color = ..., BorderStroke? = ..., Dp = ..., Dp = ..., Dp = ..., Dp = ..., Dp = ..., ContentGravity /* = Alignment */ = ..., () -> Unit = ...): Unit' is deprecated. All Box parameters have been removed (and gravity has been renamed to alignment). Use Modifier.background, Modifier.border and Modifier.padding instead. Also Box has been moved to androidx.compose.foundation.layout and that should be used instead.
+w: /Users/ltsai/Desktop/git/personal/benchmark/repos/louis993546/Compose95.git/src/main/kotlin/components/Window95.kt: (41, 9): 'Box(Modifier = ..., Shape = ..., Color = ..., BorderStroke? = ..., Dp = ..., Dp = ..., Dp = ..., Dp = ..., Dp = ..., ContentGravity /* = Alignment */ = ..., () -> Unit = ...): Unit' is deprecated. All Box parameters have been removed (and gravity has been renamed to alignment). Use Modifier.background, Modifier.border and Modifier.padding instead. Also Box has been moved to androidx.compose.foundation.layout and that should be used instead.
+
+> Task :compileJava NO-SOURCE
+> Task :processResources
+> Task :classes
+> Task :inspectClassesForKotlinIC
+> Task :jar
+> Task :assemble
+
+BUILD SUCCESSFUL in 9s
+4 actionable tasks: 4 executed
+Used daemon with pid 9944
+Execution time 9858 ms
+
+* Running warm-up build #2
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 227ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 255 ms
+
+* Running warm-up build #3
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 197ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 223 ms
+
+* Running warm-up build #4
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 183ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 220 ms
+
+* Running warm-up build #5
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 171ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 189 ms
+
+* Running warm-up build #6
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 160ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 186 ms
+
+* Using args for instrumented builds:
+
+* Running measured build #1
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 176ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 203 ms
+
+* Running measured build #2
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 169ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 202 ms
+
+* Running measured build #3
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 165ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 197 ms
+
+* Running measured build #4
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 153ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 185 ms
+
+* Running measured build #5
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 149ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 165 ms
+
+* Running measured build #6
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 135ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 150 ms
+
+* Running measured build #7
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 143ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 174 ms
+
+* Running measured build #8
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 171ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 199 ms
+
+* Running measured build #9
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 171ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 189 ms
+
+* Running measured build #10
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 183ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 9944
+Execution time 197 ms
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Results written to /Users/ltsai/Desktop/git/personal/benchmark/data/louis993546/Compose95.git
+  /Users/ltsai/Desktop/git/personal/benchmark/data/louis993546/Compose95.git/benchmark.csv
+  /Users/ltsai/Desktop/git/personal/benchmark/data/louis993546/Compose95.git/benchmark.html
+
