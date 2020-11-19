@@ -22,7 +22,8 @@ shell {
         "gradle-profiler --benchmark --project-dir repos/$id --output-dir data/$id $task"()
         "rm -rf repos/$id"()
 
-        println("${index + 1}/${lines.size}: $id is done")
+        println("${index + 1}/${lines.size}: $id is done. Next one will start in 5 minutes.")
+        Thread.sleep(300000)
     }
     println("It's all done. Please commit and push when everything looks ok")
 }
