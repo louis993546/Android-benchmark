@@ -1,6 +1,6 @@
 # Android benchmark
 
-There is a 75% chance I will go to Apple Store tomorrow and get a base model MBA with M1. 
+There is a 50% chance I will go to Apple Store tomorrow and get a base model MBA with M1. 
 So if you want to know the performance of that machine, I wrote a simple script to test 
 it out.
 
@@ -31,7 +31,7 @@ to run through all the projects in `projects.csv`
 
 1. Clone this repository
 1. Open the repository in Terminal
-1. ./run.main.kts
+1. `./run.main.kts`
 1. Sit back and wait
 
 ### Share the result
