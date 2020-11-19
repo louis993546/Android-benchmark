@@ -1,5 +1,5 @@
 
-* Started at 2020-11-19T02:27:32.365Z
+* Started at 2020-11-19T02:52:56.564Z
 
 * Settings
 Project dir: repos/louis993546/Compose95.git
@@ -26,7 +26,7 @@ To see more detail about a task, run gradle help --task <task>
 
 For troubleshooting, visit https://help.gradle.org
 
-BUILD SUCCESSFUL in 3s
+BUILD SUCCESSFUL in 4s
 1 actionable task: 1 executed
 
 * Stopping daemons
@@ -69,7 +69,7 @@ Gradle args:
   --gradle-user-home
   /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home
   -I
-  /private/var/folders/xv/ls5g0fmx0wz_10nqcd01gx6sqfg4nw/T/gradleProfiler8336360327637053522.gradle
+  /private/var/folders/xv/ls5g0fmx0wz_10nqcd01gx6sqfg4nw/T/gradleProfiler3860282842963015298.gradle
 
 * Running warm-up build #1
 
@@ -86,10 +86,10 @@ w: /Users/ltsai/Desktop/git/personal/benchmark/repos/louis993546/Compose95.git/s
 > Task :jar
 > Task :assemble
 
-BUILD SUCCESSFUL in 9s
+BUILD SUCCESSFUL in 10s
 4 actionable tasks: 4 executed
-Used daemon with pid 9944
-Execution time 9858 ms
+Used daemon with pid 12961
+Execution time 10759 ms
 
 * Running warm-up build #2
 > Task :compileKotlin UP-TO-DATE
@@ -100,10 +100,10 @@ Execution time 9858 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 227ms
+BUILD SUCCESSFUL in 233ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 255 ms
+Used daemon with pid 12961
+Execution time 264 ms
 
 * Running warm-up build #3
 > Task :compileKotlin UP-TO-DATE
@@ -114,10 +114,10 @@ Execution time 255 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 197ms
+BUILD SUCCESSFUL in 198ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 223 ms
+Used daemon with pid 12961
+Execution time 232 ms
 
 * Running warm-up build #4
 > Task :compileKotlin UP-TO-DATE
@@ -128,10 +128,10 @@ Execution time 223 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 183ms
+BUILD SUCCESSFUL in 174ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 220 ms
+Used daemon with pid 12961
+Execution time 204 ms
 
 * Running warm-up build #5
 > Task :compileKotlin UP-TO-DATE
@@ -142,10 +142,10 @@ Execution time 220 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 171ms
+BUILD SUCCESSFUL in 162ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 189 ms
+Used daemon with pid 12961
+Execution time 190 ms
 
 * Running warm-up build #6
 > Task :compileKotlin UP-TO-DATE
@@ -156,10 +156,10 @@ Execution time 189 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 160ms
+BUILD SUCCESSFUL in 156ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 186 ms
+Used daemon with pid 12961
+Execution time 181 ms
 
 * Using args for instrumented builds:
 
@@ -172,10 +172,10 @@ Execution time 186 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 176ms
+BUILD SUCCESSFUL in 170ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 203 ms
+Used daemon with pid 12961
+Execution time 189 ms
 
 * Running measured build #2
 > Task :compileKotlin UP-TO-DATE
@@ -186,10 +186,10 @@ Execution time 203 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 169ms
+BUILD SUCCESSFUL in 162ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 202 ms
+Used daemon with pid 12961
+Execution time 195 ms
 
 * Running measured build #3
 > Task :compileKotlin UP-TO-DATE
@@ -200,10 +200,10 @@ Execution time 202 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 165ms
+BUILD SUCCESSFUL in 147ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 197 ms
+Used daemon with pid 12961
+Execution time 178 ms
 
 * Running measured build #4
 > Task :compileKotlin UP-TO-DATE
@@ -214,10 +214,10 @@ Execution time 197 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 153ms
+BUILD SUCCESSFUL in 142ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 185 ms
+Used daemon with pid 12961
+Execution time 171 ms
 
 * Running measured build #5
 > Task :compileKotlin UP-TO-DATE
@@ -228,10 +228,10 @@ Execution time 185 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 149ms
+BUILD SUCCESSFUL in 146ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 165 ms
+Used daemon with pid 12961
+Execution time 158 ms
 
 * Running measured build #6
 > Task :compileKotlin UP-TO-DATE
@@ -242,10 +242,10 @@ Execution time 165 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 135ms
+BUILD SUCCESSFUL in 137ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 150 ms
+Used daemon with pid 12961
+Execution time 164 ms
 
 * Running measured build #7
 > Task :compileKotlin UP-TO-DATE
@@ -256,10 +256,10 @@ Execution time 150 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 143ms
+BUILD SUCCESSFUL in 144ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 174 ms
+Used daemon with pid 12961
+Execution time 181 ms
 
 * Running measured build #8
 > Task :compileKotlin UP-TO-DATE
@@ -270,10 +270,10 @@ Execution time 174 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 171ms
+BUILD SUCCESSFUL in 150ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 199 ms
+Used daemon with pid 12961
+Execution time 184 ms
 
 * Running measured build #9
 > Task :compileKotlin UP-TO-DATE
@@ -284,10 +284,10 @@ Execution time 199 ms
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 171ms
+BUILD SUCCESSFUL in 157ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 189 ms
+Used daemon with pid 12961
+Execution time 188 ms
 
 * Running measured build #10
 > Task :compileKotlin UP-TO-DATE
@@ -300,8 +300,8 @@ Execution time 189 ms
 
 BUILD SUCCESSFUL in 183ms
 4 actionable tasks: 4 up-to-date
-Used daemon with pid 9944
-Execution time 197 ms
+Used daemon with pid 12961
+Execution time 209 ms
 
 * Stopping daemons
 Running command /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/benchmark/gradle-user-home

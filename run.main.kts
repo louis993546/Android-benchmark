@@ -12,16 +12,17 @@ shell {
     val projects = this.file("projects.csv")
     val lines = projects.readLines().drop(1)
     lines.forEachIndexed { index, line ->
-        val (gitUrl, task) = line.split(',').map { line.trim() }
+        val (gitUrl, task) = line.split(',').map { it.trim() }.take(2)
         val (owner, project) = gitUrl.split('/').takeLast(2)
 
-        "git clone --depth 1 $gitUrl repos/$owner/$project"()
-        "gradle-profiler --benchmark --project-dir repos/$owner/$project --output-dir data/$owner/$project $task"()
-        "rm -rf repos/$owner/$project"()
-        "git add data"()
-        "git commit -m \"Benchmark $gitUrl\""()
+        val id = "$owner/$project"
+        println("Starting $id")
 
-        println("$index/${lines.size}: $owner/$project is done")
+        "git clone --depth 1 $gitUrl repos/$id"()
+        "gradle-profiler --benchmark --project-dir repos/$id --output-dir data/$id $task"()
+        "rm -rf repos/$id"()
+
+        println("${index + 1}/${lines.size}: $id is done")
     }
-    println("It's all done. Please review the commit and push when everything looks ok")
+    println("It's all done. Please commit and push when everything looks ok")
 }
