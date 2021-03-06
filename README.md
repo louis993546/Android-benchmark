@@ -14,7 +14,6 @@ to run through all the projects in `projects.csv`
 - (Machine spec TBC)
 - Charging
 - 5 minutes between each projects
-- [Running everything through Rosetta 2 with `arch -x86_64`](https://twitter.com/soffes/status/1328925421069471746)
 
 ## How to run
 
@@ -23,15 +22,17 @@ to run through all the projects in `projects.csv`
 1. Homebrew
    Follow the instructure from [their website](https://soffes.blog/homebrew-on-apple-silicon)
 2. `kotlin`
-   Run `arch -x86_64 brew install kotlin` in Terminal
+   Run `brew install kotlin` in Terminal
 3. Gradle Profiler
-   Run `arch -x86_64 brew install gradle-profiler` in Terminal
+   Run `brew install gradle-profiler` in Terminal
 
 ### Run
 
 1. Clone this repository
 1. Open the repository in Terminal
-1. `./run.main.kts`
+1. `./run.main.kts [name of machine] [wait time]`
+    * Run 1: 300000 (to just to see what's the max performance)
+    * Run 2: 0 (to see if there are severe throttling)
 1. Sit back and wait
 
 ### Share the result

@@ -1,22 +1,22 @@
-project, task
-https://github.com/louis993546/Compose95.git, assemble
-https://github.com/android/architecture-samples.git, assemble
-https://github.com/square/retrofit.git, assemble
-https://github.com/airbnb/lottie-android.git, assemble
-https://github.com/bumptech/glide.git, assemble
-https://github.com/google/flexbox-layout.git, assemble
-https://github.com/google/iosched.git, assemble
-https://github.com/square/picasso.git, assemble
-https://github.com/chrisbanes/PhotoView.git, assemble
-https://github.com/android/plaid.git, assemble
-https://github.com/square/leakcanary.git, assemble
-https://github.com/android10/Android-CleanArchitecture.git, assemble
-https://github.com/android/sunflower.git, assemble
-https://github.com/mikepenz/MaterialDrawer.git, assemble
-https://github.com/microsoft/fluentui-android.git, assemble
-https://github.com/square/okio.git, assemble
-https://github.com/JakeWharton/timber.git, assemble
-https://github.com/AppIntro/AppIntro.git, assemble
-https://github.com/JakeWharton/RxBinding.git, assemble
-https://github.com/coil-kt/coil.git, assemble
-https://github.com/apollographql/apollo-android.git, assemble
+project, commit, task
+https://github.com/louis993546/Compose95.git, 848af84c4de6c618b1865517de4937f934561077, assemble
+https://github.com/android/architecture-samples.git, be5a9d6b23c2d227b6e48e3028bc7557a500c41f, assemble
+https://github.com/square/retrofit.git, fbf1225e28e2094bec35f587b8933748b705d167, assemble
+https://github.com/airbnb/lottie-android.git, 81ad033a2d8b4cefd64adb15da7b326cb90679df, assemble
+https://github.com/bumptech/glide.git, 9f813390646d2cdaecece8fd96fa7fd8b8605217, assemble
+https://github.com/google/flexbox-layout.git, 0edae6d3b2efedd42d8e3623e0f89f6cc5c55f07, assemble
+https://github.com/google/iosched.git, c5e2f3a17b44cda6485d1be9bd7099e524bf8090, assemble
+https://github.com/square/picasso.git, 2832bcd7e725befd7f6c26ddd0e94684d5013791, assemble
+https://github.com/chrisbanes/PhotoView.git, 565505d5cb84f5977771b5d2ccb7726338e77224, assemble
+https://github.com/android/plaid.git, 15bd64742177a98cb0f00aa3599f339bfacf09f2, assemble
+https://github.com/square/leakcanary.git, 5ba7585fb4b3a2785112cc3c1c65defcede90894, assemble
+https://github.com/android10/Android-CleanArchitecture.git, 8ed4222c537e40db05e9e685bbc253fafb6b8e1f, assemble
+https://github.com/android/sunflower.git, 2c9e37607cd44724af3c778c5f898f7f28433e8f, assemble
+https://github.com/mikepenz/MaterialDrawer.git, 984c2c32a773c102fd5652bd5487fe5f9575ed4b, assemble
+https://github.com/microsoft/fluentui-android.git, e57a7e62186a1f613579baff2e6913f961417b0b, assemble
+https://github.com/square/okio.git, a847c177033145cbc28587d4d36a6e95316965ab, assemble
+https://github.com/JakeWharton/timber.git, 4fd8e2a09c81931e9c9b004f45aea2937835278c, assemble
+https://github.com/AppIntro/AppIntro.git, d4dd3bf3b50819acde40fdc660bd9d1e3351de01, assemble
+https://github.com/JakeWharton/RxBinding.git, 78f7ebdeb9dcf373abb9fc43bde838cfe2fef62a, assemble
+https://github.com/coil-kt/coil.git, d9b378d6a09fd25843cbecdf3ce0a39ae69ce160, assemble
+https://github.com/apollographql/apollo-android.git, 8d7c969e5ce9bcec2977cd9a8ddcad6b460eaac3, assemble
