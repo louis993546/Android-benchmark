@@ -1,1 +1,0 @@
-![Machine specs](Screen Shot 2020-11-19 at 11.32.58.png)
