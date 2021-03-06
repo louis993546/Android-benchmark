@@ -9,24 +9,35 @@
 import eu.jrie.jetbrains.kotlinshell.shell.*
 
 shell {
+    val nameOfMachine = args[0]
+    val waitTime = args[1].toLong()
+
     val projects = this.file("projects.csv")
     val lines = projects.readLines().drop(1)
     lines.forEachIndexed { index, line ->
-        val (gitUrl, task) = line.split(',').map { it.trim() }.take(2)
-        val (owner, project) = gitUrl.split('/').takeLast(2)
+        val row = line.split(',').map { it.trim() }.take(3)
+        val gitUrl = row[0]
+        val commit = row[1]
+        val task = row[2]
+        val (owner, projectGit) = gitUrl.split('/').takeLast(2)
+        val project = projectGit.split('.')[0]
 
         val id = "$owner/$project/$task"
         println("Starting $id")
 
-        "git clone --depth 1 $gitUrl repos/$id"()
-        "gradle-profiler --benchmark --project-dir repos/$id --output-dir data/$id $task"()
+        "git clone $gitUrl repos/$id"()
+        cd("repos/$id")
+        "git checkout $commit"()
+        repeat(4) { cd(up) }
+
+        "gradle-profiler --benchmark --project-dir repos/$id --output-dir data/$nameOfMachine/$id $task"()
         "rm -rf repos/$id"()
 
         println("${index + 1}/${lines.size}: $id is done.")
         val isLast = (index + 1) == lines.size
         if (!isLast) {
-            println("Next one will start in 5 minutes.")
-            Thread.sleep(300000)
+            println("Next one will start in about ${waitTime/1000} seconds / ${waitTime/1000/60} minutes.")
+            Thread.sleep(waitTime)
         }
     }
     println("It's all done. Please commit and push when everything looks ok")
