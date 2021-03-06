@@ -1,4 +1,0 @@
-scenario,default
-version,Gradle 6.7
-tasks,assemble
-value,execution

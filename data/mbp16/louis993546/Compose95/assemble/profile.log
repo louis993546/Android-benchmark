@@ -1,0 +1,323 @@
+
+* Started at 2021-03-06T09:43:36.011Z
+
+* Settings
+Project dir: repos/louis993546/Compose95/assemble
+Output dir: data/mbp16/louis993546/Compose95/assemble
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: [assemble]
+
+* Inspecting the build using its default Gradle version
+Downloading https://services.gradle.org/distributions/gradle-6.5.1-bin.zip
+.................................................................................................
+
+> Task :help
+
+Welcome to Gradle 6.5.1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+BUILD SUCCESSFUL in 41s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home
+
+Welcome to Gradle 6.5.1!
+
+Here are the highlights of this release:
+ - Experimental file-system watching
+ - Improved version ordering
+ - New samples
+
+For more details see https://docs.gradle.org/6.5.1/release-notes.html
+
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: using Gradle 6.5.1
+  Gradle 6.5.1 (/Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1)
+  Run using: Tooling API
+  Run: run tasks assemble
+  Cleanup: do nothing
+  Gradle args: []
+  Build changes: []
+  Warm-ups: 6
+  Builds: 10
+
+* Running scenario using Gradle 6.5.1 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 6.5.1
+Java home: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+OS: mac os x x86_64 10.16
+JVM args:
+  -XX:MaxMetaspaceSize=256m
+  -XX:+HeapDumpOnOutOfMemoryError
+  -Xms256m
+  -Xmx512m
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=default
+Gradle args:
+  --gradle-user-home
+  /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home
+  -I
+  /private/var/folders/xv/ls5g0fmx0wz_10nqcd01gx6sqfg4nw/T/gradleProfiler4864309191250909503.gradle
+
+* Running warm-up build #1
+> Task :compileKotlin
+w: /Users/ltsai/Desktop/git/personal/Android-benchmark/repos/louis993546/Compose95/assemble/src/main/kotlin/components/Panel95.kt: (8, 5): Parameter 'modifier' is never used
+w: /Users/ltsai/Desktop/git/personal/Android-benchmark/repos/louis993546/Compose95/assemble/src/main/kotlin/components/Window95.kt: (70, 21): Arguments execution order is going to be changed in a future release. The expression for named vararg argument will be executed in the order in which it was listed, not at the end. See KT-17691 for more details.
+
+> Task :compileJava NO-SOURCE
+> Task :processResources
+> Task :classes
+> Task :inspectClassesForKotlinIC
+> Task :jar
+> Task :assemble
+
+BUILD SUCCESSFUL in 1m 30s
+4 actionable tasks: 4 executed
+Used daemon with pid 18544
+Execution time 90781 ms
+
+* Running warm-up build #2
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 253ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 284 ms
+
+* Running warm-up build #3
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 196ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 218 ms
+
+* Running warm-up build #4
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 182ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 208 ms
+
+* Running warm-up build #5
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 175ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 196 ms
+
+* Running warm-up build #6
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 157ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 175 ms
+
+* Using args for instrumented builds:
+
+* Running measured build #1
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 156ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 175 ms
+
+* Running measured build #2
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 167ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 190 ms
+
+* Running measured build #3
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 153ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 180 ms
+
+* Running measured build #4
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 139ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 167 ms
+
+* Running measured build #5
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 150ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 176 ms
+
+* Running measured build #6
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 133ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 160 ms
+
+* Running measured build #7
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 135ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 162 ms
+
+* Running measured build #8
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 160ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 188 ms
+
+* Running measured build #9
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 148ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 172 ms
+
+* Running measured build #10
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :inspectClassesForKotlinIC UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 183ms
+4 actionable tasks: 4 up-to-date
+Used daemon with pid 18544
+Execution time 210 ms
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-6.5.1-bin/1m5048aptkfynhbvolwgr4ej9/gradle-6.5.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Results written to /Users/ltsai/Desktop/git/personal/Android-benchmark/data/mbp16/louis993546/Compose95/assemble
+  /Users/ltsai/Desktop/git/personal/Android-benchmark/data/mbp16/louis993546/Compose95/assemble/benchmark.csv
+  /Users/ltsai/Desktop/git/personal/Android-benchmark/data/mbp16/louis993546/Compose95/assemble/benchmark.html
+

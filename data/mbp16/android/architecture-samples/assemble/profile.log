@@ -1,0 +1,1034 @@
+
+* Started at 2021-03-06T09:51:07.499Z
+
+* Settings
+Project dir: repos/android/architecture-samples/assemble
+Output dir: data/mbp16/android/architecture-samples/assemble
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: [assemble]
+
+* Inspecting the build using its default Gradle version
+Downloading https://services.gradle.org/distributions/gradle-5.4.1-all.zip
+..............................................................................................................................
+
+> Task :help
+
+Welcome to Gradle 5.4.1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+BUILD SUCCESSFUL in 31s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home
+
+Welcome to Gradle 5.4.1!
+
+Here are the highlights of this release:
+ - Run builds with JDK12
+ - New API for Incremental Tasks
+ - Updates to native projects, including Swift 5 support
+
+For more details see https://docs.gradle.org/5.4.1/release-notes.html
+
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: using Gradle 5.4.1
+  Gradle 5.4.1 (/Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1)
+  Run using: Tooling API
+  Run: run tasks assemble
+  Cleanup: do nothing
+  Gradle args: []
+  Build changes: []
+  Warm-ups: 6
+  Builds: 10
+
+* Running scenario using Gradle 5.4.1 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 5.4.1
+Java home: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+OS: mac os x x86_64 10.16
+JVM args:
+  -XX:MaxMetaspaceSize=256m
+  -XX:+HeapDumpOnOutOfMemoryError
+  -Xms256m
+  -Xmx512m
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=default
+Gradle args:
+  --gradle-user-home
+  /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home
+  -I
+  /private/var/folders/xv/ls5g0fmx0wz_10nqcd01gx6sqfg4nw/T/gradleProfiler5772216230430829566.gradle
+
+* Running warm-up build #1
+> Task :assemble UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMockDebugBuild UP-TO-DATE
+> Task :app:compileMockDebugAidl NO-SOURCE
+> Task :app:checkMockDebugManifest
+> Task :app:compileMockDebugRenderscript NO-SOURCE
+> Task :app:generateMockDebugBuildConfig
+> Task :app:writeMockDebugApplicationId
+> Task :app:generateSafeArgsMockDebug
+> Task :app:prepareLintJar
+> Task :app:prepareLintJarForPublish
+> Task :app:generateMockDebugSources
+> Task :app:dataBindingExportBuildInfoMockDebug
+> Task :app:dataBindingMergeDependencyArtifactsMockDebug
+> Task :app:dataBindingMergeGenClassesMockDebug
+> Task :app:generateMockDebugResValues
+> Task :app:generateMockDebugResources
+> Task :app:dataBindingExportFeaturePackageIdsMockDebug
+> Task :app:mainApkListPersistenceMockDebug
+> Task :app:createMockDebugCompatibleScreenManifests
+> Task :app:processMockDebugManifest
+> Task :app:mergeMockDebugResources
+> Task :app:dataBindingGenBaseClassesMockDebug
+> Task :app:processMockDebugResources
+> Task :app:kaptGenerateStubsMockDebugKotlin
+
+> Task :app:kaptMockDebugKotlin
+w: /Users/ltsai/Desktop/git/personal/Android-benchmark/repos/android/architecture-samples/assemble/app/build/tmp/kapt3/stubs/mockDebug/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindingsKt.java:12: warning: Application namespace for attribute app:items will be ignored.
+    public static final void setItems(@org.jetbrains.annotations.NotNull()
+                             ^
+w: /Users/ltsai/Desktop/git/personal/Android-benchmark/repos/android/architecture-samples/assemble/app/build/tmp/kapt3/stubs/mockDebug/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindingsKt.java:18: warning: Application namespace for attribute app:completedTask will be ignored.
+    public static final void setStyle(@org.jetbrains.annotations.NotNull()
+                             ^
+w: [kapt] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (DYNAMIC), android.databinding.annotationprocessor.ProcessDataBinding (DYNAMIC).
+
+> Task :app:compileMockDebugKotlin
+> Task :app:javaPreCompileMockDebug
+> Task :app:compileMockDebugJavaWithJavac
+> Task :app:compileMockDebugSources
+> Task :app:checkMockDebugDuplicateClasses
+> Task :app:desugarMockDebugFileDependencies
+> Task :app:mergeMockDebugShaders
+> Task :app:compileMockDebugShaders
+> Task :app:generateMockDebugAssets
+> Task :app:mergeMockDebugAssets
+> Task :app:processMockDebugJavaRes NO-SOURCE
+> Task :app:validateSigningMockDebug
+> Task :app:signingConfigWriterMockDebug
+> Task :app:mergeMockDebugJniLibFolders
+> Task :app:preProdDebugBuild UP-TO-DATE
+> Task :app:compileProdDebugAidl NO-SOURCE
+> Task :app:compileProdDebugRenderscript NO-SOURCE
+> Task :app:checkProdDebugManifest
+> Task :app:generateProdDebugBuildConfig
+> Task :app:writeProdDebugApplicationId
+> Task :app:generateSafeArgsProdDebug
+> Task :app:generateProdDebugSources
+> Task :app:dataBindingExportBuildInfoProdDebug
+> Task :app:generateProdDebugResValues
+> Task :app:generateProdDebugResources
+> Task :app:mergeMockDebugJavaResource
+> Task :app:mergeProdDebugResources
+> Task :app:mainApkListPersistenceProdDebug
+> Task :app:createProdDebugCompatibleScreenManifests
+> Task :app:processProdDebugManifest
+> Task :app:processProdDebugResources
+> Task :app:checkProdDebugDuplicateClasses
+> Task :app:desugarProdDebugFileDependencies
+> Task :app:mergeExtDexMockDebug
+> Task :app:mergeProdDebugShaders
+> Task :app:compileProdDebugShaders
+> Task :app:generateProdDebugAssets
+> Task :app:mergeProdDebugAssets
+> Task :app:processProdDebugJavaRes NO-SOURCE
+> Task :app:validateSigningProdDebug
+> Task :app:signingConfigWriterProdDebug
+> Task :app:mergeProdDebugJniLibFolders
+> Task :app:mergeMockDebugNativeLibs
+> Task :app:stripMockDebugDebugSymbols
+> Task :app:extractProguardFiles
+> Task :app:preProdReleaseBuild
+> Task :app:compileProdReleaseAidl NO-SOURCE
+> Task :app:compileProdReleaseRenderscript NO-SOURCE
+> Task :app:checkProdReleaseManifest
+> Task :app:generateProdReleaseBuildConfig
+> Task :app:writeProdReleaseApplicationId
+> Task :app:generateSafeArgsProdRelease
+> Task :app:generateProdReleaseSources
+> Task :app:dataBindingExportBuildInfoProdRelease
+> Task :app:dataBindingMergeDependencyArtifactsProdDebug
+> Task :app:jacocoMockDebug
+> Task :app:transformClassesWithDexBuilderForMockDebug
+> Task :app:mergeExtDexProdDebug
+> Task :app:generateProdReleaseResValues
+> Task :app:generateProdReleaseResources
+> Task :app:dataBindingExportFeaturePackageIdsProdDebug
+> Task :app:mainApkListPersistenceProdRelease
+> Task :app:createProdReleaseCompatibleScreenManifests
+> Task :app:processProdReleaseManifest
+> Task :app:mergeDexMockDebug
+> Task :app:packageMockDebug
+> Task :app:assembleMockDebug
+> Task :app:assembleMock
+> Task :app:mergeProdReleaseResources
+> Task :app:processProdReleaseResources
+> Task :app:dataBindingMergeGenClassesProdDebug
+> Task :app:dataBindingGenBaseClassesProdDebug
+> Task :app:kaptGenerateStubsProdDebugKotlin
+
+> Task :app:kaptProdDebugKotlin
+w: /Users/ltsai/Desktop/git/personal/Android-benchmark/repos/android/architecture-samples/assemble/app/build/tmp/kapt3/stubs/prodDebug/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindingsKt.java:12: warning: Application namespace for attribute app:items will be ignored.
+    public static final void setItems(@org.jetbrains.annotations.NotNull()
+                             ^
+w: /Users/ltsai/Desktop/git/personal/Android-benchmark/repos/android/architecture-samples/assemble/app/build/tmp/kapt3/stubs/prodDebug/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindingsKt.java:18: warning: Application namespace for attribute app:completedTask will be ignored.
+    public static final void setStyle(@org.jetbrains.annotations.NotNull()
+                             ^
+w: [kapt] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (DYNAMIC), android.databinding.annotationprocessor.ProcessDataBinding (DYNAMIC).
+
+> Task :app:compileProdDebugKotlin
+> Task :app:dataBindingMergeGenClassesProdRelease
+> Task :app:dataBindingExportFeaturePackageIdsProdRelease
+> Task :app:dataBindingMergeDependencyArtifactsProdRelease
+> Task :app:dataBindingGenBaseClassesProdRelease
+> Task :app:kaptGenerateStubsProdReleaseKotlin
+
+> Task :app:kaptProdReleaseKotlin
+w: /Users/ltsai/Desktop/git/personal/Android-benchmark/repos/android/architecture-samples/assemble/app/build/tmp/kapt3/stubs/prodRelease/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindingsKt.java:12: warning: Application namespace for attribute app:items will be ignored.
+    public static final void setItems(@org.jetbrains.annotations.NotNull()
+                             ^
+w: /Users/ltsai/Desktop/git/personal/Android-benchmark/repos/android/architecture-samples/assemble/app/build/tmp/kapt3/stubs/prodRelease/com/example/android/architecture/blueprints/todoapp/tasks/TasksListBindingsKt.java:18: warning: Application namespace for attribute app:completedTask will be ignored.
+    public static final void setStyle(@org.jetbrains.annotations.NotNull()
+                             ^
+w: [kapt] Incremental annotation processing requested, but support is disabled because the following processors are not incremental: androidx.room.RoomProcessor (DYNAMIC), android.databinding.annotationprocessor.ProcessDataBinding (DYNAMIC).
+
+> Task :app:compileProdReleaseKotlin
+> Task :app:mergeProdDebugNativeLibs
+> Task :app:stripProdDebugDebugSymbols
+> Task :app:javaPreCompileProdRelease
+> Task :app:compileProdReleaseJavaWithJavac
+> Task :app:compileProdReleaseSources
+> Task :app:javaPreCompileProdDebug
+> Task :app:compileProdDebugJavaWithJavac
+> Task :app:compileProdDebugSources
+> Task :app:mergeProdReleaseShaders
+> Task :app:compileProdReleaseShaders
+
+> Task :app:lintVitalProdRelease
+Calling mockable JAR artifact transform to create file: /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home/caches/transforms-2/files-2.1/dafe8a29aac865ef7f0e50981be39749/android.jar with input /Users/ltsai/Library/Android/sdk/platforms/android-28/android.jar
+
+> Task :app:generateProdReleaseAssets
+> Task :app:mergeProdReleaseAssets
+> Task :app:signingConfigWriterProdRelease
+> Task :app:mergeProdReleaseJniLibFolders
+> Task :app:jacocoProdDebug
+> Task :app:transformClassesWithDexBuilderForProdDebug
+> Task :app:mergeProdDebugJavaResource
+> Task :app:mergeProdReleaseNativeLibs
+> Task :app:stripProdReleaseDebugSymbols
+> Task :app:mergeProdReleaseGeneratedProguardFiles
+> Task :app:processProdReleaseJavaRes NO-SOURCE
+> Task :app:mergeProdReleaseJavaResource
+> Task :app:transformClassesAndResourcesWithR8ForProdRelease
+
+> Task :app:transformClassesAndDexWithShrinkResForProdRelease
+Removed unused resources: Binary resource data reduced from 971KB to 921KB: Removed 5%
+
+> Task :app:packageProdRelease
+> Task :app:assembleProdRelease
+> Task :app:assembleRelease
+> Task :app:mergeDexProdDebug
+> Task :app:packageProdDebug
+> Task :app:assembleProdDebug
+> Task :app:assembleDebug
+> Task :app:assembleProd
+> Task :app:assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.4.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2m 24s
+108 actionable tasks: 108 executed
+Used daemon with pid 19043
+Execution time 144084 ms
+
+* Running warm-up build #2
+> Task :assemble UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMockDebugBuild UP-TO-DATE
+> Task :app:compileMockDebugAidl NO-SOURCE
+> Task :app:checkMockDebugManifest UP-TO-DATE
+> Task :app:generateMockDebugBuildConfig UP-TO-DATE
+> Task :app:writeMockDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsMockDebug UP-TO-DATE
+> Task :app:compileMockDebugRenderscript NO-SOURCE
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateMockDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesMockDebug UP-TO-DATE
+> Task :app:generateMockDebugResValues UP-TO-DATE
+> Task :app:generateMockDebugResources UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesMockDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceMockDebug UP-TO-DATE
+> Task :app:createMockDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processMockDebugManifest UP-TO-DATE
+> Task :app:processMockDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsMockDebugKotlin UP-TO-DATE
+> Task :app:kaptMockDebugKotlin UP-TO-DATE
+> Task :app:compileMockDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileMockDebug UP-TO-DATE
+> Task :app:compileMockDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileMockDebugSources UP-TO-DATE
+> Task :app:checkMockDebugDuplicateClasses UP-TO-DATE
+> Task :app:jacocoMockDebug UP-TO-DATE
+> Task :app:desugarMockDebugFileDependencies UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForMockDebug UP-TO-DATE
+> Task :app:mergeExtDexMockDebug UP-TO-DATE
+> Task :app:mergeDexMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugShaders UP-TO-DATE
+> Task :app:compileMockDebugShaders UP-TO-DATE
+> Task :app:generateMockDebugAssets UP-TO-DATE
+> Task :app:mergeMockDebugAssets UP-TO-DATE
+> Task :app:processMockDebugJavaRes NO-SOURCE
+> Task :app:validateSigningMockDebug UP-TO-DATE
+> Task :app:signingConfigWriterMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugJavaResource UP-TO-DATE
+> Task :app:mergeMockDebugJniLibFolders UP-TO-DATE
+> Task :app:preProdDebugBuild UP-TO-DATE
+> Task :app:compileProdDebugAidl NO-SOURCE
+> Task :app:compileProdDebugRenderscript NO-SOURCE
+> Task :app:mergeMockDebugNativeLibs UP-TO-DATE
+> Task :app:stripMockDebugDebugSymbols UP-TO-DATE
+> Task :app:packageMockDebug UP-TO-DATE
+> Task :app:assembleMockDebug UP-TO-DATE
+> Task :app:checkProdDebugManifest UP-TO-DATE
+> Task :app:generateProdDebugBuildConfig UP-TO-DATE
+> Task :app:writeProdDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdDebug UP-TO-DATE
+> Task :app:generateProdDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdDebug UP-TO-DATE
+> Task :app:generateProdDebugResValues UP-TO-DATE
+> Task :app:generateProdDebugResources UP-TO-DATE
+> Task :app:mergeProdDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdDebug UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceProdDebug UP-TO-DATE
+> Task :app:createProdDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdDebugManifest UP-TO-DATE
+> Task :app:processProdDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdDebugKotlin UP-TO-DATE
+> Task :app:kaptProdDebugKotlin UP-TO-DATE
+> Task :app:compileProdDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdDebug UP-TO-DATE
+> Task :app:compileProdDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileProdDebugSources UP-TO-DATE
+> Task :app:checkProdDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarProdDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexProdDebug UP-TO-DATE
+> Task :app:jacocoProdDebug UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForProdDebug UP-TO-DATE
+> Task :app:mergeDexProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugShaders UP-TO-DATE
+> Task :app:compileProdDebugShaders UP-TO-DATE
+> Task :app:generateProdDebugAssets UP-TO-DATE
+> Task :app:mergeProdDebugAssets UP-TO-DATE
+> Task :app:processProdDebugJavaRes NO-SOURCE
+> Task :app:mergeProdDebugJavaResource UP-TO-DATE
+> Task :app:validateSigningProdDebug UP-TO-DATE
+> Task :app:signingConfigWriterProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeProdDebugNativeLibs UP-TO-DATE
+> Task :app:stripProdDebugDebugSymbols UP-TO-DATE
+> Task :app:packageProdDebug UP-TO-DATE
+> Task :app:assembleProdDebug UP-TO-DATE
+> Task :app:assembleDebug UP-TO-DATE
+> Task :app:assembleMock UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:preProdReleaseBuild UP-TO-DATE
+> Task :app:compileProdReleaseAidl NO-SOURCE
+> Task :app:compileProdReleaseRenderscript NO-SOURCE
+> Task :app:checkProdReleaseManifest UP-TO-DATE
+> Task :app:generateProdReleaseBuildConfig UP-TO-DATE
+> Task :app:writeProdReleaseApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseResValues UP-TO-DATE
+> Task :app:generateProdReleaseResources UP-TO-DATE
+> Task :app:mergeProdReleaseResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdRelease UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdRelease UP-TO-DATE
+> Task :app:mainApkListPersistenceProdRelease UP-TO-DATE
+> Task :app:createProdReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdReleaseManifest UP-TO-DATE
+> Task :app:processProdReleaseResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdReleaseKotlin UP-TO-DATE
+> Task :app:kaptProdReleaseKotlin UP-TO-DATE
+> Task :app:compileProdReleaseKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdRelease UP-TO-DATE
+> Task :app:compileProdReleaseJavaWithJavac UP-TO-DATE
+> Task :app:compileProdReleaseSources UP-TO-DATE
+> Task :app:mergeProdReleaseShaders UP-TO-DATE
+> Task :app:compileProdReleaseShaders UP-TO-DATE
+> Task :app:generateProdReleaseAssets UP-TO-DATE
+> Task :app:mergeProdReleaseAssets UP-TO-DATE
+> Task :app:lintVitalProdRelease
+> Task :app:signingConfigWriterProdRelease UP-TO-DATE
+> Task :app:mergeProdReleaseJniLibFolders UP-TO-DATE
+> Task :app:mergeProdReleaseNativeLibs UP-TO-DATE
+> Task :app:stripProdReleaseDebugSymbols UP-TO-DATE
+> Task :app:mergeProdReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :app:processProdReleaseJavaRes NO-SOURCE
+> Task :app:mergeProdReleaseJavaResource UP-TO-DATE
+> Task :app:transformClassesAndResourcesWithR8ForProdRelease UP-TO-DATE
+> Task :app:transformClassesAndDexWithShrinkResForProdRelease UP-TO-DATE
+> Task :app:packageProdRelease UP-TO-DATE
+> Task :app:assembleProdRelease
+> Task :app:assembleProd
+> Task :app:assembleRelease
+> Task :app:assemble
+
+BUILD SUCCESSFUL in 8s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 19043
+Execution time 8586 ms
+
+* Running warm-up build #3
+> Task :assemble UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMockDebugBuild UP-TO-DATE
+> Task :app:compileMockDebugAidl NO-SOURCE
+> Task :app:checkMockDebugManifest UP-TO-DATE
+> Task :app:compileMockDebugRenderscript NO-SOURCE
+> Task :app:generateMockDebugBuildConfig UP-TO-DATE
+> Task :app:writeMockDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsMockDebug UP-TO-DATE
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateMockDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesMockDebug UP-TO-DATE
+> Task :app:generateMockDebugResValues UP-TO-DATE
+> Task :app:generateMockDebugResources UP-TO-DATE
+> Task :app:mergeMockDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesMockDebug UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsMockDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceMockDebug UP-TO-DATE
+> Task :app:createMockDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processMockDebugManifest UP-TO-DATE
+> Task :app:processMockDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsMockDebugKotlin UP-TO-DATE
+> Task :app:kaptMockDebugKotlin UP-TO-DATE
+> Task :app:compileMockDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileMockDebug UP-TO-DATE
+> Task :app:compileMockDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileMockDebugSources UP-TO-DATE
+> Task :app:checkMockDebugDuplicateClasses UP-TO-DATE
+> Task :app:jacocoMockDebug UP-TO-DATE
+> Task :app:desugarMockDebugFileDependencies UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForMockDebug UP-TO-DATE
+> Task :app:mergeExtDexMockDebug UP-TO-DATE
+> Task :app:mergeDexMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugShaders UP-TO-DATE
+> Task :app:compileMockDebugShaders UP-TO-DATE
+> Task :app:generateMockDebugAssets UP-TO-DATE
+> Task :app:mergeMockDebugAssets UP-TO-DATE
+> Task :app:processMockDebugJavaRes NO-SOURCE
+> Task :app:mergeMockDebugJavaResource UP-TO-DATE
+> Task :app:validateSigningMockDebug UP-TO-DATE
+> Task :app:signingConfigWriterMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeMockDebugNativeLibs UP-TO-DATE
+> Task :app:stripMockDebugDebugSymbols UP-TO-DATE
+> Task :app:packageMockDebug UP-TO-DATE
+> Task :app:assembleMockDebug UP-TO-DATE
+> Task :app:preProdDebugBuild UP-TO-DATE
+> Task :app:compileProdDebugAidl NO-SOURCE
+> Task :app:compileProdDebugRenderscript NO-SOURCE
+> Task :app:checkProdDebugManifest UP-TO-DATE
+> Task :app:generateProdDebugBuildConfig UP-TO-DATE
+> Task :app:writeProdDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdDebug UP-TO-DATE
+> Task :app:generateProdDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdDebug UP-TO-DATE
+> Task :app:generateProdDebugResValues UP-TO-DATE
+> Task :app:generateProdDebugResources UP-TO-DATE
+> Task :app:mergeProdDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdDebug UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceProdDebug UP-TO-DATE
+> Task :app:createProdDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdDebugManifest UP-TO-DATE
+> Task :app:processProdDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdDebugKotlin UP-TO-DATE
+> Task :app:kaptProdDebugKotlin UP-TO-DATE
+> Task :app:compileProdDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdDebug UP-TO-DATE
+> Task :app:compileProdDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileProdDebugSources UP-TO-DATE
+> Task :app:checkProdDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarProdDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexProdDebug UP-TO-DATE
+> Task :app:jacocoProdDebug UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForProdDebug UP-TO-DATE
+> Task :app:mergeDexProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugShaders UP-TO-DATE
+> Task :app:compileProdDebugShaders UP-TO-DATE
+> Task :app:generateProdDebugAssets UP-TO-DATE
+> Task :app:mergeProdDebugAssets UP-TO-DATE
+> Task :app:processProdDebugJavaRes NO-SOURCE
+> Task :app:mergeProdDebugJavaResource UP-TO-DATE
+> Task :app:validateSigningProdDebug UP-TO-DATE
+> Task :app:signingConfigWriterProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeProdDebugNativeLibs UP-TO-DATE
+> Task :app:stripProdDebugDebugSymbols UP-TO-DATE
+> Task :app:packageProdDebug UP-TO-DATE
+> Task :app:assembleProdDebug UP-TO-DATE
+> Task :app:assembleDebug UP-TO-DATE
+> Task :app:assembleMock UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:preProdReleaseBuild UP-TO-DATE
+> Task :app:compileProdReleaseAidl NO-SOURCE
+> Task :app:compileProdReleaseRenderscript NO-SOURCE
+> Task :app:checkProdReleaseManifest UP-TO-DATE
+> Task :app:generateProdReleaseBuildConfig UP-TO-DATE
+> Task :app:writeProdReleaseApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseResValues UP-TO-DATE
+> Task :app:generateProdReleaseResources UP-TO-DATE
+> Task :app:mergeProdReleaseResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdRelease UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdRelease UP-TO-DATE
+> Task :app:mainApkListPersistenceProdRelease UP-TO-DATE
+> Task :app:createProdReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdReleaseManifest UP-TO-DATE
+> Task :app:processProdReleaseResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdReleaseKotlin UP-TO-DATE
+> Task :app:kaptProdReleaseKotlin UP-TO-DATE
+> Task :app:compileProdReleaseKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdRelease UP-TO-DATE
+> Task :app:compileProdReleaseJavaWithJavac UP-TO-DATE
+> Task :app:compileProdReleaseSources UP-TO-DATE
+> Task :app:mergeProdReleaseShaders UP-TO-DATE
+> Task :app:lintVitalProdRelease
+> Task :app:compileProdReleaseShaders UP-TO-DATE
+> Task :app:generateProdReleaseAssets UP-TO-DATE
+> Task :app:mergeProdReleaseAssets UP-TO-DATE
+> Task :app:signingConfigWriterProdRelease UP-TO-DATE
+> Task :app:mergeProdReleaseJniLibFolders UP-TO-DATE
+> Task :app:mergeProdReleaseNativeLibs UP-TO-DATE
+> Task :app:stripProdReleaseDebugSymbols UP-TO-DATE
+> Task :app:mergeProdReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :app:processProdReleaseJavaRes NO-SOURCE
+> Task :app:mergeProdReleaseJavaResource UP-TO-DATE
+> Task :app:transformClassesAndResourcesWithR8ForProdRelease UP-TO-DATE
+> Task :app:transformClassesAndDexWithShrinkResForProdRelease UP-TO-DATE
+> Task :app:packageProdRelease UP-TO-DATE
+> Task :app:assembleProdRelease
+> Task :app:assembleProd
+> Task :app:assembleRelease
+> Task :app:assemble
+
+BUILD SUCCESSFUL in 6s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 19043
+Execution time 6293 ms
+
+* Running warm-up build #4
+> Task :assemble UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMockDebugBuild UP-TO-DATE
+> Task :app:compileMockDebugAidl NO-SOURCE
+> Task :app:checkMockDebugManifest UP-TO-DATE
+> Task :app:generateMockDebugBuildConfig UP-TO-DATE
+> Task :app:compileMockDebugRenderscript NO-SOURCE
+> Task :app:writeMockDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsMockDebug UP-TO-DATE
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateMockDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesMockDebug UP-TO-DATE
+> Task :app:generateMockDebugResValues UP-TO-DATE
+> Task :app:generateMockDebugResources UP-TO-DATE
+> Task :app:mergeMockDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesMockDebug UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsMockDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceMockDebug UP-TO-DATE
+> Task :app:createMockDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processMockDebugManifest UP-TO-DATE
+> Task :app:processMockDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsMockDebugKotlin UP-TO-DATE
+> Task :app:kaptMockDebugKotlin UP-TO-DATE
+> Task :app:compileMockDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileMockDebug UP-TO-DATE
+> Task :app:compileMockDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileMockDebugSources UP-TO-DATE
+> Task :app:checkMockDebugDuplicateClasses UP-TO-DATE
+> Task :app:jacocoMockDebug UP-TO-DATE
+> Task :app:desugarMockDebugFileDependencies UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForMockDebug UP-TO-DATE
+> Task :app:mergeExtDexMockDebug UP-TO-DATE
+> Task :app:mergeDexMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugShaders UP-TO-DATE
+> Task :app:compileMockDebugShaders UP-TO-DATE
+> Task :app:generateMockDebugAssets UP-TO-DATE
+> Task :app:mergeMockDebugAssets UP-TO-DATE
+> Task :app:processMockDebugJavaRes NO-SOURCE
+> Task :app:mergeMockDebugJavaResource UP-TO-DATE
+> Task :app:validateSigningMockDebug UP-TO-DATE
+> Task :app:signingConfigWriterMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeMockDebugNativeLibs UP-TO-DATE
+> Task :app:stripMockDebugDebugSymbols UP-TO-DATE
+> Task :app:packageMockDebug UP-TO-DATE
+> Task :app:assembleMockDebug UP-TO-DATE
+> Task :app:preProdDebugBuild UP-TO-DATE
+> Task :app:compileProdDebugAidl NO-SOURCE
+> Task :app:compileProdDebugRenderscript NO-SOURCE
+> Task :app:checkProdDebugManifest UP-TO-DATE
+> Task :app:generateProdDebugBuildConfig UP-TO-DATE
+> Task :app:writeProdDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdDebug UP-TO-DATE
+> Task :app:generateProdDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdDebug UP-TO-DATE
+> Task :app:generateProdDebugResValues UP-TO-DATE
+> Task :app:generateProdDebugResources UP-TO-DATE
+> Task :app:mergeProdDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdDebug UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceProdDebug UP-TO-DATE
+> Task :app:createProdDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdDebugManifest UP-TO-DATE
+> Task :app:processProdDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdDebugKotlin UP-TO-DATE
+> Task :app:kaptProdDebugKotlin UP-TO-DATE
+> Task :app:compileProdDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdDebug UP-TO-DATE
+> Task :app:compileProdDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileProdDebugSources UP-TO-DATE
+> Task :app:checkProdDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarProdDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexProdDebug UP-TO-DATE
+> Task :app:jacocoProdDebug UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForProdDebug UP-TO-DATE
+> Task :app:mergeDexProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugShaders UP-TO-DATE
+> Task :app:compileProdDebugShaders UP-TO-DATE
+> Task :app:generateProdDebugAssets UP-TO-DATE
+> Task :app:mergeProdDebugAssets UP-TO-DATE
+> Task :app:processProdDebugJavaRes NO-SOURCE
+> Task :app:mergeProdDebugJavaResource UP-TO-DATE
+> Task :app:validateSigningProdDebug UP-TO-DATE
+> Task :app:signingConfigWriterProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeProdDebugNativeLibs UP-TO-DATE
+> Task :app:stripProdDebugDebugSymbols UP-TO-DATE
+> Task :app:packageProdDebug UP-TO-DATE
+> Task :app:assembleProdDebug UP-TO-DATE
+> Task :app:assembleDebug UP-TO-DATE
+> Task :app:assembleMock UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:preProdReleaseBuild UP-TO-DATE
+> Task :app:compileProdReleaseAidl NO-SOURCE
+> Task :app:compileProdReleaseRenderscript NO-SOURCE
+> Task :app:checkProdReleaseManifest UP-TO-DATE
+> Task :app:generateProdReleaseBuildConfig UP-TO-DATE
+> Task :app:writeProdReleaseApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseResValues UP-TO-DATE
+> Task :app:generateProdReleaseResources UP-TO-DATE
+> Task :app:mergeProdReleaseResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdRelease UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdRelease UP-TO-DATE
+> Task :app:mainApkListPersistenceProdRelease UP-TO-DATE
+> Task :app:createProdReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdReleaseManifest UP-TO-DATE
+> Task :app:processProdReleaseResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdReleaseKotlin UP-TO-DATE
+> Task :app:kaptProdReleaseKotlin UP-TO-DATE
+> Task :app:compileProdReleaseKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdRelease UP-TO-DATE
+> Task :app:compileProdReleaseJavaWithJavac UP-TO-DATE
+> Task :app:compileProdReleaseSources UP-TO-DATE
+> Task :app:mergeProdReleaseShaders UP-TO-DATE
+> Task :app:lintVitalProdRelease
+> Task :app:compileProdReleaseShaders UP-TO-DATE
+> Task :app:generateProdReleaseAssets UP-TO-DATE
+> Task :app:mergeProdReleaseAssets UP-TO-DATE
+> Task :app:signingConfigWriterProdRelease UP-TO-DATE
+> Task :app:mergeProdReleaseJniLibFolders UP-TO-DATE
+> Task :app:mergeProdReleaseNativeLibs UP-TO-DATE
+> Task :app:stripProdReleaseDebugSymbols UP-TO-DATE
+> Task :app:mergeProdReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :app:processProdReleaseJavaRes NO-SOURCE
+> Task :app:mergeProdReleaseJavaResource UP-TO-DATE
+> Task :app:transformClassesAndResourcesWithR8ForProdRelease UP-TO-DATE
+> Task :app:transformClassesAndDexWithShrinkResForProdRelease UP-TO-DATE
+> Task :app:packageProdRelease UP-TO-DATE
+> Task :app:assembleProdRelease
+> Task :app:assembleProd
+> Task :app:assembleRelease
+> Task :app:assemble
+
+BUILD SUCCESSFUL in 5s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 19043
+Execution time 6020 ms
+
+* Running warm-up build #5
+> Task :assemble UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMockDebugBuild UP-TO-DATE
+> Task :app:compileMockDebugAidl NO-SOURCE
+> Task :app:checkMockDebugManifest UP-TO-DATE
+> Task :app:compileMockDebugRenderscript NO-SOURCE
+> Task :app:generateMockDebugBuildConfig UP-TO-DATE
+> Task :app:writeMockDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsMockDebug UP-TO-DATE
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateMockDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesMockDebug UP-TO-DATE
+> Task :app:generateMockDebugResValues UP-TO-DATE
+> Task :app:generateMockDebugResources UP-TO-DATE
+> Task :app:mergeMockDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesMockDebug UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsMockDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceMockDebug UP-TO-DATE
+> Task :app:createMockDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processMockDebugManifest UP-TO-DATE
+> Task :app:processMockDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsMockDebugKotlin UP-TO-DATE
+> Task :app:kaptMockDebugKotlin UP-TO-DATE
+> Task :app:compileMockDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileMockDebug UP-TO-DATE
+> Task :app:compileMockDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileMockDebugSources UP-TO-DATE
+> Task :app:checkMockDebugDuplicateClasses UP-TO-DATE
+> Task :app:jacocoMockDebug UP-TO-DATE
+> Task :app:desugarMockDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexMockDebug UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForMockDebug UP-TO-DATE
+> Task :app:mergeDexMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugShaders UP-TO-DATE
+> Task :app:compileMockDebugShaders UP-TO-DATE
+> Task :app:generateMockDebugAssets UP-TO-DATE
+> Task :app:mergeMockDebugAssets UP-TO-DATE
+> Task :app:processMockDebugJavaRes NO-SOURCE
+> Task :app:mergeMockDebugJavaResource UP-TO-DATE
+> Task :app:validateSigningMockDebug UP-TO-DATE
+> Task :app:signingConfigWriterMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeMockDebugNativeLibs UP-TO-DATE
+> Task :app:stripMockDebugDebugSymbols UP-TO-DATE
+> Task :app:packageMockDebug UP-TO-DATE
+> Task :app:assembleMockDebug UP-TO-DATE
+> Task :app:preProdDebugBuild UP-TO-DATE
+> Task :app:compileProdDebugAidl NO-SOURCE
+> Task :app:compileProdDebugRenderscript NO-SOURCE
+> Task :app:checkProdDebugManifest UP-TO-DATE
+> Task :app:generateProdDebugBuildConfig UP-TO-DATE
+> Task :app:writeProdDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdDebug UP-TO-DATE
+> Task :app:generateProdDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdDebug UP-TO-DATE
+> Task :app:generateProdDebugResValues UP-TO-DATE
+> Task :app:generateProdDebugResources UP-TO-DATE
+> Task :app:mergeProdDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdDebug UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceProdDebug UP-TO-DATE
+> Task :app:createProdDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdDebugManifest UP-TO-DATE
+> Task :app:processProdDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdDebugKotlin UP-TO-DATE
+> Task :app:kaptProdDebugKotlin UP-TO-DATE
+> Task :app:compileProdDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdDebug UP-TO-DATE
+> Task :app:compileProdDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileProdDebugSources UP-TO-DATE
+> Task :app:checkProdDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarProdDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexProdDebug UP-TO-DATE
+> Task :app:jacocoProdDebug UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForProdDebug UP-TO-DATE
+> Task :app:mergeDexProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugShaders UP-TO-DATE
+> Task :app:compileProdDebugShaders UP-TO-DATE
+> Task :app:generateProdDebugAssets UP-TO-DATE
+> Task :app:mergeProdDebugAssets UP-TO-DATE
+> Task :app:processProdDebugJavaRes NO-SOURCE
+> Task :app:mergeProdDebugJavaResource UP-TO-DATE
+> Task :app:validateSigningProdDebug UP-TO-DATE
+> Task :app:signingConfigWriterProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeProdDebugNativeLibs UP-TO-DATE
+> Task :app:stripProdDebugDebugSymbols UP-TO-DATE
+> Task :app:packageProdDebug UP-TO-DATE
+> Task :app:assembleProdDebug UP-TO-DATE
+> Task :app:assembleDebug UP-TO-DATE
+> Task :app:assembleMock UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:preProdReleaseBuild UP-TO-DATE
+> Task :app:compileProdReleaseAidl NO-SOURCE
+> Task :app:compileProdReleaseRenderscript NO-SOURCE
+> Task :app:checkProdReleaseManifest UP-TO-DATE
+> Task :app:generateProdReleaseBuildConfig UP-TO-DATE
+> Task :app:writeProdReleaseApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseResValues UP-TO-DATE
+> Task :app:generateProdReleaseResources UP-TO-DATE
+> Task :app:mergeProdReleaseResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdRelease UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdRelease UP-TO-DATE
+> Task :app:mainApkListPersistenceProdRelease UP-TO-DATE
+> Task :app:createProdReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdReleaseManifest UP-TO-DATE
+> Task :app:processProdReleaseResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdReleaseKotlin UP-TO-DATE
+> Task :app:kaptProdReleaseKotlin UP-TO-DATE
+> Task :app:compileProdReleaseKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdRelease UP-TO-DATE
+> Task :app:compileProdReleaseJavaWithJavac UP-TO-DATE
+> Task :app:compileProdReleaseSources UP-TO-DATE
+> Task :app:mergeProdReleaseShaders UP-TO-DATE
+> Task :app:lintVitalProdRelease
+> Task :app:compileProdReleaseShaders UP-TO-DATE
+> Task :app:generateProdReleaseAssets UP-TO-DATE
+> Task :app:mergeProdReleaseAssets UP-TO-DATE
+> Task :app:signingConfigWriterProdRelease UP-TO-DATE
+> Task :app:mergeProdReleaseJniLibFolders UP-TO-DATE
+> Task :app:mergeProdReleaseNativeLibs UP-TO-DATE
+> Task :app:stripProdReleaseDebugSymbols UP-TO-DATE
+> Task :app:mergeProdReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :app:processProdReleaseJavaRes NO-SOURCE
+> Task :app:mergeProdReleaseJavaResource UP-TO-DATE
+> Task :app:transformClassesAndResourcesWithR8ForProdRelease UP-TO-DATE
+> Task :app:transformClassesAndDexWithShrinkResForProdRelease UP-TO-DATE
+> Task :app:packageProdRelease UP-TO-DATE
+> Task :app:assembleProdRelease
+> Task :app:assembleProd
+> Task :app:assembleRelease
+> Task :app:assemble
+
+BUILD SUCCESSFUL in 5s
+108 actionable tasks: 1 executed, 107 up-to-date
+Daemon will be stopped at the end of the build after running out of JVM memory
+Used daemon with pid 19043
+Execution time 5357 ms
+
+* Running warm-up build #6
+> Task :assemble UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMockDebugBuild UP-TO-DATE
+> Task :app:compileMockDebugAidl NO-SOURCE
+> Task :app:checkMockDebugManifest UP-TO-DATE
+> Task :app:compileMockDebugRenderscript NO-SOURCE
+> Task :app:generateMockDebugBuildConfig UP-TO-DATE
+> Task :app:writeMockDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsMockDebug UP-TO-DATE
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateMockDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsMockDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesMockDebug UP-TO-DATE
+> Task :app:generateMockDebugResValues UP-TO-DATE
+> Task :app:generateMockDebugResources UP-TO-DATE
+> Task :app:mergeMockDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesMockDebug UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsMockDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceMockDebug UP-TO-DATE
+> Task :app:createMockDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processMockDebugManifest UP-TO-DATE
+> Task :app:processMockDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsMockDebugKotlin UP-TO-DATE
+> Task :app:kaptMockDebugKotlin UP-TO-DATE
+> Task :app:compileMockDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileMockDebug UP-TO-DATE
+> Task :app:compileMockDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileMockDebugSources UP-TO-DATE
+> Task :app:checkMockDebugDuplicateClasses UP-TO-DATE
+> Task :app:jacocoMockDebug UP-TO-DATE
+> Task :app:desugarMockDebugFileDependencies UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForMockDebug UP-TO-DATE
+> Task :app:mergeExtDexMockDebug UP-TO-DATE
+> Task :app:mergeDexMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugShaders UP-TO-DATE
+> Task :app:compileMockDebugShaders UP-TO-DATE
+> Task :app:generateMockDebugAssets UP-TO-DATE
+> Task :app:mergeMockDebugAssets UP-TO-DATE
+> Task :app:processMockDebugJavaRes NO-SOURCE
+> Task :app:validateSigningMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugJavaResource UP-TO-DATE
+> Task :app:signingConfigWriterMockDebug UP-TO-DATE
+> Task :app:mergeMockDebugJniLibFolders UP-TO-DATE
+> Task :app:preProdDebugBuild UP-TO-DATE
+> Task :app:compileProdDebugAidl NO-SOURCE
+> Task :app:compileProdDebugRenderscript NO-SOURCE
+> Task :app:mergeMockDebugNativeLibs UP-TO-DATE
+> Task :app:stripMockDebugDebugSymbols UP-TO-DATE
+> Task :app:packageMockDebug UP-TO-DATE
+> Task :app:assembleMockDebug UP-TO-DATE
+> Task :app:checkProdDebugManifest UP-TO-DATE
+> Task :app:generateProdDebugBuildConfig UP-TO-DATE
+> Task :app:writeProdDebugApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdDebug UP-TO-DATE
+> Task :app:generateProdDebugSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdDebug UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdDebug UP-TO-DATE
+> Task :app:generateProdDebugResValues UP-TO-DATE
+> Task :app:generateProdDebugResources UP-TO-DATE
+> Task :app:mergeProdDebugResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdDebug UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceProdDebug UP-TO-DATE
+> Task :app:createProdDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdDebugManifest UP-TO-DATE
+> Task :app:processProdDebugResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdDebugKotlin UP-TO-DATE
+> Task :app:kaptProdDebugKotlin UP-TO-DATE
+> Task :app:compileProdDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdDebug UP-TO-DATE
+> Task :app:compileProdDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileProdDebugSources UP-TO-DATE
+> Task :app:checkProdDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarProdDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexProdDebug UP-TO-DATE
+> Task :app:jacocoProdDebug UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForProdDebug UP-TO-DATE
+> Task :app:mergeDexProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugShaders UP-TO-DATE
+> Task :app:compileProdDebugShaders UP-TO-DATE
+> Task :app:generateProdDebugAssets UP-TO-DATE
+> Task :app:mergeProdDebugAssets UP-TO-DATE
+> Task :app:processProdDebugJavaRes NO-SOURCE
+> Task :app:mergeProdDebugJavaResource UP-TO-DATE
+> Task :app:validateSigningProdDebug UP-TO-DATE
+> Task :app:signingConfigWriterProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeProdDebugNativeLibs UP-TO-DATE
+> Task :app:stripProdDebugDebugSymbols UP-TO-DATE
+> Task :app:packageProdDebug UP-TO-DATE
+> Task :app:assembleProdDebug UP-TO-DATE
+> Task :app:assembleDebug UP-TO-DATE
+> Task :app:assembleMock UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:preProdReleaseBuild UP-TO-DATE
+> Task :app:compileProdReleaseAidl NO-SOURCE
+> Task :app:compileProdReleaseRenderscript NO-SOURCE
+> Task :app:checkProdReleaseManifest UP-TO-DATE
+> Task :app:generateProdReleaseBuildConfig UP-TO-DATE
+> Task :app:writeProdReleaseApplicationId UP-TO-DATE
+> Task :app:generateSafeArgsProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseSources UP-TO-DATE
+> Task :app:dataBindingExportBuildInfoProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsProdRelease UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesProdRelease UP-TO-DATE
+> Task :app:generateProdReleaseResValues UP-TO-DATE
+> Task :app:generateProdReleaseResources UP-TO-DATE
+> Task :app:mergeProdReleaseResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesProdRelease UP-TO-DATE
+> Task :app:dataBindingExportFeaturePackageIdsProdRelease UP-TO-DATE
+> Task :app:mainApkListPersistenceProdRelease UP-TO-DATE
+> Task :app:createProdReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:processProdReleaseManifest UP-TO-DATE
+> Task :app:processProdReleaseResources UP-TO-DATE
+> Task :app:kaptGenerateStubsProdReleaseKotlin UP-TO-DATE
+> Task :app:kaptProdReleaseKotlin UP-TO-DATE
+> Task :app:compileProdReleaseKotlin UP-TO-DATE
+> Task :app:javaPreCompileProdRelease UP-TO-DATE
+> Task :app:compileProdReleaseJavaWithJavac UP-TO-DATE
+> Task :app:compileProdReleaseSources UP-TO-DATE
+> Task :app:mergeProdReleaseShaders UP-TO-DATE
+> Task :app:compileProdReleaseShaders UP-TO-DATE
+> Task :app:generateProdReleaseAssets UP-TO-DATE
+> Task :app:mergeProdReleaseAssets UP-TO-DATE
+> Task :app:lintVitalProdRelease
+> Task :app:signingConfigWriterProdRelease UP-TO-DATE
+> Task :app:mergeProdReleaseJniLibFolders UP-TO-DATE
+> Task :app:mergeProdReleaseNativeLibs UP-TO-DATE
+> Task :app:stripProdReleaseDebugSymbols UP-TO-DATE
+> Task :app:mergeProdReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :app:processProdReleaseJavaRes NO-SOURCE
+> Task :app:mergeProdReleaseJavaResource UP-TO-DATE
+> Task :app:transformClassesAndResourcesWithR8ForProdRelease UP-TO-DATE
+> Task :app:transformClassesAndDexWithShrinkResForProdRelease UP-TO-DATE
+> Task :app:packageProdRelease UP-TO-DATE
+> Task :app:assembleProdRelease
+> Task :app:assembleProd
+> Task :app:assembleRelease
+> Task :app:assemble
+
+BUILD SUCCESSFUL in 18s
+108 actionable tasks: 1 executed, 107 up-to-date
+Used daemon with pid 19928
+Execution time 18648 ms
+
+* Stopping daemons
+Running command /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/bin/gradle --stop --gradle-user-home /Users/ltsai/Desktop/git/personal/Android-benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+java.lang.RuntimeException: Multiple Gradle daemons were used.
+	at org.gradle.profiler.GradleScenarioInvoker.checkPid(GradleScenarioInvoker.java:188)
+	at org.gradle.profiler.GradleScenarioInvoker.doRun(GradleScenarioInvoker.java:117)
+	at org.gradle.profiler.GradleScenarioInvoker.doRun(GradleScenarioInvoker.java:21)
+	at org.gradle.profiler.ScenarioInvoker.run(ScenarioInvoker.java:17)
+	at org.gradle.profiler.Main.invoke(Main.java:110)
+	at org.gradle.profiler.Main.run(Main.java:76)
+	at org.gradle.profiler.Main.main(Main.java:18)
+
+* Results written to /Users/ltsai/Desktop/git/personal/Android-benchmark/data/mbp16/android/architecture-samples/assemble
+  /Users/ltsai/Desktop/git/personal/Android-benchmark/data/mbp16/android/architecture-samples/assemble/benchmark.csv
+  /Users/ltsai/Desktop/git/personal/Android-benchmark/data/mbp16/android/architecture-samples/assemble/benchmark.html
+
