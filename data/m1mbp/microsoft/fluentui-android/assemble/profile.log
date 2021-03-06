@@ -1,0 +1,520 @@
+
+* Started at 2021-03-06T11:13:32.354Z
+
+* Settings
+Project dir: repos/microsoft/fluentui-android/assemble
+Output dir: data/m1mbp/microsoft/fluentui-android/assemble
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: [assemble]
+
+* Inspecting the build using its default Gradle version
+Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+:help
+
+Welcome to Gradle 4.6.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+BUILD SUCCESSFUL in 4s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/ltsai/Developer/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/bin/gradle --stop --gradle-user-home /Users/ltsai/Developer/personal/Android-benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: using Gradle 4.6
+  Gradle 4.6 (/Users/ltsai/Developer/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6)
+  Run using: Tooling API
+  Run: run tasks assemble
+  Cleanup: do nothing
+  Gradle args: []
+  Build changes: []
+  Warm-ups: 6
+  Builds: 10
+
+* Running scenario using Gradle 4.6 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/ltsai/Developer/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/bin/gradle --stop --gradle-user-home /Users/ltsai/Developer/personal/Android-benchmark/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 4.6
+Java home: /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+OS: mac os x aarch64 11.2.1
+JVM args:
+  -Xmx1536m
+  -Dfile.encoding=UTF-8
+  -Duser.country=DE
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=default
+Gradle args:
+  --gradle-user-home
+  /Users/ltsai/Developer/personal/Android-benchmark/gradle-user-home
+  -I
+  /private/var/folders/93/tn_m5x4j5852ys0fx0h9ccym0000gp/T/gradleProfiler3404926588582521302.gradle
+
+* Running warm-up build #1
+Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+:FluentUI:preBuild UP-TO-DATE
+:FluentUI:preDebugBuild UP-TO-DATE
+:FluentUI:compileDebugAidl NO-SOURCE
+:FluentUI:compileDebugRenderscript
+:FluentUI:checkDebugManifest
+:FluentUI:generateDebugBuildConfig
+:FluentUI:generateDebugResValues
+:FluentUI:generateDebugResources
+:FluentUI:packageDebugResources
+:FluentUI:processDebugManifest
+:FluentUI:generateDebugRFile
+:FluentUI:compileDebugKotlin
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/calendar/CalendarView.kt: (97, 17): Name shadowed: value
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/calendar/CalendarView.kt: (184, 13): Name shadowed: widthMeasureSpec
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/calendar/WeeksView.kt: (150, 13): Name shadowed: date
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/datetimepicker/TimePicker.kt: (425, 13): Name shadowed: time
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/drawer/SideSheetBehavior.kt: (57, 37): Unchecked cast: CoordinatorLayout.Behavior<(raw) View!>? to SideSheetBehavior<V>
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/drawer/TopSheetBehavior.kt: (53, 37): Unchecked cast: CoordinatorLayout.Behavior<(raw) View!>? to TopSheetBehavior<V>
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/peoplepicker/PeoplePickerTextView.kt: (588, 63): Unchecked cast: Array<(out) TokenCompleteTextView<*>.TokenImageSpan!>! to Array<T>
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/peoplepicker/PeoplePickerTextView.kt: (688, 33): 'startDrag(ClipData!, View.DragShadowBuilder!, Any!, Int): Boolean' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/peoplepicker/PeoplePickerTextView.kt: (1021, 13): 'when' expression on enum is recommended to be exhaustive, add 'NONE' branch or 'else' branch instead
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/peoplepicker/PeoplePickerView.kt: (363, 47): Unchecked cast: Any! to kotlin.collections.ArrayList<IPersona> /* = java.util.ArrayList<IPersona> */
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/persistentbottomsheet/sheetItem/VerticalViewProvider.kt: (50, 37): Parameter 'itemLayoutParam' is never used
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/persona/InitialsDrawable.kt: (127, 30): 'constructor StaticLayout(CharSequence!, TextPaint!, Int, Layout.Alignment!, Float, Float, Boolean)' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/search/Searchbar.kt: (173, 13): Name shadowed: widthMeasureSpec
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/snackbar/Snackbar.kt: (156, 13): Variable 'fallbackParent' is assigned but never accessed
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/snackbar/Snackbar.kt: (177, 21): The value 'currentView' assigned to 'var fallbackParent: ViewGroup? defined in com.microsoft.fluentui.snackbar.Snackbar.alignLeft' is never used
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/snackbar/Snackbar.kt: (326, 91): 'ContentViewCallback' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/toolbar/Toolbar.kt: (44, 64): Parameter 'defStyleAttr' is never used
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ColorProperty.kt: (20, 27): The corresponding parameter in the supertype 'FloatProperty' is named 'object'. This may cause problems when calling this function with named arguments.
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (61, 16): Unsafe use of a nullable receiver of type TypedValue?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (74, 16): Unsafe use of a nullable receiver of type TypedValue?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (94, 9): Unsafe use of a nullable receiver of type IntArray?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (114, 33): Unsafe use of a nullable receiver of type TypedValue?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (122, 9): Unsafe use of a nullable receiver of type IntArray?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/MSRecyclerView.kt: (205, 13): Name shadowed: velocityX
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/MSRecyclerView.kt: (206, 13): Name shadowed: velocityY
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (602, 9): This annotation is deprecated in Kotlin. Use '@kotlin.annotation.Retention' instead
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1387, 28): Unnecessary safe call on a non-null receiver of type IntArray
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1401, 13): Name shadowed: current
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1635, 45): Parameter 'current' is never used
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1706, 17): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1710, 17): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1734, 29): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1738, 29): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1750, 29): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1758, 29): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/Scroller.kt: (394, 13): Name shadowed: velocityX
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/Scroller.kt: (395, 13): Name shadowed: velocityY
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/Scroller.kt: (516, 21): Name shadowed: x
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/WrapContentViewPager.kt: (86, 13): Name shadowed: heightMeasureSpec
+:FluentUI:prepareLintJar
+:FluentUI:generateDebugSources
+:FluentUI:javaPreCompileDebug
+:FluentUI:compileDebugJavaWithJavac
+:FluentUI:extractDebugAnnotations
+:FluentUI:mergeDebugConsumerProguardFiles
+:FluentUI:mergeDebugShaders
+:FluentUI:compileDebugShaders
+:FluentUI:generateDebugAssets
+:FluentUI:packageDebugAssets
+:FluentUI:packageDebugRenderscript NO-SOURCE
+:FluentUI:processDebugJavaRes NO-SOURCE
+:FluentUI:transformResourcesWithMergeJavaResForDebug
+:FluentUI:transformClassesAndResourcesWithSyncLibJarsForDebug
+:FluentUI:compileDebugNdk NO-SOURCE
+:FluentUI:mergeDebugJniLibFolders
+:FluentUI:transformNativeLibsWithMergeJniLibsForDebug
+:FluentUI:transformNativeLibsWithSyncJniLibsForDebug
+:FluentUI:bundleDebugAar
+:FluentUI:mergeDebugResources
+:FluentUI:compileDebugSources
+:FluentUI:assembleDebug
+:FluentUI:preReleaseBuild UP-TO-DATE
+:FluentUI:compileReleaseAidl NO-SOURCE
+:FluentUI:compileReleaseRenderscript
+:FluentUI:checkReleaseManifest
+:FluentUI:generateReleaseBuildConfig
+:FluentUI:generateReleaseResValues
+:FluentUI:generateReleaseResources
+:FluentUI:packageReleaseResources
+:FluentUI:processReleaseManifest
+:FluentUI:generateReleaseRFile
+:FluentUI:compileReleaseKotlin
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/calendar/CalendarView.kt: (97, 17): Name shadowed: value
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/calendar/CalendarView.kt: (184, 13): Name shadowed: widthMeasureSpec
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/calendar/WeeksView.kt: (150, 13): Name shadowed: date
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/datetimepicker/TimePicker.kt: (425, 13): Name shadowed: time
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/drawer/SideSheetBehavior.kt: (57, 37): Unchecked cast: CoordinatorLayout.Behavior<(raw) View!>? to SideSheetBehavior<V>
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/drawer/TopSheetBehavior.kt: (53, 37): Unchecked cast: CoordinatorLayout.Behavior<(raw) View!>? to TopSheetBehavior<V>
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/peoplepicker/PeoplePickerTextView.kt: (588, 63): Unchecked cast: Array<(out) TokenCompleteTextView<*>.TokenImageSpan!>! to Array<T>
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/peoplepicker/PeoplePickerTextView.kt: (688, 33): 'startDrag(ClipData!, View.DragShadowBuilder!, Any!, Int): Boolean' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/peoplepicker/PeoplePickerTextView.kt: (1021, 13): 'when' expression on enum is recommended to be exhaustive, add 'NONE' branch or 'else' branch instead
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/peoplepicker/PeoplePickerView.kt: (363, 47): Unchecked cast: Any! to kotlin.collections.ArrayList<IPersona> /* = java.util.ArrayList<IPersona> */
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/persistentbottomsheet/sheetItem/VerticalViewProvider.kt: (50, 37): Parameter 'itemLayoutParam' is never used
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/persona/InitialsDrawable.kt: (127, 30): 'constructor StaticLayout(CharSequence!, TextPaint!, Int, Layout.Alignment!, Float, Float, Boolean)' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/search/Searchbar.kt: (173, 13): Name shadowed: widthMeasureSpec
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/snackbar/Snackbar.kt: (156, 13): Variable 'fallbackParent' is assigned but never accessed
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/snackbar/Snackbar.kt: (177, 21): The value 'currentView' assigned to 'var fallbackParent: ViewGroup? defined in com.microsoft.fluentui.snackbar.Snackbar.alignLeft' is never used
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/snackbar/Snackbar.kt: (326, 91): 'ContentViewCallback' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/toolbar/Toolbar.kt: (44, 64): Parameter 'defStyleAttr' is never used
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ColorProperty.kt: (20, 27): The corresponding parameter in the supertype 'FloatProperty' is named 'object'. This may cause problems when calling this function with named arguments.
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (61, 16): Unsafe use of a nullable receiver of type TypedValue?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (74, 16): Unsafe use of a nullable receiver of type TypedValue?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (94, 9): Unsafe use of a nullable receiver of type IntArray?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (114, 33): Unsafe use of a nullable receiver of type TypedValue?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/util/ThemeUtils.kt: (122, 9): Unsafe use of a nullable receiver of type IntArray?
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/MSRecyclerView.kt: (205, 13): Name shadowed: velocityX
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/MSRecyclerView.kt: (206, 13): Name shadowed: velocityY
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (602, 9): This annotation is deprecated in Kotlin. Use '@kotlin.annotation.Retention' instead
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1387, 28): Unnecessary safe call on a non-null receiver of type IntArray
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1401, 13): Name shadowed: current
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1635, 45): Parameter 'current' is never used
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1706, 17): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1710, 17): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1734, 29): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1738, 29): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1750, 29): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/NumberPicker.kt: (1758, 29): 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/Scroller.kt: (394, 13): Name shadowed: velocityX
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/Scroller.kt: (395, 13): Name shadowed: velocityY
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/Scroller.kt: (516, 21): Name shadowed: x
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI/src/main/java/com/microsoft/fluentui/view/WrapContentViewPager.kt: (86, 13): Name shadowed: heightMeasureSpec
+:FluentUI:generateReleaseSources
+:FluentUI:javaPreCompileRelease
+:FluentUI:compileReleaseJavaWithJavac
+:FluentUI:extractReleaseAnnotations
+:FluentUI:mergeReleaseConsumerProguardFiles
+:FluentUI:mergeReleaseShaders
+:FluentUI:compileReleaseShaders
+:FluentUI:generateReleaseAssets
+:FluentUI:packageReleaseAssets
+:FluentUI:packageReleaseRenderscript NO-SOURCE
+:FluentUI:processReleaseJavaRes NO-SOURCE
+:FluentUI:transformResourcesWithMergeJavaResForRelease
+:FluentUI:transformClassesAndResourcesWithSyncLibJarsForRelease
+:FluentUI:compileReleaseNdk NO-SOURCE
+:FluentUI:mergeReleaseJniLibFolders
+:FluentUI:transformNativeLibsWithMergeJniLibsForRelease
+:FluentUI:transformNativeLibsWithSyncJniLibsForRelease
+:FluentUI:bundleReleaseAar
+:FluentUI:mergeReleaseResources
+:FluentUI:compileReleaseSources
+:FluentUI:verifyReleaseResources
+:FluentUI:assembleRelease
+:FluentUI:assemble
+:FluentUI:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:FluentUI.Demo:checkDevelopmentDebugClasspath
+:FluentUI.Demo:preBuild UP-TO-DATE
+:FluentUI.Demo:preDevelopmentDebugBuild
+:FluentUI.Demo:compileDevelopmentDebugAidl NO-SOURCE
+:FluentUI.Demo:compileDevelopmentDebugRenderscript
+:FluentUI.Demo:checkDevelopmentDebugManifest
+:FluentUI.Demo:generateDevelopmentDebugBuildConfig
+:FluentUI.Demo:mainApkListPersistenceDevelopmentDebug
+:FluentUI.Demo:generateDevelopmentDebugResValues
+:FluentUI.Demo:generateDevelopmentDebugResources
+:FluentUI.Demo:mergeDevelopmentDebugResources
+:FluentUI.Demo:createDevelopmentDebugCompatibleScreenManifests
+:FluentUI.Demo:processDevelopmentDebugManifest
+:FluentUI.Demo:splitsDiscoveryTaskDevelopmentDebug
+:FluentUI.Demo:processDevelopmentDebugResources
+:FluentUI.Demo:compileDevelopmentDebugKotlin
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/development/java/fluentuidemo/Initializer.kt: (11, 14): Parameter 'application' is never used
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/AppBarLayoutActivity.kt: (292, 81): Parameter 'v' is never used, could be renamed to _
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/AppBarLayoutActivity.kt: (349, 48): Unchecked cast: kotlin.collections.ArrayList<ListSubHeader> /* = java.util.ArrayList<ListSubHeader> */ to kotlin.collections.ArrayList<IBaseListItem> /* = java.util.ArrayList<IBaseListItem> */
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/CalendarViewActivity.kt: (39, 41): The corresponding parameter in the supertype 'OnDateSelectedListener' is named 'dateTime'. This may cause problems when calling this function with named arguments.
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/ListItemViewActivity.kt: (285, 48): Unchecked cast: kotlin.collections.ArrayList<ListSubHeader> /* = java.util.ArrayList<ListSubHeader> */ to kotlin.collections.ArrayList<IBaseListItem> /* = java.util.ArrayList<IBaseListItem> */
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/views/Cell.kt: (53, 21): Type mismatch: inferred type is String? but String was expected
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/views/Cell.kt: (54, 27): Type mismatch: inferred type is String? but String was expected
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/AvatarUtils.kt: (15, 9): Name shadowed: context
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/AvatarUtils.kt: (102, 9): Name shadowed: context
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/AvatarUtils.kt: (143, 9): Name shadowed: context
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/AvatarUtils.kt: (162, 9): Name shadowed: context
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/PersonaUtils.kt: (22, 9): Name shadowed: context
+:FluentUI.Demo:prepareLintJar
+:FluentUI.Demo:generateDevelopmentDebugSources
+:FluentUI.Demo:javaPreCompileDevelopmentDebug
+:FluentUI.Demo:compileDevelopmentDebugJavaWithJavac
+:FluentUI.Demo:compileDevelopmentDebugNdk NO-SOURCE
+:FluentUI.Demo:compileDevelopmentDebugSources
+:FluentUI.Demo:mergeDevelopmentDebugShaders
+:FluentUI.Demo:compileDevelopmentDebugShaders
+:FluentUI.Demo:generateDevelopmentDebugAssets
+:FluentUI.Demo:mergeDevelopmentDebugAssets
+:FluentUI.Demo:transformClassesWithDexBuilderForDevelopmentDebug
+:FluentUI.Demo:transformDexArchiveWithExternalLibsDexMergerForDevelopmentDebug
+:FluentUI.Demo:transformDexArchiveWithDexMergerForDevelopmentDebug
+:FluentUI:transformNativeLibsWithIntermediateJniLibsForDebug
+:FluentUI.Demo:mergeDevelopmentDebugJniLibFolders
+:FluentUI.Demo:transformNativeLibsWithMergeJniLibsForDevelopmentDebug
+:FluentUI.Demo:checkDevelopmentDebugLibraries
+:FluentUI.Demo:processDevelopmentDebugJavaRes NO-SOURCE
+:FluentUI.Demo:transformResourcesWithMergeJavaResForDevelopmentDebug
+:FluentUI.Demo:validateSigningDevelopmentDebug
+:FluentUI.Demo:packageDevelopmentDebug
+:FluentUI.Demo:assembleDevelopmentDebug
+:FluentUI.Demo:checkDogfoodDebugClasspath
+:FluentUI.Demo:preDogfoodDebugBuild
+:FluentUI.Demo:compileDogfoodDebugAidl NO-SOURCE
+:FluentUI.Demo:compileDogfoodDebugRenderscript
+:FluentUI.Demo:checkDogfoodDebugManifest
+:FluentUI.Demo:generateDogfoodDebugBuildConfig
+:FluentUI.Demo:mainApkListPersistenceDogfoodDebug
+:FluentUI.Demo:generateDogfoodDebugResValues
+:FluentUI.Demo:generateDogfoodDebugResources
+:FluentUI.Demo:mergeDogfoodDebugResources
+:FluentUI.Demo:createDogfoodDebugCompatibleScreenManifests
+:FluentUI.Demo:processDogfoodDebugManifest
+:FluentUI.Demo:splitsDiscoveryTaskDogfoodDebug
+:FluentUI.Demo:processDogfoodDebugResources
+:FluentUI.Demo:compileDogfoodDebugKotlin
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/AppBarLayoutActivity.kt: (292, 81): Parameter 'v' is never used, could be renamed to _
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/AppBarLayoutActivity.kt: (349, 48): Unchecked cast: kotlin.collections.ArrayList<ListSubHeader> /* = java.util.ArrayList<ListSubHeader> */ to kotlin.collections.ArrayList<IBaseListItem> /* = java.util.ArrayList<IBaseListItem> */
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/CalendarViewActivity.kt: (39, 41): The corresponding parameter in the supertype 'OnDateSelectedListener' is named 'dateTime'. This may cause problems when calling this function with named arguments.
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/ListItemViewActivity.kt: (285, 48): Unchecked cast: kotlin.collections.ArrayList<ListSubHeader> /* = java.util.ArrayList<ListSubHeader> */ to kotlin.collections.ArrayList<IBaseListItem> /* = java.util.ArrayList<IBaseListItem> */
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/views/Cell.kt: (53, 21): Type mismatch: inferred type is String? but String was expected
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/demos/views/Cell.kt: (54, 27): Type mismatch: inferred type is String? but String was expected
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/AvatarUtils.kt: (15, 9): Name shadowed: context
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/AvatarUtils.kt: (102, 9): Name shadowed: context
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/AvatarUtils.kt: (143, 9): Name shadowed: context
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/AvatarUtils.kt: (162, 9): Name shadowed: context
+w: /Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/src/main/java/com/microsoft/fluentuidemo/util/PersonaUtils.kt: (22, 9): Name shadowed: context
+:FluentUI.Demo:generateDogfoodDebugSources
+:FluentUI.Demo:javaPreCompileDogfoodDebug
+:FluentUI.Demo:compileDogfoodDebugJavaWithJavac/Users/ltsai/Developer/personal/Android-benchmark/repos/microsoft/fluentui-android/assemble/FluentUI.Demo/build/generated/source/buildConfig/dogfood/debug/com/microsoft/fluentuidemo/BuildConfig.java:14: error: illegal start of expression
+  public static final String APP_CENTER_SECRET = ;
+                                                 ^
+1 error
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':FluentUI.Demo:compileDogfoodDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 3s
+91 actionable tasks: 91 executed
+
+ERROR: failed to run build. See log file for details.
+
+
+* Stopping daemons
+Running command /Users/ltsai/Developer/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/bin/gradle --stop --gradle-user-home /Users/ltsai/Developer/personal/Android-benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+org.gradle.tooling.BuildException: Could not execute build using connection to Gradle installation '/Users/ltsai/Developer/personal/Android-benchmark/gradle-user-home/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6'.
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:51)
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:29)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:43)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor.lambda$run$0(DefaultAsyncConsumerActionExecutor.java:64)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildLauncher.run(DefaultBuildLauncher.java:83)
+	at org.gradle.profiler.ToolingApiGradleClient.lambda$runTasks$0(ToolingApiGradleClient.java:51)
+	at org.gradle.profiler.ToolingApiGradleClient.run(ToolingApiGradleClient.java:29)
+	at org.gradle.profiler.ToolingApiGradleClient.runOperation(ToolingApiGradleClient.java:42)
+	at org.gradle.profiler.ToolingApiGradleClient.runTasks(ToolingApiGradleClient.java:47)
+	at org.gradle.profiler.RunTasksAction.run(RunTasksAction.java:36)
+	at org.gradle.profiler.GradleInvokerBuildAction.run(GradleInvokerBuildAction.java:10)
+	at org.gradle.profiler.BuildUnderTestInvoker$InvokeAndMeasureAction.run(BuildUnderTestInvoker.java:59)
+	at org.gradle.profiler.BuildUnderTestInvoker$InvokeAndMeasureAction.run(BuildUnderTestInvoker.java:40)
+	at org.gradle.profiler.RunBuildStepAction.run(RunBuildStepAction.java:29)
+	at org.gradle.profiler.ScenarioInvoker.runMeasured(ScenarioInvoker.java:36)
+	at org.gradle.profiler.GradleScenarioInvoker.doRun(GradleScenarioInvoker.java:113)
+	at org.gradle.profiler.GradleScenarioInvoker.doRun(GradleScenarioInvoker.java:21)
+	at org.gradle.profiler.ScenarioInvoker.run(ScenarioInvoker.java:17)
+	at org.gradle.profiler.Main.invoke(Main.java:110)
+	at org.gradle.profiler.Main.run(Main.java:76)
+	at org.gradle.profiler.Main.main(Main.java:18)
+Caused by: org.gradle.internal.exceptions.LocationAwareException: Execution failed for task ':FluentUI.Demo:compileDogfoodDebugJavaWithJavac'.
+	at org.gradle.initialization.DefaultExceptionAnalyser.transform(DefaultExceptionAnalyser.java:74)
+	at org.gradle.initialization.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:47)
+	at org.gradle.initialization.StackTraceSanitizingExceptionAnalyser.transform(StackTraceSanitizingExceptionAnalyser.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:143)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:115)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:78)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:75)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:75)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:53)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:49)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:32)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:64)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:67)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:62)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:82)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:295)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':FluentUI.Demo:compileDogfoodDebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:103)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:73)
+	at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:59)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:59)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:101)
+	at org.gradle.api.internal.tasks.execution.FinalizeInputFilePropertiesTaskExecuter.execute(FinalizeInputFilePropertiesTaskExecuter.java:44)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:91)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:59)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:256)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:249)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:238)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:663)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:597)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	... 3 more
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:37)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:51)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:37)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:35)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringDecorator.execute(IncrementalResultStoringDecorator.java:41)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringDecorator.execute(IncrementalResultStoringDecorator.java:27)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalAnnotationProcessingCompiler.execute(IncrementalAnnotationProcessingCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalAnnotationProcessingCompiler.execute(IncrementalAnnotationProcessingCompiler.java:36)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:156)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:126)
+	at com.android.build.gradle.tasks.factory.AndroidJavaCompile.compile(AndroidJavaCompile.java:92)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:50)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:124)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:113)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:95)
+	... 30 more
+
+* Results written to /Users/ltsai/Developer/personal/Android-benchmark/data/m1mbp/microsoft/fluentui-android/assemble
+  /Users/ltsai/Developer/personal/Android-benchmark/data/m1mbp/microsoft/fluentui-android/assemble/benchmark.csv
+  /Users/ltsai/Developer/personal/Android-benchmark/data/m1mbp/microsoft/fluentui-android/assemble/benchmark.html
+
