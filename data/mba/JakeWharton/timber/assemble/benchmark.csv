@@ -1,0 +1,20 @@
+scenario,default
+version,Gradle 6.5.1
+tasks,assemble
+value,execution
+warm-up build #1,27865
+warm-up build #2,997
+warm-up build #3,642
+warm-up build #4,613
+warm-up build #5,442
+warm-up build #6,434
+measured build #1,360
+measured build #2,469
+measured build #3,369
+measured build #4,315
+measured build #5,350
+measured build #6,325
+measured build #7,326
+measured build #8,313
+measured build #9,333
+measured build #10,325

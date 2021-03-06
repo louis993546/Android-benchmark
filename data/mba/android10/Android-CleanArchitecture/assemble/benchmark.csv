@@ -1,0 +1,20 @@
+scenario,default
+version,Gradle 4.1
+tasks,assemble
+value,execution
+warm-up build #1,27158
+warm-up build #2,1061
+warm-up build #3,875
+warm-up build #4,706
+warm-up build #5,671
+warm-up build #6,536
+measured build #1,532
+measured build #2,527
+measured build #3,538
+measured build #4,461
+measured build #5,444
+measured build #6,435
+measured build #7,467
+measured build #8,395
+measured build #9,421
+measured build #10,427
