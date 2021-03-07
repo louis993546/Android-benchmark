@@ -1,0 +1,5 @@
+project, commit, task
+https://github.com/android/architecture-samples.git, be5a9d6b23c2d227b6e48e3028bc7557a500c41f, assemble
+https://github.com/bumptech/glide.git, 9f813390646d2cdaecece8fd96fa7fd8b8605217, assemble
+https://github.com/android/plaid.git, 15bd64742177a98cb0f00aa3599f339bfacf09f2, assemble
+https://github.com/android10/Android-CleanArchitecture.git, 8ed4222c537e40db05e9e685bbc253fafb6b8e1f, assemble

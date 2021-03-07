@@ -1,0 +1,3322 @@
+
+* Started at 2021-03-07T10:23:49.679Z
+
+* Settings
+Project dir: repos/android10/Android-CleanArchitecture/assemble
+Output dir: data/linux/android10/Android-CleanArchitecture/assemble
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: gradle-user-home
+Targets: [assemble]
+
+* Inspecting the build using its default Gradle version
+Parallel execution with configuration on demand is an incubating feature.
+Observed package id 'platform-tools' in inconsistent location '/home/louis/Android/sdk/platform-tools-2' (Expected '/home/louis/Android/sdk/platform-tools')
+Already observed package id 'platform-tools' in '/home/louis/Android/sdk/platform-tools'. Skipping duplicate at '/home/louis/Android/sdk/platform-tools-2'
+Observed package id 'platform-tools' in inconsistent location '/home/louis/Android/sdk/platform-tools-2' (Expected '/home/louis/Android/sdk/platform-tools')
+Already observed package id 'platform-tools' in '/home/louis/Android/sdk/platform-tools'. Skipping duplicate at '/home/louis/Android/sdk/platform-tools-2'
+Observed package id 'platform-tools' in inconsistent location '/home/louis/Android/sdk/platform-tools-2' (Expected '/home/louis/Android/sdk/platform-tools')
+Already observed package id 'platform-tools' in '/home/louis/Android/sdk/platform-tools'. Skipping duplicate at '/home/louis/Android/sdk/platform-tools-2'
+File /home/louis/.android/repositories.cfg could not be loaded.
+Checking the license for package Android SDK Build-Tools 27.0.1 in /home/louis/Android/sdk/licenses
+License for package Android SDK Build-Tools 27.0.1 accepted.
+Preparing "Install Android SDK Build-Tools 27.0.1 (revision: 27.0.1)".
+"Install Android SDK Build-Tools 27.0.1 (revision: 27.0.1)" ready.
+Installing Android SDK Build-Tools 27.0.1 in /home/louis/Android/sdk/build-tools/27.0.1
+"Install Android SDK Build-Tools 27.0.1 (revision: 27.0.1)" complete.
+"Install Android SDK Build-Tools 27.0.1 (revision: 27.0.1)" finished.
+Checking the license for package Android SDK Platform 26 in /home/louis/Android/sdk/licenses
+License for package Android SDK Platform 26 accepted.
+Preparing "Install Android SDK Platform 26 (revision: 2)".
+"Install Android SDK Platform 26 (revision: 2)" ready.
+Installing Android SDK Platform 26 in /home/louis/Android/sdk/platforms/android-26
+"Install Android SDK Platform 26 (revision: 2)" complete.
+"Install Android SDK Platform 26 (revision: 2)" finished.
+Observed package id 'platform-tools' in inconsistent location '/home/louis/Android/sdk/platform-tools-2' (Expected '/home/louis/Android/sdk/platform-tools')
+Already observed package id 'platform-tools' in '/home/louis/Android/sdk/platform-tools'. Skipping duplicate at '/home/louis/Android/sdk/platform-tools-2'
+:help
+
+Welcome to Gradle 4.1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+BUILD SUCCESSFUL in 16s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /home/louis/WSL Dev/Android-benchmark/gradle-user-home/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/bin/gradle --stop --gradle-user-home /home/louis/WSL Dev/Android-benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: using Gradle 4.1
+  Gradle 4.1 (/home/louis/WSL Dev/Android-benchmark/gradle-user-home/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1)
+  Run using: Tooling API
+  Run: run tasks assemble
+  Cleanup: do nothing
+  Gradle args: []
+  Build changes: []
+  Warm-ups: 6
+  Builds: 10
+
+* Running scenario using Gradle 4.1 (scenario 1/1)
+
+* Stopping daemons
+Running command /home/louis/WSL Dev/Android-benchmark/gradle-user-home/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/bin/gradle --stop --gradle-user-home /home/louis/WSL Dev/Android-benchmark/gradle-user-home
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 4.1
+Java home: /usr/lib/jvm/java-8-openjdk-amd64
+OS: linux amd64 5.4.72-microsoft-standard-wsl2
+JVM args:
+  -Dfile.encoding=UTF-8
+  -Duser.country
+  -Duser.language=en
+  -Duser.variant
+  -Dfile.encoding=UTF-8
+  -Dorg.gradle.profiler.scenario=default
+Gradle args:
+  --gradle-user-home
+  /home/louis/WSL Dev/Android-benchmark/gradle-user-home
+  -I
+  /tmp/gradleProfiler8044420681861268176.gradle
+
+* Running warm-up build #1
+Parallel execution with configuration on demand is an incubating feature.
+Observed package id 'platform-tools' in inconsistent location '/home/louis/Android/sdk/platform-tools-2' (Expected '/home/louis/Android/sdk/platform-tools')
+Already observed package id 'platform-tools' in '/home/louis/Android/sdk/platform-tools'. Skipping duplicate at '/home/louis/Android/sdk/platform-tools-2'
+Observed package id 'platform-tools' in inconsistent location '/home/louis/Android/sdk/platform-tools-2' (Expected '/home/louis/Android/sdk/platform-tools')
+Already observed package id 'platform-tools' in '/home/louis/Android/sdk/platform-tools'. Skipping duplicate at '/home/louis/Android/sdk/platform-tools-2'
+:presentation:preBuild
+:domain:compileJava
+:data:preBuild UP-TO-DATE
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:generateDebugResValues
+:presentation:createDebugCompatibleScreenManifests
+:presentation:splitsDiscoveryTaskDebug
+:presentation:mergeDebugShaders
+:presentation:compileDebugShaders
+:presentation:generateDebugAssets
+:presentation:mergeDebugJniLibFolders
+:presentation:validateSigningDebug
+:presentation:generateReleaseResValues
+:presentation:createReleaseCompatibleScreenManifests
+:presentation:splitsDiscoveryTaskRelease
+:presentation:mergeReleaseShaders
+:presentation:compileReleaseShaders
+:presentation:generateReleaseAssets
+:presentation:mergeReleaseJniLibFolders
+Download https://jcenter.bintray.com/io/reactivex/rxjava2/rxandroid/2.0.1/rxandroid-2.0.1.pom
+Download https://jcenter.bintray.com/io/reactivex/rxjava2/rxjava/2.0.2/rxjava-2.0.2.pom
+Download https://jcenter.bintray.com/com/fernandocejas/arrow/1.0.0/arrow-1.0.0.pom
+Download https://jcenter.bintray.com/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.pom
+Download https://jcenter.bintray.com/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar
+Download https://jcenter.bintray.com/com/fernandocejas/arrow/1.0.0/arrow-1.0.0.jar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-annotations/25.4.0/support-annotations-25.4.0.pom
+Download https://jcenter.bintray.com/io/reactivex/rxjava2/rxjava/2.0.2/rxjava-2.0.2.jar
+Download https://jcenter.bintray.com/io/reactivex/rxjava2/rxandroid/2.0.1/rxandroid-2.0.1.aar
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:data:checkDebugManifest
+:data:generateDebugBuildConfig
+:data:prepareLintJar
+:data:generateDebugResValues
+:data:generateDebugResources
+:data:packageDebugResources
+:data:platformAttrExtractor
+:data:processDebugManifest
+:data:mergeDebugShaders
+:presentation:preDebugBuild
+:data:compileDebugShaders
+:data:generateDebugAssets
+:data:mergeDebugAssets
+:data:mergeDebugConsumerProguardFiles
+:data:packageDebugRenderscript NO-SOURCE
+:data:processDebugJavaRes NO-SOURCE
+:data:mergeDebugJniLibFolders
+:data:transformNativeLibsWithMergeJniLibsForDebug
+Download https://jcenter.bintray.com/com/google/dagger/dagger/2.8/dagger-2.8.pom
+:data:transformNativeLibsWithSyncJniLibsForDebug
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl
+Download https://jcenter.bintray.com/com/jakewharton/butterknife/7.0.1/butterknife-7.0.1.pom
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript
+:data:checkReleaseManifest
+Download https://jcenter.bintray.com/com/google/dagger/dagger-parent/2.8/dagger-parent-2.8.pom
+:data:generateReleaseBuildConfig
+:data:generateReleaseResValues
+Download https://jcenter.bintray.com/com/jakewharton/butterknife-parent/7.0.1/butterknife-parent-7.0.1.pom
+:data:generateReleaseResources
+:data:packageReleaseResources
+:data:processReleaseManifest
+:data:mergeReleaseShaders
+:data:compileReleaseShaders
+:data:generateReleaseAssets
+:data:mergeReleaseAssets
+:data:mergeReleaseConsumerProguardFiles
+:data:packageReleaseRenderscript NO-SOURCE
+:data:processReleaseJavaRes NO-SOURCE
+:data:mergeReleaseJniLibFolders
+:data:transformNativeLibsWithMergeJniLibsForRelease
+:data:transformNativeLibsWithSyncJniLibsForRelease
+:data:mergeReleaseResources
+:data:verifyReleaseResources
+:data:transformNativeLibsWithIntermediateJniLibsForDebug
+:data:transformNativeLibsWithIntermediateJniLibsForRelease
+:data:processDebugResources
+Download https://jcenter.bintray.com/com/squareup/leakcanary/leakcanary-android/1.3.1/leakcanary-android-1.3.1.pom
+warning: [options] bootstrap class path not set in conjunction with -source 1.7
+:data:generateDebugSources
+:data:processReleaseResources
+:data:generateReleaseSources
+1 warning
+:domain:processResources NO-SOURCE
+:domain:classes
+:domain:jar
+:data:javaPreCompileDebug
+:domain:assemble
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-annotations/25.4.0/support-annotations-25.4.0.jar
+:data:compileDebugJavaWithJavac
+Download https://dl.google.com/dl/android/maven2/com/android/support/recyclerview-v7/25.4.0/recyclerview-v7-25.4.0.pom
+:data:extractDebugAnnotations
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-compat/25.4.0/support-compat-25.4.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-core-ui/25.4.0/support-core-ui-25.4.0.pom
+Download https://jcenter.bintray.com/com/squareup/leakcanary/leakcanary-analyzer/1.3.1/leakcanary-analyzer-1.3.1.pom
+Download https://jcenter.bintray.com/com/squareup/leakcanary/leakcanary-watcher/1.3.1/leakcanary-watcher-1.3.1.pom
+Download https://jcenter.bintray.com/com/squareup/haha/haha/1.3/haha-1.3.pom
+Download https://jcenter.bintray.com/com/squareup/leakcanary/leakcanary-android/1.3.1/leakcanary-android-1.3.1.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-compat/25.4.0/support-compat-25.4.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/support-core-ui/25.4.0/support-core-ui-25.4.0.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/recyclerview-v7/25.4.0/recyclerview-v7-25.4.0.aar
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:compileDebugAidl
+:presentation:compileDebugRenderscript
+:presentation:checkDebugManifest
+:presentation:generateDebugBuildConfig
+:presentation:generateDebugResources
+:presentation:mergeDebugResources
+Download https://jcenter.bintray.com/net/orfjackal/retrolambda/retrolambda/2.5.1/retrolambda-2.5.1.pom
+:presentation:processDebugManifest
+Download https://jcenter.bintray.com/net/orfjackal/retrolambda/parent/2.5.1/parent-2.5.1.pom
+:presentation:processDebugResources
+Download https://jcenter.bintray.com/net/orfjackal/retrolambda/retrolambda/2.5.1/retrolambda-2.5.1.jar
+:presentation:generateDebugSources
+:presentation:compileDebugNdk NO-SOURCE
+:presentation:mergeDebugAssets
+:presentation:processDebugJavaRes NO-SOURCE
+:presentation:preReleaseBuild
+:presentation:compileReleaseAidl
+:presentation:compileReleaseRenderscript
+:presentation:checkReleaseManifest
+:presentation:generateReleaseBuildConfig
+:presentation:generateReleaseResources
+:presentation:mergeReleaseResources
+:presentation:processReleaseManifest
+:presentation:processReleaseResources
+:presentation:generateReleaseSources
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:mergeReleaseAssets
+:presentation:processReleaseJavaRes
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug
+:data:bundleDebug
+:data:compileDebugSources
+:data:assembleDebug
+:data:javaPreCompileRelease
+:data:compileReleaseJavaWithJavac
+:data:extractReleaseAnnotations
+:data:transformClassesWithRetrolambdaForRelease
+:data:transformResourcesWithMergeJavaResForRelease
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:data:bundleRelease
+:data:compileReleaseSources
+:data:assembleRelease
+:data:assemble
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:presentation:javaPreCompileDebug
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+Download https://jcenter.bintray.com/com/google/dagger/dagger-compiler/2.8/dagger-compiler-2.8.pom
+Download https://jcenter.bintray.com/com/google/guava/guava/20.0-rc1/guava-20.0-rc1.pom
+Download https://jcenter.bintray.com/com/google/guava/guava-parent/20.0-rc1/guava-parent-20.0-rc1.pom
+Download https://jcenter.bintray.com/com/google/dagger/dagger-producers/2.8/dagger-producers-2.8.pom
+Download https://jcenter.bintray.com/com/google/dagger/dagger/2.8/dagger-2.8.jar
+Download https://jcenter.bintray.com/com/jakewharton/butterknife/7.0.1/butterknife-7.0.1.jar
+Download https://jcenter.bintray.com/com/google/dagger/dagger-producers/2.8/dagger-producers-2.8.jar
+Download https://jcenter.bintray.com/com/google/dagger/dagger-compiler/2.8/dagger-compiler-2.8.jar
+Download https://jcenter.bintray.com/com/google/guava/guava/20.0-rc1/guava-20.0-rc1.jar
+Download https://jcenter.bintray.com/com/squareup/leakcanary/leakcanary-analyzer/1.3.1/leakcanary-analyzer-1.3.1.jar
+Download https://jcenter.bintray.com/com/squareup/leakcanary/leakcanary-watcher/1.3.1/leakcanary-watcher-1.3.1.jar
+Download https://jcenter.bintray.com/com/squareup/haha/haha/1.3/haha-1.3.jar
+:presentation:compileDebugJavaWithJavacNote: Generating a Provider for com.fernandocejas.android10.sample.domain.interactor.GetUserList. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.domain.interactor.GetUserDetails. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.executor.JobExecutor. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.repository.UserDataRepository. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.repository.datasource.UserDataStoreFactory. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.cache.UserCacheImpl. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.cache.serializer.Serializer. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.cache.FileManager. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.entity.mapper.UserEntityDataMapper. Prefer to run the dagger processor over that class instead.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:presentation:compileDebugSources
+:presentation:transformClassesWithDexBuilderForDebug
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug
+:presentation:transformDexArchiveWithDexMergerForDebug
+:presentation:transformNativeLibsWithMergeJniLibsForDebug
+:presentation:transformResourcesWithMergeJavaResForDebug
+:presentation:packageDebug
+:presentation:assembleDebug
+:presentation:javaPreCompileRelease
+:presentation:compileReleaseJavaWithJavacNote: Generating a Provider for com.fernandocejas.android10.sample.domain.interactor.GetUserList. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.domain.interactor.GetUserDetails. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.executor.JobExecutor. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.repository.UserDataRepository. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.repository.datasource.UserDataStoreFactory. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.cache.UserCacheImpl. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.cache.serializer.Serializer. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.cache.FileManager. Prefer to run the dagger processor over that class instead.
+Note: Generating a Provider for com.fernandocejas.android10.sample.data.entity.mapper.UserEntityDataMapper. Prefer to run the dagger processor over that class instead.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:presentation:compileReleaseSources
+:presentation:lintVitalRelease
+Download https://jcenter.bintray.com/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.pom
+Download https://jcenter.bintray.com/com/google/dexmaker/dexmaker/1.0/dexmaker-1.0.pom
+Download https://jcenter.bintray.com/com/google/dexmaker/dexmaker-mockito/1.0/dexmaker-mockito-1.0.pom
+Download https://jcenter.bintray.com/com/google/dexmaker/dexmaker-parent/1.0/dexmaker-parent-1.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/espresso/espresso-core/3.0.1/espresso-core-3.0.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/testing-support-lib/0.1/testing-support-lib-0.1.pom
+Download https://jcenter.bintray.com/org/objenesis/objenesis/1.0/objenesis-1.0.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/runner/1.0.1/runner-1.0.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/espresso/espresso-idling-resource/3.0.1/espresso-idling-resource-3.0.1.pom
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/rules/1.0.1/rules-1.0.1.pom
+Download https://jcenter.bintray.com/junit/junit-dep/4.10/junit-dep-4.10.pom
+Download https://jcenter.bintray.com/com/google/dexmaker/dexmaker/1.0/dexmaker-1.0.jar
+Download https://jcenter.bintray.com/junit/junit-dep/4.10/junit-dep-4.10.jar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/runner/1.0.1/runner-1.0.1.aar
+Download https://jcenter.bintray.com/org/objenesis/objenesis/1.0/objenesis-1.0.jar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/espresso/espresso-core/3.0.1/espresso-core-3.0.1.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/testing-support-lib/0.1/testing-support-lib-0.1.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/rules/1.0.1/rules-1.0.1.aar
+Download https://dl.google.com/dl/android/maven2/com/android/support/test/espresso/espresso-idling-resource/3.0.1/espresso-idling-resource-3.0.1.aar
+Download https://jcenter.bintray.com/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar
+Download https://jcenter.bintray.com/com/google/dexmaker/dexmaker-mockito/1.0/dexmaker-mockito-1.0.jar
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+Download https://jcenter.bintray.com/org/assertj/assertj-core/1.7.1/assertj-core-1.7.1.pom
+Download https://jcenter.bintray.com/org/assertj/assertj-parent-pom/1.2.6/assertj-parent-pom-1.2.6.pom
+Download https://jcenter.bintray.com/org/robolectric/robolectric/3.1.1/robolectric-3.1.1.pom
+Download https://jcenter.bintray.com/org/robolectric/robolectric-resources/3.1.1/robolectric-resources-3.1.1.pom
+Download https://jcenter.bintray.com/org/robolectric/robolectric-annotations/3.1.1/robolectric-annotations-3.1.1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.pom
+Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk16/1.46/bcprov-jdk16-1.46.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.pom
+Download https://jcenter.bintray.com/com/ximpleware/vtd-xml/2.11/vtd-xml-2.11.pom
+Download https://jcenter.bintray.com/org/robolectric/robolectric-utils/3.1.1/robolectric-utils-3.1.1.pom
+Download https://jcenter.bintray.com/org/robolectric/shadows-core-v23/3.1.1/shadows-core-v23-3.1.1.pom
+Download https://jcenter.bintray.com/org/robolectric/robolectric/3.1.1/robolectric-3.1.1.jar
+Download https://jcenter.bintray.com/org/robolectric/robolectric-resources/3.1.1/robolectric-resources-3.1.1.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.jar
+Download https://jcenter.bintray.com/org/robolectric/shadows-core-v23/3.1.1/shadows-core-v23-3.1.1.jar
+Download https://jcenter.bintray.com/com/ximpleware/vtd-xml/2.11/vtd-xml-2.11.jar
+Download https://jcenter.bintray.com/org/assertj/assertj-core/1.7.1/assertj-core-1.7.1.jar
+Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk16/1.46/bcprov-jdk16-1.46.jar
+Download https://jcenter.bintray.com/org/robolectric/robolectric-annotations/3.1.1/robolectric-annotations-3.1.1.jar
+Download https://jcenter.bintray.com/org/robolectric/robolectric-utils/3.1.1/robolectric-utils-3.1.1.jar
+:presentation:transformClassesWithPreDexForRelease
+:presentation:transformDexWithDexForRelease
+:presentation:transformNativeLibsWithMergeJniLibsForRelease
+:presentation:transformResourcesWithMergeJavaResForRelease
+:presentation:packageRelease
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 24s
+102 actionable tasks: 102 executed
+Used daemon with pid 11782
+Execution time 25204 ms
+
+* Running warm-up build #2
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:presentation:preBuild
+:data:preDebugBuild
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:data:compileDebugAidl UP-TO-DATE
+:presentation:mergeDebugShaders
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:presentation:mergeDebugShaders UP-TO-DATE
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:compileDebugShaders
+:data:checkDebugManifest
+:presentation:compileDebugShaders UP-TO-DATE
+:data:checkDebugManifest UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:mergeDebugJniLibFolders
+:domain:compileJava UP-TO-DATE
+:data:generateDebugBuildConfig UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:domain:processResources
+:presentation:validateSigningDebug
+:domain:processResources NO-SOURCE
+:data:prepareLintJar
+:domain:classes UP-TO-DATE
+:presentation:generateReleaseResValues
+:data:prepareLintJar UP-TO-DATE
+:domain:jar
+:data:generateDebugResValues
+:presentation:generateReleaseResValues UP-TO-DATE
+:data:generateDebugResValues UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests
+:data:generateDebugResources UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:domain:jar UP-TO-DATE
+:data:packageDebugResources
+:domain:assemble UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:presentation:mergeReleaseShaders
+:data:packageDebugResources UP-TO-DATE
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest
+:presentation:compileReleaseShaders
+:data:processDebugManifest UP-TO-DATE
+:data:processDebugResources
+:presentation:compileReleaseShaders UP-TO-DATE
+:presentation:preDebugBuild
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:data:mergeDebugShaders
+:presentation:generateDebugBuildConfig
+:data:mergeDebugShaders UP-TO-DATE
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:data:compileDebugShaders
+:presentation:processDebugManifest
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:data:packageDebugRenderscript
+:presentation:processDebugManifest UP-TO-DATE
+:data:packageDebugRenderscript NO-SOURCE
+:presentation:compileDebugNdk NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:compileDebugRenderscript UP-TO-DATE
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:presentation:generateDebugResources UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug
+:presentation:mergeDebugResources UP-TO-DATE
+:presentation:processDebugResources
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug
+:presentation:processDebugResources UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:presentation:generateDebugSources
+:data:compileDebugSources
+:presentation:generateDebugSources UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:presentation:mergeDebugAssets
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:processDebugJavaRes NO-SOURCE
+:presentation:generateReleaseAssets UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:preReleaseBuild UP-TO-DATE
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:data:extractReleaseAnnotations
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:presentation:processReleaseManifest
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders
+:presentation:processReleaseManifest UP-TO-DATE
+:data:mergeReleaseShaders UP-TO-DATE
+:presentation:compileReleaseNdk
+:data:compileReleaseShaders
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles
+:presentation:mergeReleaseAssets
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:data:mergeReleaseJniLibFolders
+:presentation:mergeReleaseResources
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease
+:presentation:processReleaseResources
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:presentation:generateReleaseSources UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 1029 ms
+
+* Running warm-up build #3
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders
+:data:compileDebugAidl UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:data:compileDebugNdk
+:presentation:generateDebugAssets
+:data:compileDebugNdk NO-SOURCE
+:presentation:generateDebugAssets UP-TO-DATE
+:data:compileDebugRenderscript UP-TO-DATE
+:data:checkDebugManifest UP-TO-DATE
+:presentation:mergeDebugJniLibFolders
+:data:generateDebugBuildConfig
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:data:generateDebugBuildConfig UP-TO-DATE
+:data:prepareLintJar
+:domain:compileJava UP-TO-DATE
+:presentation:generateReleaseResValues
+:data:prepareLintJar UP-TO-DATE
+:domain:processResources
+:presentation:generateReleaseResValues UP-TO-DATE
+:data:generateDebugResValues
+:domain:processResources NO-SOURCE
+:presentation:createReleaseCompatibleScreenManifests
+:domain:classes
+:data:generateDebugResValues UP-TO-DATE
+:domain:classes UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:domain:jar
+:data:packageDebugResources
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:domain:jar UP-TO-DATE
+:presentation:mergeReleaseShaders
+:domain:assemble UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:processDebugManifest
+:presentation:compileReleaseShaders UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders
+:data:processDebugManifest UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:processDebugResources
+:presentation:preDebugBuild
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:checkDebugManifest
+:data:mergeDebugShaders
+:presentation:checkDebugManifest UP-TO-DATE
+:data:mergeDebugShaders UP-TO-DATE
+:presentation:generateDebugBuildConfig
+:data:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:presentation:processDebugManifest
+:data:mergeDebugAssets UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:processDebugManifest UP-TO-DATE
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:processDebugJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:compileDebugRenderscript UP-TO-DATE
+:presentation:generateDebugResources UP-TO-DATE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug
+:presentation:mergeDebugResources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:processDebugResources
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:presentation:processDebugResources UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:presentation:generateDebugSources
+:data:assembleDebug
+:presentation:generateDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:presentation:compileDebugNdk
+:data:preReleaseBuild
+:presentation:compileDebugNdk NO-SOURCE
+:data:preReleaseBuild UP-TO-DATE
+:presentation:mergeDebugAssets
+:data:compileReleaseAidl
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:processDebugJavaRes NO-SOURCE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:preReleaseBuild UP-TO-DATE
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:presentation:processReleaseManifest
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:data:extractReleaseAnnotations
+:presentation:processReleaseManifest UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles
+:presentation:mergeReleaseAssets
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:data:processReleaseJavaRes
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:presentation:generateReleaseResources UP-TO-DATE
+:data:transformResourcesWithMergeJavaResForRelease
+:presentation:mergeReleaseResources
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:presentation:processReleaseResources
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease
+:presentation:generateReleaseSources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 856 ms
+
+* Running warm-up build #4
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:presentation:preBuild
+:data:preDebugBuild
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders
+:data:compileDebugAidl UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:presentation:validateSigningDebug
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:generateReleaseResValues
+:data:checkDebugManifest
+:presentation:generateReleaseResValues UP-TO-DATE
+:data:checkDebugManifest UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests
+:data:generateDebugBuildConfig
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:generateDebugBuildConfig UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease
+:data:prepareLintJar UP-TO-DATE
+:data:generateDebugResValues
+:domain:compileJava UP-TO-DATE
+:data:generateDebugResValues UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:domain:processResources NO-SOURCE
+:domain:classes UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:presentation:mergeReleaseShaders
+:data:packageDebugResources
+:presentation:mergeReleaseShaders UP-TO-DATE
+:domain:jar
+:data:packageDebugResources UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:platformAttrExtractor
+:presentation:compileReleaseShaders UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:processDebugManifest
+:presentation:mergeReleaseJniLibFolders
+:domain:jar UP-TO-DATE
+:domain:assemble
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:data:processDebugResources
+:presentation:preDebugBuild
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:checkDebugManifest
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:presentation:processDebugManifest
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:processDebugManifest UP-TO-DATE
+:data:mergeDebugShaders
+:presentation:compileDebugNdk
+:data:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:data:compileDebugShaders
+:presentation:processDebugJavaRes
+:data:compileDebugShaders UP-TO-DATE
+:presentation:processDebugJavaRes NO-SOURCE
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:presentation:mergeDebugAssets
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:presentation:compileDebugRenderscript UP-TO-DATE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:generateDebugResources UP-TO-DATE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders
+:presentation:mergeDebugResources UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:processDebugResources
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:presentation:processDebugResources UP-TO-DATE
+:data:bundleDebug
+:presentation:generateDebugSources UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:presentation:preReleaseBuild UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:data:extractReleaseAnnotations
+:presentation:processReleaseManifest
+:data:extractReleaseAnnotations UP-TO-DATE
+:presentation:processReleaseManifest UP-TO-DATE
+:data:mergeReleaseShaders
+:presentation:compileReleaseNdk NO-SOURCE
+:data:mergeReleaseShaders UP-TO-DATE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles
+:presentation:mergeReleaseAssets
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:data:packageReleaseRenderscript NO-SOURCE
+:presentation:mergeReleaseAssets UP-TO-DATE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:presentation:generateReleaseResources
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease
+:presentation:mergeReleaseResources
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:presentation:processReleaseResources
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease
+:presentation:processReleaseResources UP-TO-DATE
+:presentation:generateReleaseSources UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 804 ms
+
+* Running warm-up build #5
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:data:compileDebugAidl UP-TO-DATE
+:data:compileDebugNdk
+:presentation:generateReleaseResValues
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:presentation:generateReleaseResValues UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:checkDebugManifest
+:presentation:splitsDiscoveryTaskRelease
+:data:checkDebugManifest UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:mergeReleaseShaders
+:data:generateDebugBuildConfig UP-TO-DATE
+:data:prepareLintJar
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:prepareLintJar UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:generateDebugResValues UP-TO-DATE
+:data:generateDebugResources
+:presentation:compileReleaseShaders UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:packageDebugResources
+:presentation:mergeReleaseJniLibFolders
+:domain:compileJava UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:domain:processResources
+:data:platformAttrExtractor
+:domain:processResources NO-SOURCE
+:domain:classes
+:data:platformAttrExtractor UP-TO-DATE
+:domain:classes UP-TO-DATE
+:data:processDebugManifest
+:domain:jar
+:data:processDebugManifest UP-TO-DATE
+:data:processDebugResources
+:presentation:preDebugBuild
+:domain:jar UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:generateDebugBuildConfig
+:data:mergeDebugShaders
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:presentation:processDebugManifest
+:data:mergeDebugShaders UP-TO-DATE
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:presentation:processDebugManifest UP-TO-DATE
+:data:mergeDebugAssets
+:presentation:compileDebugNdk NO-SOURCE
+:data:mergeDebugAssets UP-TO-DATE
+:presentation:processDebugJavaRes
+:data:mergeDebugConsumerProguardFiles
+:presentation:processDebugJavaRes NO-SOURCE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:presentation:mergeDebugAssets
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:compileDebugRenderscript UP-TO-DATE
+:presentation:generateDebugResources UP-TO-DATE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:presentation:mergeDebugResources UP-TO-DATE
+:data:mergeDebugJniLibFolders
+:presentation:processDebugResources
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug
+:presentation:processDebugResources UP-TO-DATE
+:presentation:generateDebugSources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:preReleaseBuild UP-TO-DATE
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:generateReleaseBuildConfig
+:data:extractReleaseAnnotations
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:presentation:processReleaseManifest UP-TO-DATE
+:presentation:compileReleaseNdk
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes
+:data:mergeReleaseShaders UP-TO-DATE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles
+:presentation:mergeReleaseAssets
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:data:processReleaseJavaRes
+:presentation:generateReleaseResources UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:presentation:mergeReleaseResources
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:presentation:mergeReleaseResources UP-TO-DATE
+:presentation:processReleaseResources
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease
+:presentation:generateReleaseSources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 702 ms
+
+* Running warm-up build #6
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:presentation:preBuild
+:data:preDebugBuild
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar UP-TO-DATE
+:data:compileDebugAidl
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:presentation:generateReleaseResValues
+:data:compileDebugAidl UP-TO-DATE
+:presentation:generateReleaseResValues UP-TO-DATE
+:data:compileDebugNdk NO-SOURCE
+:presentation:createReleaseCompatibleScreenManifests
+:data:compileDebugRenderscript
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:data:checkDebugManifest
+:presentation:mergeReleaseShaders
+:data:checkDebugManifest UP-TO-DATE
+:data:generateDebugBuildConfig UP-TO-DATE
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:prepareLintJar UP-TO-DATE
+:presentation:compileReleaseShaders UP-TO-DATE
+:data:generateDebugResValues
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:generateDebugResValues UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders
+:domain:compileJava UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:domain:processResources NO-SOURCE
+:domain:classes UP-TO-DATE
+:domain:jar
+:data:packageDebugResources
+:domain:jar UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:presentation:preDebugBuild
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:presentation:processDebugManifest UP-TO-DATE
+:presentation:compileDebugNdk
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:presentation:processDebugJavaRes
+:data:mergeDebugShaders
+:presentation:processDebugJavaRes NO-SOURCE
+:data:mergeDebugShaders UP-TO-DATE
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles
+:presentation:mergeDebugAssets
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:compileDebugRenderscript UP-TO-DATE
+:presentation:generateDebugResources UP-TO-DATE
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:mergeDebugResources
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:mergeDebugResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug
+:presentation:processDebugResources
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl
+:presentation:processDebugResources UP-TO-DATE
+:presentation:generateDebugSources UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease
+:presentation:preReleaseBuild UP-TO-DATE
+:presentation:compileReleaseAidl
+:data:javaPreCompileRelease UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:data:extractReleaseAnnotations
+:presentation:processReleaseManifest UP-TO-DATE
+:data:extractReleaseAnnotations UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:presentation:mergeReleaseAssets
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:presentation:mergeReleaseResources
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:presentation:processReleaseResources
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:presentation:generateReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 684 ms
+
+* Using args for instrumented builds:
+
+* Running measured build #1
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:presentation:preBuild
+:data:preDebugBuild
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:presentation:generateReleaseResValues UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:data:compileDebugAidl UP-TO-DATE
+:presentation:mergeReleaseShaders
+:data:compileDebugNdk
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:compileDebugNdk NO-SOURCE
+:presentation:compileReleaseShaders
+:data:compileDebugRenderscript
+:presentation:compileReleaseShaders UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:compileDebugRenderscript UP-TO-DATE
+:data:checkDebugManifest UP-TO-DATE
+:data:generateDebugBuildConfig UP-TO-DATE
+:data:prepareLintJar UP-TO-DATE
+:data:generateDebugResValues UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest
+:domain:compileJava UP-TO-DATE
+:domain:processResources NO-SOURCE
+:data:processDebugManifest UP-TO-DATE
+:domain:classes UP-TO-DATE
+:data:processDebugResources
+:presentation:preDebugBuild
+:domain:jar
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:domain:jar UP-TO-DATE
+:data:mergeDebugShaders
+:domain:assemble UP-TO-DATE
+:data:mergeDebugShaders UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:presentation:processDebugManifest UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:presentation:processDebugJavaRes NO-SOURCE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations UP-TO-DATE
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:presentation:mergeDebugAssets
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:presentation:compileDebugRenderscript UP-TO-DATE
+:data:processDebugJavaRes
+:presentation:generateDebugResources UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug
+:presentation:mergeDebugResources UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:presentation:processDebugResources
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:processDebugResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug
+:presentation:generateDebugSources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:presentation:preReleaseBuild UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:processReleaseManifest
+:data:extractReleaseAnnotations
+:presentation:processReleaseManifest UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles
+:presentation:mergeReleaseAssets
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:presentation:mergeReleaseResources
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:presentation:mergeReleaseResources UP-TO-DATE
+:presentation:processReleaseResources
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease
+:presentation:generateReleaseSources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 704 ms
+
+* Running measured build #2
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild
+:domain:compileJava
+:presentation:preBuild UP-TO-DATE
+:data:preBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar UP-TO-DATE
+:data:compileDebugAidl
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:presentation:generateReleaseResValues UP-TO-DATE
+:data:compileDebugAidl UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:presentation:splitsDiscoveryTaskRelease
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:data:checkDebugManifest UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:mergeReleaseShaders
+:data:generateDebugBuildConfig UP-TO-DATE
+:data:prepareLintJar
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:prepareLintJar UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:generateDebugResValues UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:presentation:compileReleaseShaders UP-TO-DATE
+:data:packageDebugResources
+:domain:compileJava UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:domain:processResources NO-SOURCE
+:presentation:mergeReleaseJniLibFolders
+:domain:classes UP-TO-DATE
+:domain:jar
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:data:processDebugResources
+:presentation:preDebugBuild
+:domain:jar UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:generateDebugBuildConfig
+:data:mergeDebugShaders
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:data:mergeDebugShaders UP-TO-DATE
+:presentation:processDebugManifest
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:presentation:processDebugManifest UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:data:packageDebugRenderscript NO-SOURCE
+:presentation:mergeDebugAssets
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:compileDebugRenderscript UP-TO-DATE
+:presentation:generateDebugResources UP-TO-DATE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders
+:presentation:mergeDebugResources UP-TO-DATE
+:presentation:processDebugResources
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug
+:presentation:processDebugResources UP-TO-DATE
+:presentation:generateDebugSources UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:presentation:processDebugJavaRes NO-SOURCE
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease
+:presentation:preReleaseBuild UP-TO-DATE
+:presentation:compileReleaseAidl
+:data:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:presentation:processReleaseManifest UP-TO-DATE
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:presentation:mergeReleaseAssets
+:data:mergeReleaseConsumerProguardFiles
+:presentation:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:presentation:mergeReleaseResources
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:processReleaseResources
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:presentation:generateReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 641 ms
+
+* Running measured build #3
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:data:preDebugBuild
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar UP-TO-DATE
+:data:compileDebugAidl
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:presentation:generateReleaseResValues UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests
+:data:compileDebugAidl UP-TO-DATE
+:data:compileDebugNdk
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:compileDebugNdk NO-SOURCE
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:data:compileDebugRenderscript
+:presentation:mergeReleaseShaders UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:compileReleaseShaders UP-TO-DATE
+:data:checkDebugManifest
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:checkDebugManifest UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders
+:data:generateDebugBuildConfig
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:generateDebugBuildConfig UP-TO-DATE
+:data:prepareLintJar UP-TO-DATE
+:data:generateDebugResValues UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest
+:domain:compileJava UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:domain:processResources
+:presentation:preDebugBuild
+:domain:processResources NO-SOURCE
+:domain:classes UP-TO-DATE
+:domain:jar
+:data:processDebugResources
+:domain:jar UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:presentation:processDebugManifest
+:data:extractDebugAnnotations UP-TO-DATE
+:data:mergeDebugShaders
+:presentation:processDebugManifest UP-TO-DATE
+:data:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:presentation:processDebugJavaRes NO-SOURCE
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:presentation:mergeDebugAssets
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:compileDebugRenderscript UP-TO-DATE
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:presentation:generateDebugResources UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:mergeDebugResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug
+:presentation:processDebugResources
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:presentation:processDebugResources UP-TO-DATE
+:data:compileDebugSources
+:presentation:generateDebugSources
+:data:compileDebugSources UP-TO-DATE
+:presentation:generateDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:presentation:preReleaseBuild UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:processReleaseManifest
+:data:extractReleaseAnnotations
+:presentation:processReleaseManifest UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:presentation:compileReleaseRenderscript
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:mergeReleaseResources
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources
+:presentation:mergeReleaseResources UP-TO-DATE
+:presentation:processReleaseResources
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:presentation:processReleaseResources UP-TO-DATE
+:presentation:generateReleaseSources UP-TO-DATE
+:presentation:mergeReleaseAssets
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:mergeReleaseAssets UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForDebug
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 569 ms
+
+* Running measured build #4
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:presentation:generateReleaseResValues
+:data:compileDebugAidl UP-TO-DATE
+:presentation:generateReleaseResValues UP-TO-DATE
+:data:compileDebugNdk NO-SOURCE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:compileDebugRenderscript
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:presentation:mergeReleaseShaders
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:checkDebugManifest
+:presentation:compileReleaseShaders
+:data:checkDebugManifest UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:compileReleaseShaders UP-TO-DATE
+:presentation:generateReleaseAssets
+:data:generateDebugBuildConfig UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:prepareLintJar
+:presentation:mergeReleaseJniLibFolders
+:data:prepareLintJar UP-TO-DATE
+:data:generateDebugResValues
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:generateDebugResValues UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:domain:compileJava UP-TO-DATE
+:data:packageDebugResources
+:domain:processResources NO-SOURCE
+:domain:classes UP-TO-DATE
+:domain:jar
+:data:packageDebugResources UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest
+:domain:jar UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:data:processDebugResources
+:presentation:preDebugBuild
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl
+:data:extractDebugAnnotations UP-TO-DATE
+:data:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:data:compileDebugShaders
+:presentation:checkDebugManifest UP-TO-DATE
+:data:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugBuildConfig
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:presentation:processDebugManifest
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:processDebugManifest UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:presentation:compileDebugRenderscript UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:generateDebugResources UP-TO-DATE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:presentation:mergeDebugResources UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:processDebugResources
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:processDebugResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug
+:presentation:generateDebugSources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:data:bundleDebug
+:presentation:mergeDebugAssets
+:data:bundleDebug UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug
+:presentation:mergeDebugAssets UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:presentation:processDebugJavaRes NO-SOURCE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:preReleaseBuild UP-TO-DATE
+:presentation:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:data:extractReleaseAnnotations
+:presentation:processReleaseManifest UP-TO-DATE
+:data:extractReleaseAnnotations UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:data:mergeReleaseShaders
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:presentation:mergeReleaseAssets
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:presentation:generateReleaseResources UP-TO-DATE
+:presentation:mergeReleaseResources
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:presentation:processReleaseResources
+:data:bundleRelease
+:presentation:processReleaseResources UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:presentation:generateReleaseSources
+:data:compileReleaseSources
+:presentation:generateReleaseSources UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 589 ms
+
+* Running measured build #5
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:data:preDebugBuild
+:presentation:preBuild
+:data:preDebugBuild UP-TO-DATE
+:presentation:preBuild UP-TO-DATE
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:data:compileDebugAidl UP-TO-DATE
+:presentation:validateSigningDebug
+:data:compileDebugNdk NO-SOURCE
+:presentation:generateReleaseResValues UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:compileDebugRenderscript
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:presentation:mergeReleaseShaders
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:checkDebugManifest
+:presentation:compileReleaseShaders
+:data:checkDebugManifest UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:compileReleaseShaders UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:generateDebugBuildConfig UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders
+:domain:compileJava UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:domain:processResources NO-SOURCE
+:data:prepareLintJar
+:domain:classes UP-TO-DATE
+:data:prepareLintJar UP-TO-DATE
+:domain:jar
+:data:generateDebugResValues UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:data:packageDebugResources
+:domain:jar UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:data:processDebugResources
+:presentation:preDebugBuild
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:data:mergeDebugShaders UP-TO-DATE
+:presentation:checkDebugManifest
+:data:compileDebugShaders
+:presentation:checkDebugManifest UP-TO-DATE
+:presentation:generateDebugBuildConfig
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:data:mergeDebugAssets
+:presentation:processDebugManifest
+:data:mergeDebugAssets UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:processDebugManifest UP-TO-DATE
+:presentation:compileDebugRenderscript UP-TO-DATE
+:presentation:generateDebugResources
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:presentation:generateDebugResources UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug
+:presentation:mergeDebugResources UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:presentation:processDebugResources
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:processDebugResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug
+:presentation:generateDebugSources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:data:bundleDebug
+:presentation:mergeDebugAssets
+:data:bundleDebug UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:processDebugJavaRes NO-SOURCE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease
+:presentation:preReleaseBuild UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseAidl
+:data:compileReleaseJavaWithJavac
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:presentation:processReleaseManifest UP-TO-DATE
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:presentation:mergeReleaseAssets
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:presentation:generateReleaseResources UP-TO-DATE
+:presentation:mergeReleaseResources
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:presentation:processReleaseResources
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources
+:presentation:processReleaseResources UP-TO-DATE
+:presentation:generateReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 590 ms
+
+* Running measured build #6
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild
+:domain:compileJava
+:presentation:preBuild
+:data:preBuild UP-TO-DATE
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:data:compileDebugAidl UP-TO-DATE
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:presentation:generateReleaseResValues UP-TO-DATE
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests
+:data:checkDebugManifest UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:splitsDiscoveryTaskRelease
+:data:generateDebugBuildConfig UP-TO-DATE
+:data:prepareLintJar
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:data:prepareLintJar UP-TO-DATE
+:presentation:mergeReleaseShaders
+:data:generateDebugResValues
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:generateDebugResValues UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:generateDebugResources UP-TO-DATE
+:domain:compileJava UP-TO-DATE
+:presentation:compileReleaseShaders UP-TO-DATE
+:data:packageDebugResources
+:domain:processResources NO-SOURCE
+:presentation:generateReleaseAssets
+:data:packageDebugResources UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:domain:classes UP-TO-DATE
+:data:platformAttrExtractor
+:presentation:mergeReleaseJniLibFolders
+:data:platformAttrExtractor UP-TO-DATE
+:domain:jar
+:data:processDebugManifest
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:data:processDebugResources
+:presentation:preDebugBuild
+:domain:jar UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:presentation:processDebugManifest UP-TO-DATE
+:presentation:compileDebugNdk
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:data:mergeDebugShaders
+:presentation:processDebugJavaRes NO-SOURCE
+:data:mergeDebugShaders UP-TO-DATE
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles
+:presentation:mergeDebugAssets
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:presentation:compileDebugRenderscript UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:presentation:generateDebugResources UP-TO-DATE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:mergeDebugResources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:processDebugResources
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug
+:presentation:processDebugResources UP-TO-DATE
+:presentation:generateDebugSources UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease
+:presentation:preReleaseBuild UP-TO-DATE
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig
+:data:javaPreCompileRelease UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:presentation:processReleaseManifest UP-TO-DATE
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:data:extractReleaseAnnotations
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources
+:presentation:compileReleaseRenderscript
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:presentation:mergeReleaseResources
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:presentation:generateReleaseSources UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 584 ms
+
+* Running measured build #7
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:data:preDebugBuild UP-TO-DATE
+:presentation:preBuild UP-TO-DATE
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders
+:data:compileDebugAidl UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:data:compileDebugNdk
+:presentation:validateSigningDebug
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:presentation:generateReleaseResValues UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease
+:data:checkDebugManifest
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:presentation:mergeReleaseShaders
+:data:checkDebugManifest UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:mergeReleaseShaders UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:generateDebugBuildConfig UP-TO-DATE
+:data:prepareLintJar
+:presentation:compileReleaseShaders UP-TO-DATE
+:presentation:generateReleaseAssets
+:data:prepareLintJar UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:generateDebugResValues
+:presentation:mergeReleaseJniLibFolders
+:data:generateDebugResValues UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:domain:compileJava UP-TO-DATE
+:data:processDebugManifest
+:domain:processResources NO-SOURCE
+:domain:classes UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:domain:jar
+:data:processDebugResources
+:presentation:preDebugBuild
+:domain:jar UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:compileDebugAidl
+:data:mergeDebugShaders UP-TO-DATE
+:data:compileDebugShaders
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:checkDebugManifest
+:data:compileDebugShaders UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:presentation:generateDebugBuildConfig
+:data:mergeDebugAssets
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:presentation:processDebugManifest
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:processDebugManifest UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:presentation:compileDebugRenderscript UP-TO-DATE
+:data:processDebugJavaRes
+:presentation:generateDebugResources
+:data:processDebugJavaRes NO-SOURCE
+:presentation:generateDebugResources UP-TO-DATE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:mergeDebugResources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:processDebugResources
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug
+:presentation:processDebugResources UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:presentation:generateDebugSources UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:presentation:compileDebugNdk
+:data:assembleDebug UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:data:preReleaseBuild UP-TO-DATE
+:presentation:mergeDebugAssets
+:data:compileReleaseAidl
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:processDebugJavaRes NO-SOURCE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease
+:presentation:preReleaseBuild UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseAidl
+:data:compileReleaseJavaWithJavac
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:presentation:processReleaseManifest
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:data:extractReleaseAnnotations
+:presentation:processReleaseManifest UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:presentation:mergeReleaseAssets
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:presentation:mergeReleaseResources
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:processReleaseResources
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease
+:presentation:processReleaseResources UP-TO-DATE
+:presentation:generateReleaseSources UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 529 ms
+
+* Running measured build #8
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders
+:data:compileDebugAidl UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:data:compileDebugNdk
+:presentation:validateSigningDebug
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:presentation:generateReleaseResValues UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:data:checkDebugManifest
+:presentation:mergeReleaseShaders
+:data:checkDebugManifest UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:mergeReleaseShaders UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:generateDebugBuildConfig UP-TO-DATE
+:data:prepareLintJar
+:presentation:compileReleaseShaders UP-TO-DATE
+:data:prepareLintJar UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:generateDebugResValues
+:presentation:mergeReleaseJniLibFolders
+:data:generateDebugResValues UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:data:processDebugResources
+:domain:compileJava UP-TO-DATE
+:domain:processResources NO-SOURCE
+:domain:classes UP-TO-DATE
+:presentation:preDebugBuild
+:data:processDebugResources UP-TO-DATE
+:domain:jar
+:data:generateDebugSources UP-TO-DATE
+:data:mergeDebugShaders UP-TO-DATE
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:domain:jar UP-TO-DATE
+:data:mergeDebugAssets
+:domain:assemble UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:compileDebugAidl
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:compileDebugRenderscript UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:generateDebugBuildConfig
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:presentation:generateDebugResources UP-TO-DATE
+:presentation:mergeDebugResources
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl
+:presentation:mergeDebugResources UP-TO-DATE
+:presentation:processDebugManifest UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:presentation:processDebugResources
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript
+:presentation:processDebugResources UP-TO-DATE
+:presentation:generateDebugSources UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:presentation:mergeDebugAssets
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:presentation:mergeDebugAssets UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:presentation:processDebugJavaRes
+:data:generateReleaseResources
+:presentation:processDebugJavaRes NO-SOURCE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:preReleaseBuild UP-TO-DATE
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:data:extractReleaseAnnotations
+:presentation:processReleaseManifest UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes
+:data:extractReleaseAnnotations UP-TO-DATE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:presentation:mergeReleaseResources
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease
+:presentation:mergeReleaseResources UP-TO-DATE
+:presentation:processReleaseResources
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease
+:presentation:generateReleaseSources UP-TO-DATE
+:presentation:mergeReleaseAssets
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:data:bundleRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 531 ms
+
+* Running measured build #9
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild UP-TO-DATE
+:domain:compileJava
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar
+:data:compileDebugAidl
+:presentation:prepareLintJar UP-TO-DATE
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:presentation:generateReleaseResValues UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests
+:data:compileDebugAidl UP-TO-DATE
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:presentation:mergeReleaseShaders
+:data:compileDebugRenderscript UP-TO-DATE
+:data:checkDebugManifest
+:presentation:mergeReleaseShaders UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:checkDebugManifest UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:compileReleaseShaders UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:data:generateDebugBuildConfig UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders
+:data:prepareLintJar UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:generateDebugResValues UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:data:packageDebugResources UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest
+:domain:compileJava UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:domain:processResources NO-SOURCE
+:data:processDebugResources
+:presentation:preDebugBuild
+:domain:classes UP-TO-DATE
+:domain:jar UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:processDebugResources UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl UP-TO-DATE
+:presentation:checkDebugManifest
+:data:extractDebugAnnotations UP-TO-DATE
+:presentation:checkDebugManifest UP-TO-DATE
+:data:mergeDebugShaders
+:presentation:generateDebugBuildConfig
+:data:mergeDebugShaders UP-TO-DATE
+:data:compileDebugShaders
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:data:compileDebugShaders UP-TO-DATE
+:presentation:processDebugManifest
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:data:packageDebugRenderscript NO-SOURCE
+:presentation:processDebugManifest UP-TO-DATE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:compileDebugRenderscript UP-TO-DATE
+:presentation:generateDebugResources UP-TO-DATE
+:presentation:mergeDebugResources
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug
+:presentation:mergeDebugResources UP-TO-DATE
+:presentation:processDebugResources
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug
+:presentation:processDebugResources UP-TO-DATE
+:presentation:generateDebugSources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:presentation:compileDebugNdk
+:data:compileDebugSources UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:data:assembleDebug UP-TO-DATE
+:presentation:mergeDebugAssets
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl
+:presentation:mergeDebugAssets UP-TO-DATE
+:presentation:processDebugJavaRes NO-SOURCE
+:data:compileReleaseAidl UP-TO-DATE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:data:compileReleaseJavaWithJavac
+:presentation:preReleaseBuild UP-TO-DATE
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:data:extractReleaseAnnotations
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:presentation:processReleaseManifest UP-TO-DATE
+:data:extractReleaseAnnotations UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:data:mergeReleaseShaders
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:presentation:mergeReleaseAssets
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:presentation:mergeReleaseResources
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:presentation:processReleaseResources
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:data:mergeReleaseResources
+:presentation:generateReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 501 ms
+
+* Running measured build #10
+Parallel execution with configuration on demand is an incubating feature.
+:data:preBuild
+:domain:compileJava
+:data:preBuild UP-TO-DATE
+:presentation:preBuild UP-TO-DATE
+:data:preDebugBuild UP-TO-DATE
+:presentation:prepareLintJar UP-TO-DATE
+:data:compileDebugAidl
+:presentation:generateDebugResValues UP-TO-DATE
+:presentation:createDebugCompatibleScreenManifests UP-TO-DATE
+:presentation:splitsDiscoveryTaskDebug UP-TO-DATE
+:presentation:mergeDebugShaders UP-TO-DATE
+:presentation:compileDebugShaders UP-TO-DATE
+:presentation:generateDebugAssets UP-TO-DATE
+:presentation:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:validateSigningDebug
+:data:compileDebugAidl UP-TO-DATE
+:data:compileDebugNdk NO-SOURCE
+:data:compileDebugRenderscript
+:presentation:generateReleaseResValues
+:data:compileDebugRenderscript UP-TO-DATE
+:presentation:generateReleaseResValues UP-TO-DATE
+:data:checkDebugManifest
+:presentation:createReleaseCompatibleScreenManifests
+:data:checkDebugManifest UP-TO-DATE
+:data:generateDebugBuildConfig
+:presentation:createReleaseCompatibleScreenManifests UP-TO-DATE
+:data:generateDebugBuildConfig UP-TO-DATE
+:presentation:splitsDiscoveryTaskRelease
+:data:prepareLintJar
+:presentation:splitsDiscoveryTaskRelease UP-TO-DATE
+:data:prepareLintJar UP-TO-DATE
+:presentation:mergeReleaseShaders
+:data:generateDebugResValues UP-TO-DATE
+:presentation:mergeReleaseShaders UP-TO-DATE
+:data:generateDebugResources UP-TO-DATE
+:presentation:compileReleaseShaders
+:data:packageDebugResources
+:presentation:compileReleaseShaders UP-TO-DATE
+:presentation:generateReleaseAssets UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders
+:data:packageDebugResources UP-TO-DATE
+:presentation:mergeReleaseJniLibFolders UP-TO-DATE
+:data:platformAttrExtractor UP-TO-DATE
+:data:processDebugManifest UP-TO-DATE
+:data:processDebugResources
+:domain:compileJava UP-TO-DATE
+:presentation:preDebugBuild
+:domain:processResources NO-SOURCE
+:domain:classes UP-TO-DATE
+:domain:jar
+:data:processDebugResources UP-TO-DATE
+:domain:jar UP-TO-DATE
+:data:generateDebugSources UP-TO-DATE
+:domain:assemble UP-TO-DATE
+:data:javaPreCompileDebug UP-TO-DATE
+:data:compileDebugJavaWithJavac UP-TO-DATE
+:data:extractDebugAnnotations
+:presentation:preDebugBuild UP-TO-DATE
+:presentation:compileDebugAidl
+:data:extractDebugAnnotations UP-TO-DATE
+:data:mergeDebugShaders UP-TO-DATE
+:data:compileDebugShaders UP-TO-DATE
+:data:generateDebugAssets UP-TO-DATE
+:data:mergeDebugAssets
+:presentation:compileDebugAidl UP-TO-DATE
+:data:mergeDebugAssets UP-TO-DATE
+:presentation:checkDebugManifest
+:data:mergeDebugConsumerProguardFiles
+:presentation:checkDebugManifest UP-TO-DATE
+:data:mergeDebugConsumerProguardFiles UP-TO-DATE
+:presentation:generateDebugBuildConfig
+:data:packageDebugRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForDebug
+:presentation:generateDebugBuildConfig UP-TO-DATE
+:presentation:compileDebugRenderscript
+:data:transformClassesWithRetrolambdaForDebug UP-TO-DATE
+:presentation:compileDebugRenderscript UP-TO-DATE
+:data:processDebugJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForDebug
+:presentation:generateDebugResources UP-TO-DATE
+:presentation:mergeDebugResources
+:data:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:data:mergeDebugJniLibFolders
+:presentation:mergeDebugResources UP-TO-DATE
+:data:mergeDebugJniLibFolders UP-TO-DATE
+:presentation:processDebugManifest
+:data:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForDebug UP-TO-DATE
+:data:bundleDebug
+:presentation:processDebugManifest UP-TO-DATE
+:data:bundleDebug UP-TO-DATE
+:presentation:processDebugResources
+:data:compileDebugSources UP-TO-DATE
+:data:assembleDebug UP-TO-DATE
+:data:preReleaseBuild UP-TO-DATE
+:data:compileReleaseAidl
+:presentation:processDebugResources UP-TO-DATE
+:presentation:generateDebugSources UP-TO-DATE
+:data:compileReleaseAidl UP-TO-DATE
+:presentation:compileDebugNdk NO-SOURCE
+:data:compileReleaseNdk NO-SOURCE
+:data:compileReleaseRenderscript
+:presentation:mergeDebugAssets
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:checkReleaseManifest UP-TO-DATE
+:data:generateReleaseBuildConfig UP-TO-DATE
+:presentation:mergeDebugAssets UP-TO-DATE
+:data:generateReleaseResValues
+:presentation:processDebugJavaRes NO-SOURCE
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResources UP-TO-DATE
+:data:packageReleaseResources UP-TO-DATE
+:data:processReleaseManifest UP-TO-DATE
+:data:processReleaseResources
+:presentation:preReleaseBuild
+:data:processReleaseResources UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:data:javaPreCompileRelease
+:presentation:preReleaseBuild UP-TO-DATE
+:data:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseAidl
+:data:compileReleaseJavaWithJavac
+:presentation:compileReleaseAidl UP-TO-DATE
+:presentation:checkReleaseManifest UP-TO-DATE
+:presentation:generateReleaseBuildConfig UP-TO-DATE
+:presentation:processReleaseManifest
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:data:extractReleaseAnnotations
+:presentation:processReleaseManifest UP-TO-DATE
+:presentation:compileReleaseNdk NO-SOURCE
+:presentation:processReleaseJavaRes NO-SOURCE
+:data:extractReleaseAnnotations UP-TO-DATE
+:data:mergeReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders UP-TO-DATE
+:data:generateReleaseAssets UP-TO-DATE
+:data:mergeReleaseAssets UP-TO-DATE
+:data:mergeReleaseConsumerProguardFiles UP-TO-DATE
+:presentation:mergeReleaseAssets
+:data:packageReleaseRenderscript NO-SOURCE
+:data:transformClassesWithRetrolambdaForRelease
+:presentation:mergeReleaseAssets UP-TO-DATE
+:presentation:compileReleaseRenderscript UP-TO-DATE
+:presentation:generateReleaseResources UP-TO-DATE
+:data:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:presentation:mergeReleaseResources
+:data:processReleaseJavaRes NO-SOURCE
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:mergeReleaseResources UP-TO-DATE
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+:presentation:processReleaseResources
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:data:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:presentation:processReleaseResources UP-TO-DATE
+:data:bundleRelease
+:presentation:generateReleaseSources UP-TO-DATE
+:data:bundleRelease UP-TO-DATE
+:data:compileReleaseSources UP-TO-DATE
+:data:mergeReleaseResources UP-TO-DATE
+:data:verifyReleaseResources UP-TO-DATE
+:data:assembleRelease UP-TO-DATE
+:data:assemble UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:presentation:javaPreCompileDebug
+:data:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:data:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:data:transformNativeLibsWithIntermediateJniLibsForRelease UP-TO-DATE
+:presentation:javaPreCompileDebug UP-TO-DATE
+:presentation:compileDebugJavaWithJavac UP-TO-DATE
+:presentation:compileDebugSources UP-TO-DATE
+:presentation:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:presentation:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:presentation:packageDebug UP-TO-DATE
+:presentation:assembleDebug UP-TO-DATE
+:presentation:javaPreCompileRelease UP-TO-DATE
+:presentation:compileReleaseJavaWithJavac UP-TO-DATE
+:presentation:compileReleaseSources UP-TO-DATE
+:presentation:lintVitalRelease
+Gradle now uses separate output directories for each JVM language, but this build assumes a single directory for all classes from a source set. This behaviour has been deprecated and is scheduled to be removed in Gradle 5.0
+:presentation:transformClassesWithPreDexForRelease UP-TO-DATE
+:presentation:transformDexWithDexForRelease UP-TO-DATE
+:presentation:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:presentation:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:presentation:packageRelease UP-TO-DATE
+:presentation:assembleRelease
+:presentation:assemble
+
+BUILD SUCCESSFUL in 0s
+102 actionable tasks: 2 executed, 100 up-to-date
+Used daemon with pid 11782
+Execution time 541 ms
+
+* Stopping daemons
+Running command /home/louis/WSL Dev/Android-benchmark/gradle-user-home/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/bin/gradle --stop --gradle-user-home /home/louis/WSL Dev/Android-benchmark/gradle-user-home
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Results written to /home/louis/WSL Dev/Android-benchmark/data/linux/android10/Android-CleanArchitecture/assemble
+  /home/louis/WSL Dev/Android-benchmark/data/linux/android10/Android-CleanArchitecture/assemble/benchmark.csv
+  /home/louis/WSL Dev/Android-benchmark/data/linux/android10/Android-CleanArchitecture/assemble/benchmark.html
+
